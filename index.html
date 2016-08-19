@@ -206,15 +206,12 @@ new.pkgs &lt;-<span class="st"> </span>needed_pkgs[!(needed_pkgs %in%<span class
 
 if (<span class="kw">length</span>(new.pkgs)) {
   <span class="kw">install.packages</span>(new.pkgs, <span class="dt">repos =</span> <span class="st">&quot;http://cran.rstudio.com&quot;</span>)
-}</code></pre></div>
-<pre><code>## 
-## The downloaded binary packages are in
-##  /var/folders/sh/d8fmrj5j5kgg1_gfyxz2ys440000gn/T//RtmpDTTtBf/downloaded_packages</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Check that phantomjs is installed</span>
+}
+<span class="co"># Check that phantomjs is installed</span>
 if(<span class="kw">is.null</span>(webshot:::<span class="kw">find_phantom</span>()))
   webshot::<span class="kw">install_phantomjs</span>()</code></pre></div>
 <p><strong>Book was last updated:</strong></p>
-<pre><code>## [1] &quot;By Chester on Thursday, August 18, 2016 17:09:11 PDT&quot;</code></pre>
+<pre><code>## [1] &quot;By Chester on Thursday, August 18, 2016 17:28:12 PDT&quot;</code></pre>
 <!--
 The `printr` package is useful for outputting help files directly into our book and also looking at R output in a clean way.  We, thus, need to load the packages via the `library` function:
 
@@ -649,7 +646,7 @@ gitbook.start({
 "link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
 "text": null
 },
-"download": null,
+"download": ["ismay_kim.pdf", "ismay_kim.epub"],
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
