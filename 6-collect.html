@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="2-intro.html">
+<link rel="prev" href="5-manip.html">
+<link rel="next" href="7-infer.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,437 +189,38 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A MODERN DIVE into Data with R</h1>
-<h3 class="subtitle"><em>Modern Open-source Data-analysis Encouraging Reproducibility aNd Driven by Intuitive Visualization Efforts</em></h3>
-<h4 class="author"><em>Chester Ismay and Albert Y. Kim</em></h4>
-<h4 class="date"><em>2016-08-18</em></h4>
-</div>
-<div id="prereqs" class="section level1">
-<h1><span class="header-section-number">1</span> Prerequisites</h1>
-<p>This book was written using the <strong>bookdown</strong> R package from Yihui Xie. In order to follow along and run the code in this book on your own, you’ll need to have access to R and RStudio. You can find more information on both of these with a simple Google search for “R” and for “RStudio” and in Appendix A - Chapter <a href="8-appendix1.html#appendix1">8</a>.</p>
-<p>We will keep a running list of R packages you will need to have installed to complete the analysis as well here in the <code>needed_pkgs</code> character vector. You can check if you have all of the needed packages installed by running all of the lines below. The last lines including the <code>if</code> will install them as needed (i.e., download their needed files from the internet to your hard drive).</p>
-<p>You can run the <code>library</code> function on them to load them into your current analysis. Prior to each analysis where a package is needed, you will see the corresponding <code>library</code> function in the text.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">needed_pkgs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;nycflights13&quot;</span>, <span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;knitr&quot;</span>, 
-  <span class="st">&quot;devtools&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;webshot&quot;</span>, <span class="st">&quot;dygraphs&quot;</span>, <span class="st">&quot;tufte&quot;</span>, <span class="st">&quot;rmarkdown&quot;</span>)
-new.pkgs &lt;-<span class="st"> </span>needed_pkgs[!(needed_pkgs %in%<span class="st"> </span><span class="kw">installed.packages</span>())]
-
-if (<span class="kw">length</span>(new.pkgs)) {
-  <span class="kw">install.packages</span>(new.pkgs, <span class="dt">repos =</span> <span class="st">&quot;http://cran.rstudio.com&quot;</span>)
-}</code></pre></div>
-<pre><code>## 
-## The downloaded binary packages are in
-##  /var/folders/sh/d8fmrj5j5kgg1_gfyxz2ys440000gn/T//RtmpDTTtBf/downloaded_packages</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Check that phantomjs is installed</span>
-if(<span class="kw">is.null</span>(webshot:::<span class="kw">find_phantom</span>()))
-  webshot::<span class="kw">install_phantomjs</span>()</code></pre></div>
-<p><strong>Book was last updated:</strong></p>
-<pre><code>## [1] &quot;By Chester on Thursday, August 18, 2016 17:09:11 PDT&quot;</code></pre>
-<!--
-The `printr` package is useful for outputting help files directly into our book and also looking at R output in a clean way.  We, thus, need to load the packages via the `library` function:
-
-
-```r
-#library(printr)
-```
--->
-<div id="colophon" class="section level2">
-<h2><span class="header-section-number">1.1</span> Colophon</h2>
-<p>The source of the book is available at <strong>UPDATE THIS</strong> and was built with versions of R packages given here. This may not be of importance for initial readers of this book, but you can reproduce a duplicate of this book by installing these versions of the packages.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">package</th>
-<th align="left">*</th>
-<th align="left">version</th>
-<th align="left">date</th>
-<th align="left">source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">assertthat</td>
-<td align="left"></td>
-<td align="left">0.1</td>
-<td align="left">2013-12-06</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">base64enc</td>
-<td align="left"></td>
-<td align="left">0.1-3</td>
-<td align="left">2015-07-28</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">BH</td>
-<td align="left"></td>
-<td align="left">1.60.0-2</td>
-<td align="left">2016-05-07</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">bitops</td>
-<td align="left"></td>
-<td align="left">1.0-6</td>
-<td align="left">2013-08-17</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">caTools</td>
-<td align="left"></td>
-<td align="left">1.17.1</td>
-<td align="left">2014-09-10</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">colorspace</td>
-<td align="left"></td>
-<td align="left">1.2-6</td>
-<td align="left">2015-03-11</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">curl</td>
-<td align="left"></td>
-<td align="left">1.2</td>
-<td align="left">2016-08-13</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">DBI</td>
-<td align="left"></td>
-<td align="left">0.5</td>
-<td align="left">2016-08-11</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">devtools</td>
-<td align="left"></td>
-<td align="left">1.12.0</td>
-<td align="left">2016-06-24</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">dichromat</td>
-<td align="left"></td>
-<td align="left">2.0-0</td>
-<td align="left">2013-01-24</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">digest</td>
-<td align="left"></td>
-<td align="left">0.6.10</td>
-<td align="left">2016-08-02</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">dplyr</td>
-<td align="left"></td>
-<td align="left">0.5.0</td>
-<td align="left">2016-06-24</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">dygraphs</td>
-<td align="left"></td>
-<td align="left">1.1.1-1</td>
-<td align="left">2016-08-06</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">evaluate</td>
-<td align="left"></td>
-<td align="left">0.9</td>
-<td align="left">2016-04-29</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">formatR</td>
-<td align="left"></td>
-<td align="left">1.4</td>
-<td align="left">2016-05-09</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">ggplot2</td>
-<td align="left"></td>
-<td align="left">2.1.0</td>
-<td align="left">2016-03-01</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">git2r</td>
-<td align="left"></td>
-<td align="left">0.15.0</td>
-<td align="left">2016-05-11</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">gtable</td>
-<td align="left"></td>
-<td align="left">0.2.0</td>
-<td align="left">2016-02-26</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">highr</td>
-<td align="left"></td>
-<td align="left">0.6</td>
-<td align="left">2016-05-09</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">htmltools</td>
-<td align="left"></td>
-<td align="left">0.3.5</td>
-<td align="left">2016-03-21</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">htmlwidgets</td>
-<td align="left"></td>
-<td align="left">0.6</td>
-<td align="left">2016-02-25</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">httr</td>
-<td align="left"></td>
-<td align="left">1.2.1</td>
-<td align="left">2016-07-03</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">jsonlite</td>
-<td align="left"></td>
-<td align="left">1.0</td>
-<td align="left">2016-07-01</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">knitr</td>
-<td align="left"></td>
-<td align="left">1.14</td>
-<td align="left">2016-08-13</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">labeling</td>
-<td align="left"></td>
-<td align="left">0.3</td>
-<td align="left">2014-08-23</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">lattice</td>
-<td align="left"></td>
-<td align="left">0.20-33</td>
-<td align="left">2015-07-14</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">lazyeval</td>
-<td align="left"></td>
-<td align="left">0.2.0</td>
-<td align="left">2016-06-12</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">magrittr</td>
-<td align="left"></td>
-<td align="left">1.5</td>
-<td align="left">2014-11-22</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">markdown</td>
-<td align="left"></td>
-<td align="left">0.7.7</td>
-<td align="left">2015-04-22</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">MASS</td>
-<td align="left"></td>
-<td align="left">7.3-45</td>
-<td align="left">2016-04-21</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">memoise</td>
-<td align="left"></td>
-<td align="left">1.0.0</td>
-<td align="left">2016-01-29</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">mime</td>
-<td align="left"></td>
-<td align="left">0.5</td>
-<td align="left">2016-07-07</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">munsell</td>
-<td align="left"></td>
-<td align="left">0.4.3</td>
-<td align="left">2016-02-13</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">nycflights13</td>
-<td align="left"></td>
-<td align="left">0.2.0</td>
-<td align="left">2016-04-30</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">openssl</td>
-<td align="left"></td>
-<td align="left">0.9.4</td>
-<td align="left">2016-05-25</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">plyr</td>
-<td align="left"></td>
-<td align="left">1.8.4</td>
-<td align="left">2016-06-08</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">R6</td>
-<td align="left"></td>
-<td align="left">2.1.2</td>
-<td align="left">2016-01-26</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">RColorBrewer</td>
-<td align="left"></td>
-<td align="left">1.1-2</td>
-<td align="left">2014-12-07</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">Rcpp</td>
-<td align="left"></td>
-<td align="left">0.12.6</td>
-<td align="left">2016-07-19</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">reshape2</td>
-<td align="left"></td>
-<td align="left">1.4.1</td>
-<td align="left">2014-12-06</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">rmarkdown</td>
-<td align="left"></td>
-<td align="left">1.0</td>
-<td align="left">2016-07-08</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">rstudioapi</td>
-<td align="left"></td>
-<td align="left">0.6</td>
-<td align="left">2016-06-27</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">scales</td>
-<td align="left"></td>
-<td align="left">0.4.0</td>
-<td align="left">2016-02-26</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">stringi</td>
-<td align="left"></td>
-<td align="left">1.1.1</td>
-<td align="left">2016-05-27</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">stringr</td>
-<td align="left"></td>
-<td align="left">1.0.0</td>
-<td align="left">2015-04-30</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">tibble</td>
-<td align="left"></td>
-<td align="left">1.1</td>
-<td align="left">2016-07-04</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">tufte</td>
-<td align="left"></td>
-<td align="left">0.2</td>
-<td align="left">2016-02-07</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">webshot</td>
-<td align="left"></td>
-<td align="left">0.3.2</td>
-<td align="left">2016-06-23</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">whisker</td>
-<td align="left"></td>
-<td align="left">0.3-2</td>
-<td align="left">2013-04-28</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">withr</td>
-<td align="left"></td>
-<td align="left">1.0.2</td>
-<td align="left">2016-06-20</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">xts</td>
-<td align="left"></td>
-<td align="left">0.9-7</td>
-<td align="left">2014-01-02</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="even">
-<td align="left">yaml</td>
-<td align="left"></td>
-<td align="left">2.1.13</td>
-<td align="left">2014-06-12</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-<tr class="odd">
-<td align="left">zoo</td>
-<td align="left"></td>
-<td align="left">1.7-13</td>
-<td align="left">2016-05-03</td>
-<td align="left">CRAN (R 3.3.0)</td>
-</tr>
-</tbody>
-</table>
+<div id="collect" class="section level1">
+<h1><span class="header-section-number">6</span> Collecting Data</h1>
+<p>More traditional in feel</p>
+<ul>
+<li>(random) Sampling: representativeness/generalizability/bias
+<ul>
+<li>Image of sampling: population, soup idea</li>
+<li>Representativeness/bias: OkCupid to make statements. Population</li>
+</ul></li>
+<li>Observational study vs randomized experiment (fit with correlation)
+<ul>
+<li>OkCupid is an observational</li>
+</ul></li>
+<li>Correlation is not causation
+<ul>
+<li>Confounding variables</li>
+<li>Shoes on vs waking up with headache</li>
+<li>Think up data example to include in earlier chapters</li>
+</ul></li>
+</ul>
 
 </div>
-</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="2-intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+<a href="5-manip.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="7-infer.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
@@ -646,7 +247,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05a-collecting_data.Rmd",
 "text": null
 },
 "download": null,

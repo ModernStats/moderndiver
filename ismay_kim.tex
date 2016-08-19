@@ -104,7 +104,7 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % title / author / date
-\title{A MODERN DIVE into Data with R}
+\title{\Large{A MODERN DIVE into Data with R}}
 \author{Chester Ismay and Albert Y. Kim}
 \date{2016-08-18}
 
@@ -206,12 +206,23 @@ will see the corresponding \texttt{library} function in the text.
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{needed_pkgs <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"nycflights13"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }
-  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"webshot"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"tufte"}\NormalTok{)}
+  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"webshot"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"tufte"}\NormalTok{, }\StringTok{"rmarkdown"}\NormalTok{)}
 \NormalTok{new.pkgs <-}\StringTok{ }\NormalTok{needed_pkgs[!(needed_pkgs %in%}\StringTok{ }\KeywordTok{installed.packages}\NormalTok{())]}
 
 \NormalTok{if (}\KeywordTok{length}\NormalTok{(new.pkgs)) \{}
   \KeywordTok{install.packages}\NormalTok{(new.pkgs, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
 \NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## The downloaded binary packages are in
+##  /var/folders/sh/d8fmrj5j5kgg1_gfyxz2ys440000gn/T//RtmpDTTtBf/downloaded_packages
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \CommentTok{# Check that phantomjs is installed}
 \NormalTok{if(}\KeywordTok{is.null}\NormalTok{(webshot:::}\KeywordTok{find_phantom}\NormalTok{()))}
   \NormalTok{webshot::}\KeywordTok{install_phantomjs}\NormalTok{()}
@@ -221,7 +232,7 @@ will see the corresponding \texttt{library} function in the text.
 \textbf{Book was last updated:}
 
 \begin{verbatim}
-## [1] "By Chester on Thursday, August 18, 2016 15:32:06 PDT"
+## [1] "By Chester on Thursday, August 18, 2016 17:09:52 PDT"
 \end{verbatim}
 
 \section{Colophon}\label{colophon}
@@ -231,117 +242,75 @@ built with versions of R packages given here. This may not be of
 importance for initial readers of this book, but you can reproduce a
 duplicate of this book by installing these versions of the packages.
 
-\begin{tabular}{l|l|l|l|l}
-\hline
+\begin{longtable}{lllll}
+\toprule
 package & * & version & date & source\\
-\hline
+\midrule
 assertthat &  & 0.1 & 2013-12-06 & CRAN (R 3.3.0)\\
-\hline
 base64enc &  & 0.1-3 & 2015-07-28 & CRAN (R 3.3.0)\\
-\hline
 BH &  & 1.60.0-2 & 2016-05-07 & CRAN (R 3.3.0)\\
-\hline
 bitops &  & 1.0-6 & 2013-08-17 & CRAN (R 3.3.0)\\
-\hline
 caTools &  & 1.17.1 & 2014-09-10 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 colorspace &  & 1.2-6 & 2015-03-11 & CRAN (R 3.3.0)\\
-\hline
 curl &  & 1.2 & 2016-08-13 & CRAN (R 3.3.0)\\
-\hline
 DBI &  & 0.5 & 2016-08-11 & CRAN (R 3.3.0)\\
-\hline
 devtools &  & 1.12.0 & 2016-06-24 & CRAN (R 3.3.0)\\
-\hline
 dichromat &  & 2.0-0 & 2013-01-24 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 digest &  & 0.6.10 & 2016-08-02 & CRAN (R 3.3.0)\\
-\hline
 dplyr & * & 0.5.0 & 2016-06-24 & CRAN (R 3.3.0)\\
-\hline
 dygraphs & * & 1.1.1-1 & 2016-08-06 & CRAN (R 3.3.0)\\
-\hline
 evaluate &  & 0.9 & 2016-04-29 & CRAN (R 3.3.0)\\
-\hline
 formatR &  & 1.4 & 2016-05-09 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 ggplot2 & * & 2.1.0 & 2016-03-01 & CRAN (R 3.3.0)\\
-\hline
 git2r &  & 0.15.0 & 2016-05-11 & CRAN (R 3.3.0)\\
-\hline
 gtable &  & 0.2.0 & 2016-02-26 & CRAN (R 3.3.0)\\
-\hline
 highr &  & 0.6 & 2016-05-09 & CRAN (R 3.3.0)\\
-\hline
 htmltools &  & 0.3.5 & 2016-03-21 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 htmlwidgets &  & 0.6 & 2016-02-25 & CRAN (R 3.3.0)\\
-\hline
 httr &  & 1.2.1 & 2016-07-03 & CRAN (R 3.3.0)\\
-\hline
 jsonlite &  & 1.0 & 2016-07-01 & CRAN (R 3.3.0)\\
-\hline
 knitr & * & 1.14 & 2016-08-13 & CRAN (R 3.3.0)\\
-\hline
 labeling &  & 0.3 & 2014-08-23 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 lattice &  & 0.20-33 & 2015-07-14 & CRAN (R 3.3.0)\\
-\hline
 lazyeval &  & 0.2.0 & 2016-06-12 & CRAN (R 3.3.0)\\
-\hline
 magrittr &  & 1.5 & 2014-11-22 & CRAN (R 3.3.0)\\
-\hline
 markdown &  & 0.7.7 & 2015-04-22 & CRAN (R 3.3.0)\\
-\hline
 MASS &  & 7.3-45 & 2016-04-21 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 memoise &  & 1.0.0 & 2016-01-29 & CRAN (R 3.3.0)\\
-\hline
 mime &  & 0.5 & 2016-07-07 & CRAN (R 3.3.0)\\
-\hline
 munsell &  & 0.4.3 & 2016-02-13 & CRAN (R 3.3.0)\\
-\hline
 nycflights13 & * & 0.2.0 & 2016-04-30 & CRAN (R 3.3.0)\\
-\hline
 openssl &  & 0.9.4 & 2016-05-25 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 plyr &  & 1.8.4 & 2016-06-08 & CRAN (R 3.3.0)\\
-\hline
 R6 &  & 2.1.2 & 2016-01-26 & CRAN (R 3.3.0)\\
-\hline
 RColorBrewer &  & 1.1-2 & 2014-12-07 & CRAN (R 3.3.0)\\
-\hline
 Rcpp &  & 0.12.6 & 2016-07-19 & CRAN (R 3.3.0)\\
-\hline
 reshape2 &  & 1.4.1 & 2014-12-06 & CRAN (R 3.3.0)\\
-\hline
-rmarkdown &  & 1.0.9002 & 2016-08-17 & Github (rstudio/rmarkdown@2674682)\\
-\hline
+\addlinespace
+rmarkdown &  & 1.0 & 2016-07-08 & CRAN (R 3.3.0)\\
 rstudioapi &  & 0.6 & 2016-06-27 & CRAN (R 3.3.0)\\
-\hline
 scales &  & 0.4.0 & 2016-02-26 & CRAN (R 3.3.0)\\
-\hline
 stringi &  & 1.1.1 & 2016-05-27 & CRAN (R 3.3.0)\\
-\hline
 stringr &  & 1.0.0 & 2015-04-30 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 tibble &  & 1.1 & 2016-07-04 & CRAN (R 3.3.0)\\
-\hline
 tufte &  & 0.2 & 2016-02-07 & CRAN (R 3.3.0)\\
-\hline
 webshot &  & 0.3.2 & 2016-06-23 & CRAN (R 3.3.0)\\
-\hline
 whisker &  & 0.3-2 & 2013-04-28 & CRAN (R 3.3.0)\\
-\hline
 withr &  & 1.0.2 & 2016-06-20 & CRAN (R 3.3.0)\\
-\hline
+\addlinespace
 xts &  & 0.9-7 & 2014-01-02 & CRAN (R 3.3.0)\\
-\hline
 yaml &  & 2.1.13 & 2014-06-12 & CRAN (R 3.3.0)\\
-\hline
 zoo &  & 1.7-13 & 2016-05-03 & CRAN (R 3.3.0)\\
-\hline
-\end{tabular}
+\bottomrule
+\end{longtable}
 
 \chapter{Introduction}\label{intro}
 
@@ -1002,11 +971,11 @@ something similar to a number line:
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-12-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-13-1} 
 
 }
 
-\caption[Strip Plot of Hourly Temperature Recordings from NYC in 2013]{Strip Plot of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-12}
+\caption[Strip Plot of Hourly Temperature Recordings from NYC in 2013]{Strip Plot of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-13}
 \end{figure}
 
 This gives us a general idea of how the values of \texttt{temp} differ.
@@ -1040,7 +1009,7 @@ function as arguments where \texttt{aes} stands for ``aesthetics''.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-13-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-14-1} \end{center}
 
 The plot given above is not a histogram, but the output does show us a
 bit of what is going on with
@@ -1070,11 +1039,11 @@ Chapter \ref{appendix1}.)
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-14-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-15-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013]{Histogram of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-14}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013]{Histogram of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-15}
 \end{figure}
 
 We have the power to specify how many bins we would like to put the data
@@ -1094,11 +1063,11 @@ of the plot. (\textbf{Discuss missing values here?})
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-15-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-16-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins]{Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins}\label{fig:unnamed-chunk-15}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins]{Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins}\label{fig:unnamed-chunk-16}
 \end{figure}
 
 We can tweak the plot a little more by specifying the width of the bins
@@ -1118,11 +1087,11 @@ by name and color is available
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-16-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-17-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10]{Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10}\label{fig:unnamed-chunk-16}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10]{Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10}\label{fig:unnamed-chunk-17}
 \end{figure}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1259,7 +1228,7 @@ concept of faceting in further detail in Section \ref{barplots}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-18-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-19-1} \end{center}
 
 As we might expect, the temperature tends to increase as summer
 approaches and then decrease as winter approaches.
@@ -1312,7 +1281,7 @@ above with the faceted histograms.
 ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
 \end{verbatim}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-19-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-20-1} \end{center}
 
 Note the first warning that is given here. (The second one corresponds
 to missing values in the dataframe and it is turned off on subsequent
@@ -1329,7 +1298,7 @@ groupings. We can get around this by introducing a new function for our
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-20-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-21-1} \end{center}
 
 We have introduced a new function called \texttt{factor()} here. One of
 the things this function does is to convert a numeric value like
@@ -1402,11 +1371,11 @@ invoking the \texttt{geom\_bar} function in \texttt{ggplot2}:
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-21-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-22-1} 
 
 }
 
-\caption[Number of flights departing NYC in 2013 by airline]{Number of flights departing NYC in 2013 by airline}\label{fig:unnamed-chunk-21}
+\caption[Number of flights departing NYC in 2013 by airline]{Number of flights departing NYC in 2013 by airline}\label{fig:unnamed-chunk-22}
 \end{figure}
 
 Recall the \texttt{airlines} dataset discussed in Chapter \ref{tidy}.
@@ -1508,7 +1477,7 @@ review this chart, try to identify
   (\texttt{UA})?
 \end{itemize}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-24-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-25-1} \end{center}
 
 While it is quite easy to look back at the barplot to get the answer to
 these questions, it's quite difficult to get the answers correct when
@@ -1574,11 +1543,11 @@ plot to get an idea of what this argument gives.
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-27-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-28-1} 
 
 }
 
-\caption[Stacked barplot comparing the number of flights by carrier and airport]{Stacked barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-27}
+\caption[Stacked barplot comparing the number of flights by carrier and airport]{Stacked barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-28}
 \end{figure}
 
 This plot is what is known as a \textbf{stacked barplot}. While simple
@@ -1609,11 +1578,11 @@ Another variation on the \textbf{stacked barplot} is the
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-28-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-29-1} 
 
 }
 
-\caption[Side-by-side barplot comparing the number of flights by carrier and airport]{Side-by-side barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-28}
+\caption[Side-by-side barplot comparing the number of flights by carrier and airport]{Side-by-side barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-29}
 \end{figure}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1645,11 +1614,11 @@ distributions across both \texttt{carrier} and airport/\texttt{name}.
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-29-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-30-1} 
 
 }
 
-\caption[Faceted barplot comparing the number of flights by carrier and airport]{Faceted barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-29}
+\caption[Faceted barplot comparing the number of flights by carrier and airport]{Faceted barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-30}
 \end{figure}
 
 Note how the \texttt{facet\_grid} function arguments are written here.
@@ -1786,7 +1755,7 @@ variables (minutes here).
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-31-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-32-1} \end{center}
 
 This has helps us a little bit in getting a sense for the over-plotting,
 but with a relatively large dataset like this one (714 flights), it is
@@ -1900,7 +1869,7 @@ of these values, we obtain the following scatter-plot:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-32-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-33-1} \end{center}
 
 We see that this plot is difficult to understand based on the sheer
 number of points plotted. We see some outlier points with more than 500
@@ -2012,7 +1981,7 @@ work with:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-35-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-36-1} \end{center}
 
 The syntax here is a little different than what we have covered so far.
 The \texttt{dygraph} function is expecting for the dates to be given as
@@ -2323,6 +2292,9 @@ More traditional in feel
 
 \section{What's to come?}\label{whats-to-come-3}
 
+\part{Appendix}\label{part-appendix}
+
+
 \chapter{Appendix A: R and RStudio Basics}\label{appendix1}
 
 Link to \url{http://ismayc.github.io/rbasics-book} or reproduce the
@@ -2401,11 +2373,11 @@ We can use the sorted table giving the number of flights defined as
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-38-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-39-1} 
 
 }
 
-\caption[Number of flights departing NYC in 2013 by airline - Descending numbers]{Number of flights departing NYC in 2013 by airline - Descending numbers}\label{fig:unnamed-chunk-38}
+\caption[Number of flights departing NYC in 2013 by airline - Descending numbers]{Number of flights departing NYC in 2013 by airline - Descending numbers}\label{fig:unnamed-chunk-39}
 \end{figure}
 
 \begin{Shaded}
