@@ -106,7 +106,7 @@
 % title / author / date
 \title{\Large{A MODERN DIVE into Data with R}}
 \author{Chester Ismay and Albert Y. Kim}
-\date{2016-08-18}
+\date{2016-08-23}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -206,22 +206,20 @@ will see the corresponding \texttt{library} function in the text.
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{needed_pkgs <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"nycflights13"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }
-  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"webshot"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"tufte"}\NormalTok{, }\StringTok{"rmarkdown"}\NormalTok{)}
+  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"rmarkdown"}\NormalTok{)}
+
 \NormalTok{new.pkgs <-}\StringTok{ }\NormalTok{needed_pkgs[!(needed_pkgs %in%}\StringTok{ }\KeywordTok{installed.packages}\NormalTok{())]}
 
-\NormalTok{if (}\KeywordTok{length}\NormalTok{(new.pkgs)) \{}
+\NormalTok{if(}\KeywordTok{length}\NormalTok{(new.pkgs)) \{}
   \KeywordTok{install.packages}\NormalTok{(new.pkgs, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
 \NormalTok{\}}
-\CommentTok{# Check that phantomjs is installed}
-\NormalTok{if(}\KeywordTok{is.null}\NormalTok{(webshot:::}\KeywordTok{find_phantom}\NormalTok{()))}
-  \NormalTok{webshot::}\KeywordTok{install_phantomjs}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
 \textbf{Book was last updated:}
 
 \begin{verbatim}
-## [1] "By Chester on Thursday, August 18, 2016 17:28:57 PDT"
+## [1] "By cismay on Tuesday, August 23, 2016 15:50:07 PDT"
 \end{verbatim}
 
 \section{Colophon}\label{colophon}
@@ -259,17 +257,17 @@ gtable &  & 0.2.0 & 2016-02-26 & CRAN (R 3.3.0)\\
 highr &  & 0.6 & 2016-05-09 & CRAN (R 3.3.0)\\
 htmltools &  & 0.3.5 & 2016-03-21 & CRAN (R 3.3.0)\\
 \addlinespace
-htmlwidgets &  & 0.6 & 2016-02-25 & CRAN (R 3.3.0)\\
+htmlwidgets &  & 0.7 & 2016-08-02 & CRAN (R 3.3.0)\\
 httr &  & 1.2.1 & 2016-07-03 & CRAN (R 3.3.0)\\
 jsonlite &  & 1.0 & 2016-07-01 & CRAN (R 3.3.0)\\
 knitr & * & 1.14 & 2016-08-13 & CRAN (R 3.3.0)\\
 labeling &  & 0.3 & 2014-08-23 & CRAN (R 3.3.0)\\
 \addlinespace
-lattice &  & 0.20-33 & 2015-07-14 & CRAN (R 3.3.0)\\
+lattice &  & 0.20-33 & 2015-07-14 & CRAN (R 3.3.1)\\
 lazyeval &  & 0.2.0 & 2016-06-12 & CRAN (R 3.3.0)\\
 magrittr &  & 1.5 & 2014-11-22 & CRAN (R 3.3.0)\\
 markdown &  & 0.7.7 & 2015-04-22 & CRAN (R 3.3.0)\\
-MASS &  & 7.3-45 & 2016-04-21 & CRAN (R 3.3.0)\\
+MASS &  & 7.3-45 & 2016-04-21 & CRAN (R 3.3.1)\\
 \addlinespace
 memoise &  & 1.0.0 & 2016-01-29 & CRAN (R 3.3.0)\\
 mime &  & 0.5 & 2016-07-07 & CRAN (R 3.3.0)\\
@@ -278,7 +276,7 @@ nycflights13 & * & 0.2.0 & 2016-04-30 & CRAN (R 3.3.0)\\
 openssl &  & 0.9.4 & 2016-05-25 & CRAN (R 3.3.0)\\
 \addlinespace
 plyr &  & 1.8.4 & 2016-06-08 & CRAN (R 3.3.0)\\
-R6 &  & 2.1.2 & 2016-01-26 & CRAN (R 3.3.0)\\
+R6 &  & 2.1.3 & 2016-08-19 & CRAN (R 3.3.0)\\
 RColorBrewer &  & 1.1-2 & 2014-12-07 & CRAN (R 3.3.0)\\
 Rcpp &  & 0.12.6 & 2016-07-19 & CRAN (R 3.3.0)\\
 reshape2 &  & 1.4.1 & 2014-12-06 & CRAN (R 3.3.0)\\
@@ -287,14 +285,11 @@ rmarkdown &  & 1.0 & 2016-07-08 & CRAN (R 3.3.0)\\
 rstudioapi &  & 0.6 & 2016-06-27 & CRAN (R 3.3.0)\\
 scales &  & 0.4.0 & 2016-02-26 & CRAN (R 3.3.0)\\
 stringi &  & 1.1.1 & 2016-05-27 & CRAN (R 3.3.0)\\
-stringr &  & 1.0.0 & 2015-04-30 & CRAN (R 3.3.0)\\
+stringr &  & 1.1.0 & 2016-08-19 & CRAN (R 3.3.0)\\
 \addlinespace
 tibble &  & 1.1 & 2016-07-04 & CRAN (R 3.3.0)\\
-tufte &  & 0.2 & 2016-02-07 & CRAN (R 3.3.0)\\
-webshot &  & 0.3.2 & 2016-06-23 & CRAN (R 3.3.0)\\
 whisker &  & 0.3-2 & 2013-04-28 & CRAN (R 3.3.0)\\
 withr &  & 1.0.2 & 2016-06-20 & CRAN (R 3.3.0)\\
-\addlinespace
 xts &  & 0.9-7 & 2014-01-02 & CRAN (R 3.3.0)\\
 yaml &  & 2.1.13 & 2014-06-12 & CRAN (R 3.3.0)\\
 zoo &  & 1.7-13 & 2016-05-03 & CRAN (R 3.3.0)\\
@@ -356,19 +351,6 @@ experience.
 \emph{To think about further}
 
 \chapter{Tidy data}\label{tidy}
-
-\textbf{Include discussion on ethics of various datasets}.
-
-\textbf{Need to give big picture question here and set up how this
-chapter ties in to chapters to come}.
-
-\textbf{Force dataframes into tibbles using \texttt{as\_tibble} or
-\texttt{tbl\_df}? That way \texttt{head} isn't needed since printing
-will be nice by default. \url{http://r4ds.had.co.nz/tibbles.html}}
-
-\textbf{Add RStudio graphics}
-
-**\url{http://chance.amstat.org/2015/04/setting-the-stage/**}
 
 You have surely heard the word ``tidy'' in your life:
 
@@ -881,14 +863,6 @@ be a useful way to expand on the \texttt{str} function we have seen here
 for tidy data.
 
 \chapter{Visualizing Data}\label{viz}
-
-\textbf{Compare shapes of plots instead of summary statistics?
-(Berkeley)}
-
-\textbf{Most important thing with graphics is making it obvious for your
-audience to see the findings you want to get across}
-
-\textbf{To create insights into the data}
 
 In Chapter \ref{tidy}, we discussed the importance of datasets being
 \textbf{tidy}. You will see in examples here why having a tidy dataset
@@ -1476,7 +1450,7 @@ may be one exception from Nathan Yau at
 \href{https://flowingdata.com/2008/09/19/pie-i-have-eaten-and-pie-i-have-not-eaten/}{FlowingData.com}
 but we will leave this for the reader to decide:
 
-\begin{center}\includegraphics{images/Pie-I-have-Eaten} \end{center}
+\begin{center}\includegraphics[width=6.94in]{images/Pie-I-have-Eaten} \end{center}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -2126,7 +2100,7 @@ More traditional in feel
   \begin{itemize}
   \tightlist
   \item
-    OkCupid is an observational
+    OkCupid is an observational study
   \end{itemize}
 \item
   Correlation is not causation
@@ -2281,6 +2255,162 @@ More traditional in feel
 
 \section{What's to come?}\label{whats-to-come-3}
 
+\part{Inference}\label{part-inference-1}
+
+
+\chapter{Inference Basics}\label{infer-basics}
+
+\begin{itemize}
+\tightlist
+\item
+  Idea of histogram of sample being a visual approximation to population
+  distribution.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Shiny
+  \item
+    Take normal distribution using mean/SD of okcupid heights and plot
+    count (not density) curve on top of histogram.
+  \end{itemize}
+\item
+  Sampling distribution:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Permutation test:
+
+    \begin{itemize}
+    \item
+      Flight delays for American vs United
+    \item
+      Do women smoke more than men in OkCupid?
+    \item
+      Think up more dichotomies than male vs female.
+    \item
+    \end{itemize}
+  \end{itemize}
+\item
+  Standard errors and sampling distribution via randomization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Developing traditional inference from randomization
+  \item
+    two-sample permutation test -\textgreater{} null distribution\\
+  \item
+    Showing what happens when assumptions/conditions aren't met
+  \item
+    Then show normal/t-test and show how it fits on top of sampling
+    distribution
+  \item
+    Shiny Google Forms
+  \end{itemize}
+\end{itemize}
+
+\section{What's to come?}\label{whats-to-come-4}
+
+\chapter{Hypothesis Testing}\label{hypo}
+
+\begin{itemize}
+\tightlist
+\item
+  Hypothesis testing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The theory of hypothesis. Criminal justice. Question: what do you do
+    with a problem like alpha?
+  \item
+    Example of non-rejection of H0: heights of men and women, flights
+    from NYC to Boston vs flights from NYC to SF.
+  \end{itemize}
+\end{itemize}
+
+\section{What's to come?}\label{whats-to-come-5}
+
+\chapter{Confidence Intervals}\label{ci}
+
+\section{What's to come?}\label{whats-to-come-6}
+
+\chapter{Simple and Multiple Regression}\label{regress}
+
+\begin{itemize}
+\tightlist
+\item
+  Simple linear regression
+\item
+  Multiple regression
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Regression/correlation/multiple regression/confounding
+  \item
+    Categorical predictor and baseline
+  \item
+    Implement \texttt{tidy}, \texttt{broom::augment}, and
+    \texttt{glance} in \texttt{broom} package to get results
+  \item
+    Model selection is a can of worms
+  \item
+    Cross-validation
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Take half of dataset for fit, use to predict other half.
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Show random sampling of half matters
+      \item
+        Is only once enough?
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\part{Conclusion}\label{part-conclusion}
+
+
+\chapter{Concluding remarks}\label{conclusion}
+
+\section{Topics to be Dropped}\label{topics-to-be-dropped-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Design of experiments
+\item
+  statistical power
+\item
+  Independence/Probability
+\item
+  Chi-Square Tests
+\item
+  Not do extensive ANOVA, but allude to it after doing multiple
+  regression with categorical
+\item
+  Logistic Regression
+\item
+  CLT/Mathematical computation engine (but we need to ascertain the
+  unintended consequences of dropping it)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tell them the minimum they need to know
+  \end{itemize}
+\item
+  Simpson's paradox
+\end{itemize}
+
 \part{Appendix}\label{part-appendix}
 
 
@@ -2406,6 +2536,9 @@ by looking at Figure 4.6 instead of Figure 4.5?
 
 Link to \url{http://ismayc.github.io/rbasics-book} or reproduce the
 documents here?
+
+\part{Bibliography}\label{part-bibliography}
+
 
 \bibliography{bib/packages.bib,bib/books.bib,bib/articles.bib}
 
