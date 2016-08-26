@@ -8,7 +8,7 @@
   <title>A MODERN DIVE into Data with R</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Getting away from the traditional introductory statistics curriculum, more focused on reproducible research and modern data analysis techniques and tools">
-  <meta name="generator" content="bookdown 0.1.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.1.5 and GitBook 2.6.7">
 
   <meta property="og:title" content="A MODERN DIVE into Data with R" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 
 <meta name="author" content="Chester Ismay and Albert Y. Kim">
 
-<meta name="date" content="2016-08-23">
+<meta name="date" content="2016-08-26">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,10 +115,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="2" data-path="2-intro.html"><a href="2-intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
 <li class="chapter" data-level="2.1" data-path="2-intro.html"><a href="2-intro.html#preamble"><i class="fa fa-check"></i><b>2.1</b> Preamble</a></li>
-<li class="chapter" data-level="2.2" data-path="2-intro.html"><a href="2-intro.html#datascience-pipeline"><i class="fa fa-check"></i><b>2.2</b> Data/science pipeline</a></li>
-<li class="chapter" data-level="2.3" data-path="2-intro.html"><a href="2-intro.html#reproducibility"><i class="fa fa-check"></i><b>2.3</b> Reproducibility</a></li>
-<li class="chapter" data-level="2.4" data-path="2-intro.html"><a href="2-intro.html#who-is-this-book-for-target"><i class="fa fa-check"></i><b>2.4</b> Who is this book for? (Target)</a></li>
+<li class="chapter" data-level="2.2" data-path="2-intro.html"><a href="2-intro.html#two-driving-data-sources"><i class="fa fa-check"></i><b>2.2</b> Two driving data sources</a></li>
+<li class="chapter" data-level="2.3" data-path="2-intro.html"><a href="2-intro.html#datascience-pipeline"><i class="fa fa-check"></i><b>2.3</b> Data/science pipeline</a></li>
+<li class="chapter" data-level="2.4" data-path="2-intro.html"><a href="2-intro.html#reproducibility"><i class="fa fa-check"></i><b>2.4</b> Reproducibility</a></li>
+<li class="chapter" data-level="2.5" data-path="2-intro.html"><a href="2-intro.html#who-is-this-book-for"><i class="fa fa-check"></i><b>2.5</b> Who is this book for?</a></li>
 </ul></li>
+<li class="part"><span><b>Data Exploration</b></span></li>
 <li class="chapter" data-level="3" data-path="3-tidy.html"><a href="3-tidy.html"><i class="fa fa-check"></i><b>3</b> Tidy data</a><ul>
 <li class="chapter" data-level="3.1" data-path="3-tidy.html"><a href="3-tidy.html#what-is-tidy-data"><i class="fa fa-check"></i><b>3.1</b> What is tidy data?</a></li>
 <li class="chapter" data-level="3.2" data-path="3-tidy.html"><a href="3-tidy.html#the-nycflights13-datasets"><i class="fa fa-check"></i><b>3.2</b> The <code>nycflights13</code> datasets</a></li>
@@ -129,7 +131,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4" data-path="4-viz.html"><a href="4-viz.html"><i class="fa fa-check"></i><b>4</b> Visualizing Data</a><ul>
 <li class="chapter" data-level="4.1" data-path="4-viz.html"><a href="4-viz.html#five-named-graphs---the-fng"><i class="fa fa-check"></i><b>4.1</b> Five Named Graphs - The FNG</a></li>
 <li class="chapter" data-level="4.2" data-path="4-viz.html"><a href="4-viz.html#histograms"><i class="fa fa-check"></i><b>4.2</b> Histograms</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="4-viz.html"><a href="4-viz.html#continuous-data-summaries"><i class="fa fa-check"></i><b>4.2.1</b> Continuous data summaries</a></li>
+<li class="chapter" data-level="4.2.1" data-path="4-viz.html"><a href="4-viz.html#contsum"><i class="fa fa-check"></i><b>4.2.1</b> Continuous data summaries</a></li>
 <li class="chapter" data-level="4.2.2" data-path="4-viz.html"><a href="4-viz.html#summary"><i class="fa fa-check"></i><b>4.2.2</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="4-viz.html"><a href="4-viz.html#boxplots"><i class="fa fa-check"></i><b>4.3</b> Boxplots</a><ul>
@@ -154,32 +156,44 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.8" data-path="4-viz.html"><a href="4-viz.html#whats-to-come-1"><i class="fa fa-check"></i><b>4.8</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="5-manip.html"><a href="5-manip.html"><i class="fa fa-check"></i><b>5</b> Manipulating Data</a><ul>
-<li class="chapter" data-level="5.1" data-path="5-manip.html"><a href="5-manip.html#whats-to-come-2"><i class="fa fa-check"></i><b>5.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="5.1" data-path="5-manip.html"><a href="5-manip.html#five-main-verbs---the-fmv"><i class="fa fa-check"></i><b>5.1</b> Five Main Verbs - The FMV</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="5-manip.html"><a href="5-manip.html#select-variables-using-select"><i class="fa fa-check"></i><b>5.1.1</b> Select variables using <code id="select">select</code></a></li>
+<li class="chapter" data-level="5.1.2" data-path="5-manip.html"><a href="5-manip.html#filter-observations-using-filter"><i class="fa fa-check"></i><b>5.1.2</b> Filter observations using <code id="filter">filter</code></a></li>
+<li class="chapter" data-level="5.1.3" data-path="5-manip.html"><a href="5-manip.html#summarize-variables-using-summarize"><i class="fa fa-check"></i><b>5.1.3</b> Summarize variables using <code>summarize</code></a></li>
+<li class="chapter" data-level="5.1.4" data-path="5-manip.html"><a href="5-manip.html#create-new-variableschange-old-variables-using-mutate"><i class="fa fa-check"></i><b>5.1.4</b> Create new variables/change old variables using <code>mutate</code></a></li>
+<li class="chapter" data-level="5.1.5" data-path="5-manip.html"><a href="5-manip.html#reorder-the-data-frame-using-arrange"><i class="fa fa-check"></i><b>5.1.5</b> Reorder the data frame using <code id="arrange">arrange</code></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="6-collect.html"><a href="6-collect.html"><i class="fa fa-check"></i><b>6</b> Collecting Data</a></li>
+<li class="chapter" data-level="5.2" data-path="5-manip.html"><a href="5-manip.html#the-pipe"><i class="fa fa-check"></i><b>5.2</b> The pipe <code>%&gt;%</code></a></li>
+<li class="chapter" data-level="5.3" data-path="5-manip.html"><a href="5-manip.html#joiningmerging-data-frames"><i class="fa fa-check"></i><b>5.3</b> Joining/merging data frames</a></li>
+<li class="chapter" data-level="5.4" data-path="5-manip.html"><a href="5-manip.html#whats-to-come-2"><i class="fa fa-check"></i><b>5.4</b> What’s to come?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-collect.html"><a href="6-collect.html"><i class="fa fa-check"></i><b>6</b> Collecting Data</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-collect.html"><a href="6-collect.html#whats-to-come-3"><i class="fa fa-check"></i><b>6.1</b> What’s to come?</a></li>
+</ul></li>
 <li class="part"><span><b>Inference</b></span></li>
 <li class="chapter" data-level="7" data-path="7-infer-basics.html"><a href="7-infer-basics.html"><i class="fa fa-check"></i><b>7</b> Inference Basics</a><ul>
-<li class="chapter" data-level="7.1" data-path="7-infer-basics.html"><a href="7-infer-basics.html#whats-to-come-3"><i class="fa fa-check"></i><b>7.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="7.1" data-path="7-infer-basics.html"><a href="7-infer-basics.html#whats-to-come-4"><i class="fa fa-check"></i><b>7.1</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="8-hypo.html"><a href="8-hypo.html"><i class="fa fa-check"></i><b>8</b> Hypothesis Testing</a><ul>
-<li class="chapter" data-level="8.1" data-path="8-hypo.html"><a href="8-hypo.html#whats-to-come-4"><i class="fa fa-check"></i><b>8.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="8.1" data-path="8-hypo.html"><a href="8-hypo.html#whats-to-come-5"><i class="fa fa-check"></i><b>8.1</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="9-ci.html"><a href="9-ci.html"><i class="fa fa-check"></i><b>9</b> Confidence Intervals</a><ul>
-<li class="chapter" data-level="9.1" data-path="9-ci.html"><a href="9-ci.html#whats-to-come-5"><i class="fa fa-check"></i><b>9.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="9.1" data-path="9-ci.html"><a href="9-ci.html#whats-to-come-6"><i class="fa fa-check"></i><b>9.1</b> What’s to come?</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="10-regress.html"><a href="10-regress.html"><i class="fa fa-check"></i><b>10</b> Simple and Multiple Regression</a></li>
+<li class="chapter" data-level="10" data-path="10-regress.html"><a href="10-regress.html"><i class="fa fa-check"></i><b>10</b> Simple and Multiple Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="10-regress.html"><a href="10-regress.html#whats-to-come-7"><i class="fa fa-check"></i><b>10.1</b> What’s to come?</a></li>
+</ul></li>
 <li class="part"><span><b>Conclusion</b></span></li>
-<li class="chapter" data-level="11" data-path="11-conclusion.html"><a href="11-conclusion.html"><i class="fa fa-check"></i><b>11</b> Concluding remarks</a><ul>
-<li class="chapter" data-level="11.1" data-path="11-conclusion.html"><a href="11-conclusion.html#topics-to-be-dropped"><i class="fa fa-check"></i><b>11.1</b> Topics to be Dropped</a></li>
-</ul></li>
+<li class="chapter" data-level="11" data-path="11-conclusion.html"><a href="11-conclusion.html"><i class="fa fa-check"></i><b>11</b> Concluding Remarks</a></li>
 <li class="part"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="12" data-path="12-appendix1.html"><a href="12-appendix1.html"><i class="fa fa-check"></i><b>12</b> Appendix A: R and RStudio Basics</a></li>
-<li class="chapter" data-level="13" data-path="13-appendix2.html"><a href="13-appendix2.html"><i class="fa fa-check"></i><b>13</b> Appendix B: Intermediate R</a><ul>
-<li class="chapter" data-level="13.1" data-path="13-appendix2.html"><a href="13-appendix2.html#sorted-barplots"><i class="fa fa-check"></i><b>13.1</b> Sorted barplots</a></li>
+<li class="chapter" data-level="12" data-path="12-appendix1.html"><a href="12-appendix1.html"><i class="fa fa-check"></i><b>12</b> Appendix A: Intermediate R</a><ul>
+<li class="chapter" data-level="12.1" data-path="12-appendix1.html"><a href="12-appendix1.html#sorted-barplots"><i class="fa fa-check"></i><b>12.1</b> Sorted barplots</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="14-appendix3.html"><a href="14-appendix3.html"><i class="fa fa-check"></i><b>14</b> Appendix C: R Markdown</a></li>
+<li class="chapter" data-level="13" data-path="13-appendix2.html"><a href="13-appendix2.html"><i class="fa fa-check"></i><b>13</b> Appendix B: Statistical Basics</a><ul>
+<li class="chapter" data-level="13.1" data-path="13-appendix2.html"><a href="13-appendix2.html#basic-statistical-terms"><i class="fa fa-check"></i><b>13.1</b> Basic statistical terms</a></li>
+</ul></li>
 <li class="part"><span><b>Bibliography</b></span></li>
-<li class="chapter" data-level="15" data-path="15-references.html"><a href="15-references.html"><i class="fa fa-check"></i><b>15</b> References</a></li>
+<li class="chapter" data-level="14" data-path="14-references.html"><a href="14-references.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -204,15 +218,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1 class="title">A MODERN DIVE into Data with R</h1>
 <h3 class="subtitle"><em>Modern Open-source Data-analysis Encouraging Reproducibility aNd Driven by Intuitive Visualization Efforts</em></h3>
 <h4 class="author"><em>Chester Ismay and Albert Y. Kim</em></h4>
-<h4 class="date"><em>2016-08-23</em></h4>
+<h4 class="date"><em>2016-08-26</em></h4>
 </div>
 <div id="prereqs" class="section level1">
 <h1><span class="header-section-number">1</span> Prerequisites</h1>
-<p>This book was written using the <strong>bookdown</strong> R package from Yihui Xie. In order to follow along and run the code in this book on your own, you’ll need to have access to R and RStudio. You can find more information on both of these with a simple Google search for “R” and for “RStudio” and in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>.</p>
+<p>This book was written using the <strong>bookdown</strong> R package from Yihui Xie. In order to follow along and run the code in this book on your own, you’ll need to have access to R and RStudio. You can find more information on both of these with a simple Google search for “R” and for “RStudio”. An introduction to using R, RStudio, and R Markdown is also available in a free book <a href="http://ismayc.github.io/rbasics-book">here</a> <span class="citation">(Ismay <a href="#ref-usedtor2016">2016</a>)</span>. It is recommended that you refer back to this book frequently as it has GIF screen recordings that you can follow along with as you learn.</p>
 <p>We will keep a running list of R packages you will need to have installed to complete the analysis as well here in the <code>needed_pkgs</code> character vector. You can check if you have all of the needed packages installed by running all of the lines below. The last lines including the <code>if</code> will install them as needed (i.e., download their needed files from the internet to your hard drive).</p>
 <p>You can run the <code>library</code> function on them to load them into your current analysis. Prior to each analysis where a package is needed, you will see the corresponding <code>library</code> function in the text.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">needed_pkgs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;nycflights13&quot;</span>, <span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;knitr&quot;</span>, 
-  <span class="st">&quot;devtools&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;dygraphs&quot;</span>, <span class="st">&quot;rmarkdown&quot;</span>)
+  <span class="st">&quot;devtools&quot;</span>, <span class="st">&quot;ggplot2movies&quot;</span>, <span class="st">&quot;dygraphs&quot;</span>, <span class="st">&quot;rmarkdown&quot;</span>)
 
 new.pkgs &lt;-<span class="st"> </span>needed_pkgs[!(needed_pkgs %in%<span class="st"> </span><span class="kw">installed.packages</span>())]
 
@@ -220,10 +234,10 @@ if(<span class="kw">length</span>(new.pkgs)) {
   <span class="kw">install.packages</span>(new.pkgs, <span class="dt">repos =</span> <span class="st">&quot;http://cran.rstudio.com&quot;</span>)
 }</code></pre></div>
 <p><strong>Book was last updated:</strong></p>
-<pre><code>## [1] &quot;By cismay on Tuesday, August 23, 2016 16:11:42 PDT&quot;</code></pre>
+<pre><code>## [1] &quot;By Chester on Friday, August 26, 2016 16:44:19 PDT&quot;</code></pre>
 <div id="colophon" class="section level2">
 <h2><span class="header-section-number">1.1</span> Colophon</h2>
-<p>The source of the book is available at <strong>UPDATE THIS</strong> and was built with versions of R packages given here. This may not be of importance for initial readers of this book, but you can reproduce a duplicate of this book by installing these versions of the packages.</p>
+<p>The source of the book is available <a href="https://github.com/ModernStats/bookdown">here</a> and was built with versions of R packages given here. This may not be of importance for initial readers of this book, but you can reproduce a duplicate of this book by installing these versions of the packages.</p>
 <table>
 <thead>
 <tr class="header">
@@ -348,244 +362,251 @@ if(<span class="kw">length</span>(new.pkgs)) {
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
 <tr class="odd">
+<td align="left">ggplot2movies</td>
+<td align="left"></td>
+<td align="left">0.0.1</td>
+<td align="left">2015-08-25</td>
+<td align="left">CRAN (R 3.3.0)</td>
+</tr>
+<tr class="even">
 <td align="left">git2r</td>
 <td align="left"></td>
 <td align="left">0.15.0</td>
 <td align="left">2016-05-11</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">gtable</td>
 <td align="left"></td>
 <td align="left">0.2.0</td>
 <td align="left">2016-02-26</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">highr</td>
 <td align="left"></td>
 <td align="left">0.6</td>
 <td align="left">2016-05-09</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">htmltools</td>
 <td align="left"></td>
 <td align="left">0.3.5</td>
 <td align="left">2016-03-21</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">htmlwidgets</td>
 <td align="left"></td>
 <td align="left">0.7</td>
 <td align="left">2016-08-02</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">httr</td>
 <td align="left"></td>
 <td align="left">1.2.1</td>
 <td align="left">2016-07-03</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">jsonlite</td>
 <td align="left"></td>
 <td align="left">1.0</td>
 <td align="left">2016-07-01</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">knitr</td>
 <td align="left"></td>
 <td align="left">1.14</td>
 <td align="left">2016-08-13</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">labeling</td>
 <td align="left"></td>
 <td align="left">0.3</td>
 <td align="left">2014-08-23</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">lattice</td>
 <td align="left"></td>
 <td align="left">0.20-33</td>
 <td align="left">2015-07-14</td>
 <td align="left">CRAN (R 3.3.1)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">lazyeval</td>
 <td align="left"></td>
 <td align="left">0.2.0</td>
 <td align="left">2016-06-12</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">magrittr</td>
 <td align="left"></td>
 <td align="left">1.5</td>
 <td align="left">2014-11-22</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">markdown</td>
 <td align="left"></td>
 <td align="left">0.7.7</td>
 <td align="left">2015-04-22</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">MASS</td>
 <td align="left"></td>
 <td align="left">7.3-45</td>
 <td align="left">2016-04-21</td>
 <td align="left">CRAN (R 3.3.1)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">memoise</td>
 <td align="left"></td>
 <td align="left">1.0.0</td>
 <td align="left">2016-01-29</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">mime</td>
 <td align="left"></td>
 <td align="left">0.5</td>
 <td align="left">2016-07-07</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">munsell</td>
 <td align="left"></td>
 <td align="left">0.4.3</td>
 <td align="left">2016-02-13</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">nycflights13</td>
 <td align="left"></td>
 <td align="left">0.2.0</td>
 <td align="left">2016-04-30</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">openssl</td>
 <td align="left"></td>
 <td align="left">0.9.4</td>
 <td align="left">2016-05-25</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">plyr</td>
 <td align="left"></td>
 <td align="left">1.8.4</td>
 <td align="left">2016-06-08</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">R6</td>
 <td align="left"></td>
 <td align="left">2.1.3</td>
 <td align="left">2016-08-19</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">RColorBrewer</td>
 <td align="left"></td>
 <td align="left">1.1-2</td>
 <td align="left">2014-12-07</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rcpp</td>
 <td align="left"></td>
 <td align="left">0.12.6</td>
 <td align="left">2016-07-19</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">reshape2</td>
 <td align="left"></td>
 <td align="left">1.4.1</td>
 <td align="left">2014-12-06</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">rmarkdown</td>
 <td align="left"></td>
 <td align="left">1.0</td>
 <td align="left">2016-07-08</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">rstudioapi</td>
 <td align="left"></td>
 <td align="left">0.6</td>
 <td align="left">2016-06-27</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">scales</td>
 <td align="left"></td>
 <td align="left">0.4.0</td>
 <td align="left">2016-02-26</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">stringi</td>
 <td align="left"></td>
 <td align="left">1.1.1</td>
 <td align="left">2016-05-27</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">stringr</td>
 <td align="left"></td>
 <td align="left">1.1.0</td>
 <td align="left">2016-08-19</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">tibble</td>
 <td align="left"></td>
 <td align="left">1.1</td>
 <td align="left">2016-07-04</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">whisker</td>
 <td align="left"></td>
 <td align="left">0.3-2</td>
 <td align="left">2013-04-28</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">withr</td>
 <td align="left"></td>
 <td align="left">1.0.2</td>
 <td align="left">2016-06-20</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">xts</td>
 <td align="left"></td>
 <td align="left">0.9-7</td>
 <td align="left">2014-01-02</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">yaml</td>
 <td align="left"></td>
 <td align="left">2.1.13</td>
 <td align="left">2014-06-12</td>
 <td align="left">CRAN (R 3.3.0)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">zoo</td>
 <td align="left"></td>
 <td align="left">1.7-13</td>
@@ -595,6 +616,12 @@ if(<span class="kw">length</span>(new.pkgs)) {
 </tbody>
 </table>
 
+</div>
+</div>
+<h3> References</h3>
+<div id="refs" class="references">
+<div id="ref-usedtor2016">
+<p>Ismay, Chester. 2016. <em>Getting Used to R, RStudio, and R Markdown</em>. <a href="http://ismayc.github.io/rbasics-book" class="uri">http://ismayc.github.io/rbasics-book</a>.</p>
 </div>
 </div>
             </section>

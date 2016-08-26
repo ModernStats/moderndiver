@@ -8,7 +8,7 @@
   <title>A MODERN DIVE into Data with R</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Getting away from the traditional introductory statistics curriculum, more focused on reproducible research and modern data analysis techniques and tools">
-  <meta name="generator" content="bookdown 0.1.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.1.5 and GitBook 2.6.7">
 
   <meta property="og:title" content="A MODERN DIVE into Data with R" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 
 <meta name="author" content="Chester Ismay and Albert Y. Kim">
 
-<meta name="date" content="2016-08-23">
+<meta name="date" content="2016-08-26">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,10 +115,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="2" data-path="2-intro.html"><a href="2-intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
 <li class="chapter" data-level="2.1" data-path="2-intro.html"><a href="2-intro.html#preamble"><i class="fa fa-check"></i><b>2.1</b> Preamble</a></li>
-<li class="chapter" data-level="2.2" data-path="2-intro.html"><a href="2-intro.html#datascience-pipeline"><i class="fa fa-check"></i><b>2.2</b> Data/science pipeline</a></li>
-<li class="chapter" data-level="2.3" data-path="2-intro.html"><a href="2-intro.html#reproducibility"><i class="fa fa-check"></i><b>2.3</b> Reproducibility</a></li>
-<li class="chapter" data-level="2.4" data-path="2-intro.html"><a href="2-intro.html#who-is-this-book-for-target"><i class="fa fa-check"></i><b>2.4</b> Who is this book for? (Target)</a></li>
+<li class="chapter" data-level="2.2" data-path="2-intro.html"><a href="2-intro.html#two-driving-data-sources"><i class="fa fa-check"></i><b>2.2</b> Two driving data sources</a></li>
+<li class="chapter" data-level="2.3" data-path="2-intro.html"><a href="2-intro.html#datascience-pipeline"><i class="fa fa-check"></i><b>2.3</b> Data/science pipeline</a></li>
+<li class="chapter" data-level="2.4" data-path="2-intro.html"><a href="2-intro.html#reproducibility"><i class="fa fa-check"></i><b>2.4</b> Reproducibility</a></li>
+<li class="chapter" data-level="2.5" data-path="2-intro.html"><a href="2-intro.html#who-is-this-book-for"><i class="fa fa-check"></i><b>2.5</b> Who is this book for?</a></li>
 </ul></li>
+<li class="part"><span><b>Data Exploration</b></span></li>
 <li class="chapter" data-level="3" data-path="3-tidy.html"><a href="3-tidy.html"><i class="fa fa-check"></i><b>3</b> Tidy data</a><ul>
 <li class="chapter" data-level="3.1" data-path="3-tidy.html"><a href="3-tidy.html#what-is-tidy-data"><i class="fa fa-check"></i><b>3.1</b> What is tidy data?</a></li>
 <li class="chapter" data-level="3.2" data-path="3-tidy.html"><a href="3-tidy.html#the-nycflights13-datasets"><i class="fa fa-check"></i><b>3.2</b> The <code>nycflights13</code> datasets</a></li>
@@ -129,7 +131,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4" data-path="4-viz.html"><a href="4-viz.html"><i class="fa fa-check"></i><b>4</b> Visualizing Data</a><ul>
 <li class="chapter" data-level="4.1" data-path="4-viz.html"><a href="4-viz.html#five-named-graphs---the-fng"><i class="fa fa-check"></i><b>4.1</b> Five Named Graphs - The FNG</a></li>
 <li class="chapter" data-level="4.2" data-path="4-viz.html"><a href="4-viz.html#histograms"><i class="fa fa-check"></i><b>4.2</b> Histograms</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="4-viz.html"><a href="4-viz.html#continuous-data-summaries"><i class="fa fa-check"></i><b>4.2.1</b> Continuous data summaries</a></li>
+<li class="chapter" data-level="4.2.1" data-path="4-viz.html"><a href="4-viz.html#contsum"><i class="fa fa-check"></i><b>4.2.1</b> Continuous data summaries</a></li>
 <li class="chapter" data-level="4.2.2" data-path="4-viz.html"><a href="4-viz.html#summary"><i class="fa fa-check"></i><b>4.2.2</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="4-viz.html"><a href="4-viz.html#boxplots"><i class="fa fa-check"></i><b>4.3</b> Boxplots</a><ul>
@@ -154,32 +156,44 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.8" data-path="4-viz.html"><a href="4-viz.html#whats-to-come-1"><i class="fa fa-check"></i><b>4.8</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="5-manip.html"><a href="5-manip.html"><i class="fa fa-check"></i><b>5</b> Manipulating Data</a><ul>
-<li class="chapter" data-level="5.1" data-path="5-manip.html"><a href="5-manip.html#whats-to-come-2"><i class="fa fa-check"></i><b>5.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="5.1" data-path="5-manip.html"><a href="5-manip.html#five-main-verbs---the-fmv"><i class="fa fa-check"></i><b>5.1</b> Five Main Verbs - The FMV</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="5-manip.html"><a href="5-manip.html#select-variables-using-select"><i class="fa fa-check"></i><b>5.1.1</b> Select variables using <code id="select">select</code></a></li>
+<li class="chapter" data-level="5.1.2" data-path="5-manip.html"><a href="5-manip.html#filter-observations-using-filter"><i class="fa fa-check"></i><b>5.1.2</b> Filter observations using <code id="filter">filter</code></a></li>
+<li class="chapter" data-level="5.1.3" data-path="5-manip.html"><a href="5-manip.html#summarize-variables-using-summarize"><i class="fa fa-check"></i><b>5.1.3</b> Summarize variables using <code>summarize</code></a></li>
+<li class="chapter" data-level="5.1.4" data-path="5-manip.html"><a href="5-manip.html#create-new-variableschange-old-variables-using-mutate"><i class="fa fa-check"></i><b>5.1.4</b> Create new variables/change old variables using <code>mutate</code></a></li>
+<li class="chapter" data-level="5.1.5" data-path="5-manip.html"><a href="5-manip.html#reorder-the-data-frame-using-arrange"><i class="fa fa-check"></i><b>5.1.5</b> Reorder the data frame using <code id="arrange">arrange</code></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="6-collect.html"><a href="6-collect.html"><i class="fa fa-check"></i><b>6</b> Collecting Data</a></li>
+<li class="chapter" data-level="5.2" data-path="5-manip.html"><a href="5-manip.html#the-pipe"><i class="fa fa-check"></i><b>5.2</b> The pipe <code>%&gt;%</code></a></li>
+<li class="chapter" data-level="5.3" data-path="5-manip.html"><a href="5-manip.html#joiningmerging-data-frames"><i class="fa fa-check"></i><b>5.3</b> Joining/merging data frames</a></li>
+<li class="chapter" data-level="5.4" data-path="5-manip.html"><a href="5-manip.html#whats-to-come-2"><i class="fa fa-check"></i><b>5.4</b> What’s to come?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-collect.html"><a href="6-collect.html"><i class="fa fa-check"></i><b>6</b> Collecting Data</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-collect.html"><a href="6-collect.html#whats-to-come-3"><i class="fa fa-check"></i><b>6.1</b> What’s to come?</a></li>
+</ul></li>
 <li class="part"><span><b>Inference</b></span></li>
 <li class="chapter" data-level="7" data-path="7-infer-basics.html"><a href="7-infer-basics.html"><i class="fa fa-check"></i><b>7</b> Inference Basics</a><ul>
-<li class="chapter" data-level="7.1" data-path="7-infer-basics.html"><a href="7-infer-basics.html#whats-to-come-3"><i class="fa fa-check"></i><b>7.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="7.1" data-path="7-infer-basics.html"><a href="7-infer-basics.html#whats-to-come-4"><i class="fa fa-check"></i><b>7.1</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="8-hypo.html"><a href="8-hypo.html"><i class="fa fa-check"></i><b>8</b> Hypothesis Testing</a><ul>
-<li class="chapter" data-level="8.1" data-path="8-hypo.html"><a href="8-hypo.html#whats-to-come-4"><i class="fa fa-check"></i><b>8.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="8.1" data-path="8-hypo.html"><a href="8-hypo.html#whats-to-come-5"><i class="fa fa-check"></i><b>8.1</b> What’s to come?</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="9-ci.html"><a href="9-ci.html"><i class="fa fa-check"></i><b>9</b> Confidence Intervals</a><ul>
-<li class="chapter" data-level="9.1" data-path="9-ci.html"><a href="9-ci.html#whats-to-come-5"><i class="fa fa-check"></i><b>9.1</b> What’s to come?</a></li>
+<li class="chapter" data-level="9.1" data-path="9-ci.html"><a href="9-ci.html#whats-to-come-6"><i class="fa fa-check"></i><b>9.1</b> What’s to come?</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="10-regress.html"><a href="10-regress.html"><i class="fa fa-check"></i><b>10</b> Simple and Multiple Regression</a></li>
+<li class="chapter" data-level="10" data-path="10-regress.html"><a href="10-regress.html"><i class="fa fa-check"></i><b>10</b> Simple and Multiple Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="10-regress.html"><a href="10-regress.html#whats-to-come-7"><i class="fa fa-check"></i><b>10.1</b> What’s to come?</a></li>
+</ul></li>
 <li class="part"><span><b>Conclusion</b></span></li>
-<li class="chapter" data-level="11" data-path="11-conclusion.html"><a href="11-conclusion.html"><i class="fa fa-check"></i><b>11</b> Concluding remarks</a><ul>
-<li class="chapter" data-level="11.1" data-path="11-conclusion.html"><a href="11-conclusion.html#topics-to-be-dropped"><i class="fa fa-check"></i><b>11.1</b> Topics to be Dropped</a></li>
-</ul></li>
+<li class="chapter" data-level="11" data-path="11-conclusion.html"><a href="11-conclusion.html"><i class="fa fa-check"></i><b>11</b> Concluding Remarks</a></li>
 <li class="part"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="12" data-path="12-appendix1.html"><a href="12-appendix1.html"><i class="fa fa-check"></i><b>12</b> Appendix A: R and RStudio Basics</a></li>
-<li class="chapter" data-level="13" data-path="13-appendix2.html"><a href="13-appendix2.html"><i class="fa fa-check"></i><b>13</b> Appendix B: Intermediate R</a><ul>
-<li class="chapter" data-level="13.1" data-path="13-appendix2.html"><a href="13-appendix2.html#sorted-barplots"><i class="fa fa-check"></i><b>13.1</b> Sorted barplots</a></li>
+<li class="chapter" data-level="12" data-path="12-appendix1.html"><a href="12-appendix1.html"><i class="fa fa-check"></i><b>12</b> Appendix A: Intermediate R</a><ul>
+<li class="chapter" data-level="12.1" data-path="12-appendix1.html"><a href="12-appendix1.html#sorted-barplots"><i class="fa fa-check"></i><b>12.1</b> Sorted barplots</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="14-appendix3.html"><a href="14-appendix3.html"><i class="fa fa-check"></i><b>14</b> Appendix C: R Markdown</a></li>
+<li class="chapter" data-level="13" data-path="13-appendix2.html"><a href="13-appendix2.html"><i class="fa fa-check"></i><b>13</b> Appendix B: Statistical Basics</a><ul>
+<li class="chapter" data-level="13.1" data-path="13-appendix2.html"><a href="13-appendix2.html#basic-statistical-terms"><i class="fa fa-check"></i><b>13.1</b> Basic statistical terms</a></li>
+</ul></li>
 <li class="part"><span><b>Bibliography</b></span></li>
-<li class="chapter" data-level="15" data-path="15-references.html"><a href="15-references.html"><i class="fa fa-check"></i><b>15</b> References</a></li>
+<li class="chapter" data-level="14" data-path="14-references.html"><a href="14-references.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -202,42 +216,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="viz" class="section level1">
 <h1><span class="header-section-number">4</span> Visualizing Data</h1>
-<!--
-Cover grammar of graphics?  Yes, we definitely should.
-
-Theoretical discussion of the grammar of graphics
-  - Menard example
-  
-Five named graphs
-  - Breakdown of their components with geoms
-  - In particular histogram as a visual representation of distribution. i.e. it is an empirical distribution as an estimate of population distribution.
--->
-<!--
-**Compare shapes of plots instead of summary statistics? (Berkeley)**
-
-**Most important thing with graphics is making it obvious for your audience to see the findings you want to get across**
-
-**To create insights into the data**
--->
-<p>In Chapter <a href="3-tidy.html#tidy">3</a>, we discussed the importance of datasets being <strong>tidy</strong>. You will see in examples here why having a tidy dataset helps us immensely with plotting our data. We will focus on using Hadley’s <code>ggplot2</code> package in doing so, which was developed to work specifically on datasets that are <strong>tidy</strong>. It provides an easy way to customize your plots and is based on data visualization theory given in <em>The Grammar of Graphics</em> <span class="citation">(Wilkinson <a href="#ref-wilkinson2005">2005</a>)</span>.</p>
-<p>Graphics provide a nice way for us to get a sense for how quantitative variables compare in terms of their center and their spread. It also helps us to identify patterns and outliers in our data. We will see that a common extension of these ideas is to compare the distribution (i.e., what the spread of a variable looks like) as we go across the levels of a different categorical variable.</p>
+<p>In Chapter <a href="3-tidy.html#tidy">3</a>, we discussed the importance of datasets being <strong>tidy</strong>. You will see in examples here why having a tidy dataset helps us immensely with plotting our data. In plotting our data, we will be able to gain valuable insights from our data that we couldn’t initially see from just looking at the raw tidy data. We will focus on using Hadley’s <code>ggplot2</code> package in doing so, which was developed to work specifically on datasets that are <strong>tidy</strong>. It provides an easy way to customize your plots and is based on data visualization theory given in <em>The Grammar of Graphics</em> <span class="citation">(Wilkinson <a href="#ref-wilkinson2005">2005</a>)</span>.</p>
+<p>Graphics provide a nice way for us to get a sense for how quantitative variables compare in terms of their center and their spread. The most important thing to know about graphics is that they should be created to make it obvious for your audience to see the findings you want to get across. This requires a balance on not including too much in your plots, but also including enough so that relationships and interesting findings can be easily seen. As we will see, plots/graphics also help us to identify patterns and outliers in our data. We will see that a common extension of these ideas is to compare the distribution (i.e., what the spread of a variable looks like) as we go across the levels of a different categorical variable.</p>
 <div id="five-named-graphs---the-fng" class="section level2">
 <h2><span class="header-section-number">4.1</span> Five Named Graphs - The FNG</h2>
-<!--
-* Focussing on `dep_delay` here and how it relates with other variables
-* May need to introduce some data manipulation here with `dplyr`
-* Restrict types of plots:
-    + histogram: as long as we avoid density plots
-    + boxplot: have to set x=1 aes. categorical variables when univariate
-        - Hadley suggests that a univariate boxplot shouldn't be used and prefers a histogram <https://groups.google.com/forum/#!topic/ggplot2/N4qRSmqMZxI>
-        - Boxplots do make sense when comparing distributions across levels of another variable though
-    + barplot: issue with categorical variables 
-        - May want to also discuss dot plots for many levels of categorical variable
-    + scatterplot: jitter/alpha/color
-    + linegraph: useful for time series / not useful if no ordering to x-values
-    + faceting: show why better than stacked bargraphs in via patterns across levels
-    + mosaicplot [I actually prefer side-by-side bar graphs/facetted bargraphs to stacked/mosaic so this might be moot?]
--->
 <p>For our purposes here, we will be working with five different types of graphs. (Note that we will use a lot of different words here in regards to plotting - “graphs”, “plots”, and “charts” are all ways to discuss a resulting graphic. You can think of them as all being synonyms.) These five plots are:</p>
 <ul>
 <li>histograms</li>
@@ -254,8 +236,8 @@ Five named graphs
 <div id="histograms" class="section level2">
 <h2><span class="header-section-number">4.2</span> Histograms</h2>
 <p>Our focus now turns to the <code>temp</code> variable in this <code>weather</code> dataset. We would like to visualize what the 26130 temperatures look like. Looking over the <code>weather</code> dataset<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> and running <code>?weather</code>, we can see that the <code>temp</code> variable corresponds to hourly temperature (in Fahrenheit) recordings at weather stations near airports in New York City. We could just produce points where each of the different values appears on something similar to a number line:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-13"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-13-1.png" alt="Strip Plot of Hourly Temperature Recordings from NYC in 2013" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-14"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-14-1.png" alt="Strip Plot of Hourly Temperature Recordings from NYC in 2013" width="672" />
 <p class="caption">
 Figure 4.1: Strip Plot of Hourly Temperature Recordings from NYC in 2013
 </p>
@@ -269,24 +251,25 @@ Figure 4.1: Strip Plot of Hourly Temperature Recordings from NYC in 2013
 </ul>
 <p>The names of the variables will be entered into the <code>aes</code> function as arguments where <code>aes</code> stands for “aesthetics”.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp))</code></pre></div>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-14-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-15-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>The plot given above is not a histogram, but the output does show us a bit of what is going on with <code>ggplot(data = weather, mapping = aes(x = temp))</code>. It is producing a backdrop onto which we will “paint” elements.</p>
-<p>We next proceed by adding a layer—hence, the use of the <code>+</code> symbol—to the plot to produce a histogram. (Note also here that we don’t have to specify the <code>data =</code> and <code>mapping =</code> text in our function calls. This is covered in more detail in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>.)</p>
+<p>We next proceed by adding a layer—hence, the use of the <code>+</code> symbol—to the plot to produce a histogram. (Note also here that we don’t have to specify the <code>data =</code> and <code>mapping =</code> text in our function calls. This is covered in more detail in Chapter 5 of the “Getting Used to R, RStudio, and R Markdown” book <span class="citation">(Ismay <a href="#ref-usedtor2016">2016</a>)</span>).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_histogram</span>()</code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <pre><code>## Warning: Removed 1 rows containing non-finite values (stat_bin).</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-15"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-15-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-16-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013" width="672" />
 <p class="caption">
 Figure 4.2: Histogram of Hourly Temperature Recordings from NYC in 2013
 </p>
 </div>
-<p>We have the power to specify how many bins we would like to put the data into as an argument in the <code>geom_histogram</code> function. By default, this is chosen to be 30 somewhat arbitrarily and we have received a warning above our plot that this was done. We also notice here that another warning about 1 missing value is given. This value is omitted from the plot. This warning is ignored for future customizations of the plot. (<strong>Discuss missing values here?</strong>)</p>
+<p>We have the power to specify how many bins we would like to put the data into as an argument in the <code>geom_histogram</code> function. By default, this is chosen to be 30 somewhat arbitrarily and we have received a warning above our plot that this was done. We also notice here that another warning about 1 missing value is given. This value is omitted from the plot. This warning is ignored for future customizations of the plot.</p>
+<p>Missing values are a common problem when working with data and there are entire fields of study on how to work with missing data. Frequently what is done is to remove instances from the data set that are missing. This is certainly the easy way to deal with them, but not necessarily the correct decision in all cases. For our purposes, we will usually ignore potential warnings about missing data since R can usually handle them by ignoring them.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-16-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-17-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins" width="672" />
 <p class="caption">
 Figure 4.3: Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins
 </p>
@@ -294,8 +277,8 @@ Figure 4.3: Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bin
 <p>We can tweak the plot a little more by specifying the width of the bins (instead of how many bins to divide the variable into) by using the <code>binwidth</code> argument in the <code>geom_histogram</code> function. We can also add some color to the plot by invoking the <code>fill</code> and <code>color</code> arguments. A listing of all of the built-in colors to R by name and color is available <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">here</a>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;forestgreen&quot;</span>)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-17-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-18"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-18-1.png" alt="Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10" width="672" />
 <p class="caption">
 Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10
 </p>
@@ -311,19 +294,28 @@ Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwid
 <p><strong>(LC4.3)</strong> What would you guess is the “center” value in this distribution? Why did you make that choice?</p>
 <p><strong>(LC4.4)</strong> Is this data spread out greatly from the center or is it close? Why?</p>
 <hr />
-<div id="continuous-data-summaries" class="section level3">
+<div id="contsum" class="section level3">
 <h3><span class="header-section-number">4.2.1</span> Continuous data summaries</h3>
-<p>The <code>temp</code> variable is a <strong>continuous</strong> quantitative variable (frequently just called a <strong>continuous variable</strong>). “A variable is <strong>continuous</strong> if you can arrange its values in order and an infinite number of unique values can exist between any two values of the variable”<span class="citation">(Wickham and Grolemund <a href="#ref-r4ds2016">2016</a>)</span>. Some common examples of continuous variables are time and height. Between any two times there are an infinitely many number of time units that fall between them.</p>
+<p>The <code>temp</code> variable is a <strong>continuous</strong> quantitative variable (frequently just called a <strong>continuous variable</strong>). “A variable is <strong>continuous</strong> if you can arrange its values in order and an infinite number of unique values can exist between any two values of the variable”<span class="citation">(Grolemund and Wickham <a href="#ref-r4ds2016">2016</a>)</span>. Some common examples of continuous variables are time and height. Between any two times there are an infinitely many number of time units that fall between them.</p>
 <p>It is often easier to think about quantitative variables that are not continuous to help us better understand continuity. The best example is counts. If we are looking to count the number of flights that depart on a given day from New York City, this variable would not be continuous. It falls on a <strong>discrete</strong> scale.</p>
 <p>We can examine some summary information about this <code>temp</code> variable. To do so, we introduce the <code>summary</code> function. (We will see in Chapter <a href="5-manip.html#manip">5</a> how to use the <code>summarize</code> function in the <code>dplyr</code> package to produce similar results.)</p>
-<p>The syntax here is a little different than what we have seen before. (A further discussion about R syntax is available in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>). Here, <code>summary</code> is the function and it is expecting an object to be summarized as its argument. The object here is the <code>temp</code> variable in the <code>weather</code> dataframe. To focus on just this one variable <code>temp</code> in <code>weather</code>, we separate them by the dollar sign symbol <code>$</code>. Order matters here: the dataframe comes before the <code>$</code> and the variable/column name comes after.</p>
+<p>The syntax here is a little different than what we have seen before. (A further discussion about R syntax is available in Chapter 5 of the “R basics” book <span class="citation">(Ismay <a href="#ref-usedtor2016">2016</a>)</span>). Here, <code>summary</code> is the function and it is expecting an object to be summarized as its argument. The object here is the <code>temp</code> variable in the <code>weather</code> dataframe. To focus on just this one variable <code>temp</code> in <code>weather</code>, we separate them by the dollar sign symbol <code>$</code>. Order matters here: the dataframe comes before the <code>$</code> and the variable/column name comes after.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(weather$temp)</code></pre></div>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
 ##   10.94   39.92   55.04   55.20   69.98  100.00       1</code></pre>
-<p>This tells us what is known as the <strong>five-number summary</strong> for our variable as well as the <strong>mean</strong> value of the variable. More information on both of these concepts is given in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>.</p>
+<p>This tells us what is known as the <strong>five-number summary</strong> for our variable as well as the <strong>mean</strong> value of the variable. More information on both of these concepts is given in Appendix B - Chapter <a href="13-appendix2.html#appendix2">13</a>.</p>
 <p>This <code>summary</code> gives us some numerical summaries of our temperature variable. The minimum recorded temperature is 10.94 degrees Fahrenheit and the maximum is 100.04 degrees Fahrenheit. We have one missing value denoted as an <code>NA</code> in the observations of this variable. The median Fahrenheit temperature of 55.04 and mean of 55.2035149 are quite close. This is a property of symmetric distributions.</p>
 <p>The last two entries given by <code>summary</code> correspond to the 25<sup>th</sup> percentile and the 75<sup>th</sup> percentile. If we sorted all of the temperatures in increasing order, we would see that 25% of them would fall below 39.92 and that 75% of them would fall below 69.98. This implies that the middle 50% of data values lie between 39.92 and 69.98 degrees Fahrenheit.</p>
-<p><strong>Introduce standard deviation here?</strong></p>
+<p>Another common measure to determine the variability of a data set is the <strong>standard deviation</strong>. You can read further about the mathematical details of standard deviation in Appendix B - Chapter <a href="13-appendix2.html#appendix2">13</a>, but you can think of it as being a measure of how far the data is, on average, from the mean. Let’s investigate this further by calculating the standard deviation of our temperature variable:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(weather$temp)</code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<p>Remember that there were some missing values in our temperature data when we plotted it earlier. By default, the <code>sd</code> function that computes standard deviation of a variable will give the value of <code>NA</code> if any of the data is missing. To further understand this, you can look at the help of the <code>sd</code> function in the R Console:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">?sd</code></pre></div>
+<p>Under <strong>Usage</strong> you can see that <code>na.rm</code> is set to <code>FALSE</code> by default. We’d like for missing values to be removed from our analysis so we set that value to <code>TRUE</code>:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(weather$temp, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<pre><code>## [1] 17.78212</code></pre>
+<p>Standard deviation is always in the same units as our original data set. So in this case the standard deviation is in degrees Fahrenheit. Thus, we can interpret this value saying:</p>
+<p>For a randomly selected element in our temperature column, we can expect it to be about 17.7821236 degrees Fahrenheit from our mean value of `55.2035149. By combining this knowledge with the plots above, we can have a good idea for whether this data is very spread out from its center or if it is tightly bunched.</p>
 </div>
 <div id="summary" class="section level3">
 <h3><span class="header-section-number">4.2.2</span> Summary</h3>
@@ -333,7 +325,7 @@ Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwid
 <li>Are most values close to the center? If so, the spread of the variable is small. If not, the spread is large.</li>
 <li>How spread out are the values? One measure of this spread is <strong>standard deviation</strong> discussed above.</li>
 </ul>
-<p>The histogram show how many entries fall in different groupings of this variable. Another common property of distributions is symmetry and as we saw it is quite easily identified by looking over the histogram produced from the variable’s values.</p>
+<p>The histogram shows how many entries fall in different groupings of this variable. Another common property of distributions is symmetry and as we saw it is quite easily identified by looking over the histogram produced from the variable’s values.</p>
 </div>
 </div>
 <div id="boxplots" class="section level2">
@@ -345,7 +337,7 @@ Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwid
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">5</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;firebrick&quot;</span>) +
 <span class="st">  </span><span class="kw">facet_wrap</span>(~month)</code></pre></div>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-19-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-23-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>As we might expect, the temperature tends to increase as summer approaches and then decrease as winter approaches.</p>
 <hr />
 <div class="learncheck">
@@ -357,28 +349,29 @@ Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwid
 <p><strong>(LC4.6)</strong> What do the numbers 1-12 correspond to in the plot above? What about 25, 50, 75, 100?</p>
 <p><strong>(LC4.7)</strong> What could be done to make the faceted plot above more readable? (Focus on tweaking the histograms and not on making a different type of plot here.)</p>
 <p><strong>(LC4.8)</strong> For which types of datasets would these types of faceted plots not work well in comparing relationships between variables? Draw or give an example.</p>
+<p><strong>(LC4.9)</strong> Does the <code>temp</code> variable in the <code>weather</code> data set have a lot of variability? Why do you say that?</p>
 <hr />
 <p>Histograms can provide a way to compare distributions across groups as we see above when we looked at temperature over months. Frequently, a plot called a <strong>boxplot</strong> (also called a <strong>side-by-side boxplot</strong>) is done instead. The <strong>boxplot</strong> uses the information provided in the <strong>five-number summary</strong> referred to in the previous section when we used the <code>summary</code> function. It gives a way to compare this summary information across the different levels of a group. Let’s create a boxplot to compare the monthly temperatures as we did above with the faceted histograms.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> month, <span class="dt">y =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>()</code></pre></div>
 <pre><code>## Warning: Continuous x aesthetic -- did you forget aes(group=...)?</code></pre>
 <pre><code>## Warning: Removed 1 rows containing non-finite values (stat_boxplot).</code></pre>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-20-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-24-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Note the first warning that is given here. (The second one corresponds to missing values in the dataframe and it is turned off on subsequent plots.) This plot does not look like what we were expecting. We were expecting to see the distribution of temperatures for each month (so 12 different boxplots). This gives us the overall boxplot without any other groupings. We can get around this by introducing a new function for our <code>x</code> variable.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> <span class="kw">factor</span>(month), <span class="dt">y =</span> temp)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>()</code></pre></div>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-21-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>We have introduced a new function called <code>factor()</code> here. One of the things this function does is to convert a numeric value like <code>month</code> (1, 2, …, 12) into a categorical variable. The “box” part of this plot represents the 25<sup>th</sup> percentile, the median (50<sup>th</sup> percentile), and the 75<sup>th</sup> percentile. The dots correspond to <strong>outliers</strong>. (The specific formulation for these outliers is discussed in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>.) The lines show how the data varies that is not in the center 50% defined by the first and third quantiles. Longer lines correspond to more variability and shorter lines correspond to less variability.</p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-25-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>We have introduced a new function called <code>factor()</code> here. One of the things this function does is to convert a numeric value like <code>month</code> (1, 2, …, 12) into a categorical variable. The “box” part of this plot represents the 25<sup>th</sup> percentile, the median (50<sup>th</sup> percentile), and the 75<sup>th</sup> percentile. The dots correspond to <strong>outliers</strong>. (The specific formulation for these outliers is discussed in Appendix B - Chapter <a href="13-appendix2.html#appendix2">13</a>.) The lines show how the data varies that is not in the center 50% defined by the first and third quantiles. Longer lines correspond to more variability and shorter lines correspond to less variability.</p>
 <hr />
 <div class="learncheck">
 <p>
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.9)</strong> What does the dot at the bottom of the plot for May correspond to? Explain what might have occurred in May to produce this point.</p>
-<p><strong>(LC4.10)</strong> Which months have the highest variability in temperature? What reasons do you think this is?</p>
-<p><strong>(LC4.11)</strong> We looked at the distribution of a continuous variable over a categorical variable here with this boxplot. Why can’t we look at the distribution of one continuous variable over the distribution of another continuous variable? Say temperature across pressure, for example?</p>
-<p><strong>(LC4.12)</strong> Boxplots provide a simple way to identify outliers. Why may outliers be easier to identify when looking at a boxplot instead of a faceted histogram?</p>
+<p><strong>(LC4.10)</strong> What does the dot at the bottom of the plot for May correspond to? Explain what might have occurred in May to produce this point.</p>
+<p><strong>(LC4.11)</strong> Which months have the highest variability in temperature? What reasons do you think this is?</p>
+<p><strong>(LC4.12)</strong> We looked at the distribution of a continuous variable over a categorical variable here with this boxplot. Why can’t we look at the distribution of one continuous variable over the distribution of another continuous variable? Say temperature across pressure, for example?</p>
+<p><strong>(LC4.13)</strong> Boxplots provide a simple way to identify outliers. Why may outliers be easier to identify when looking at a boxplot instead of a faceted histogram?</p>
 <hr />
 </div>
 <div id="summary-1" class="section level3">
@@ -392,8 +385,8 @@ Figure 4.4: Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwid
 <p>Frequently, the best way to visualize these different counts (also known as <strong>frequencies</strong>) is via a barplot. Consider the distribution of airlines that flew out of New York City in 2013. This can be plotted by invoking the <code>geom_bar</code> function in <code>ggplot2</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier)) +
 <span class="st">  </span><span class="kw">geom_bar</span>()</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-22"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-22-1.png" alt="Number of flights departing NYC in 2013 by airline" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-26"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-26-1.png" alt="Number of flights departing NYC in 2013 by airline" width="672" />
 <p class="caption">
 Figure 4.5: Number of flights departing NYC in 2013 by airline
 </p>
@@ -420,25 +413,39 @@ airlines</code></pre></div>
 ## 14      VX              Virgin America
 ## 15      WN      Southwest Airlines Co.
 ## 16      YV          Mesa Airlines Inc.</code></pre>
-<p>We see that United Air Lines, JetBlue Airways, and ExpressJet Airlines had the most flights depart New York City in 2013. To get the actual number of flights by each airline we can use the <code>table</code> function on the <code>carrier</code> variable in <code>flights</code>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">flights_table &lt;-<span class="st"> </span><span class="kw">table</span>(flights$carrier)
+<p>We see that United Air Lines, JetBlue Airways, and ExpressJet Airlines had the most flights depart New York City in 2013. To get the actual number of flights by each airline we can use the <code>count</code> function in the <code>dplyr</code> package on the <code>carrier</code> variable in <code>flights</code>:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dplyr)
+flights_table &lt;-<span class="st"> </span><span class="kw">count</span>(<span class="dt">x =</span> flights, <span class="dt">vars =</span> carrier)
 flights_table</code></pre></div>
-<pre><code>## 
-##    9E    AA    AS    B6    DL    EV    F9    FL    HA    MQ    OO    UA 
-## 18460 32729   714 54635 48110 54173   685  3260   342 26397    32 58665 
-##    US    VX    WN    YV 
-## 20536  5162 12275   601</code></pre>
-<p>More information on the use of this <code>$</code> syntax is available in Chapter <a href="3-tidy.html#tidy">3</a> and in Appendix A - Chapter <a href="12-appendix1.html#appendix1">12</a>.</p>
+<pre><code>## # A tibble: 16 x 2
+##     vars     n
+##    &lt;chr&gt; &lt;int&gt;
+## 1     9E 18460
+## 2     AA 32729
+## 3     AS   714
+## 4     B6 54635
+## 5     DL 48110
+## 6     EV 54173
+## 7     F9   685
+## 8     FL  3260
+## 9     HA   342
+## 10    MQ 26397
+## 11    OO    32
+## 12    UA 58665
+## 13    US 20536
+## 14    VX  5162
+## 15    WN 12275
+## 16    YV   601</code></pre>
 <hr />
 <div class="learncheck">
 <p>
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.13)</strong> Why are histograms inappropriate for visualizing categorical variables?</p>
-<p><strong>(LC4.14)</strong> What is the difference between histograms and barplots?</p>
-<p><strong>(LC4.15)</strong> How many Envoy Air flights departed NYC in 2013?</p>
-<p><strong>(LC4.16)</strong> What was the seventh highest airline in terms of departed flights from NYC in 2013?</p>
+<p><strong>(LC4.14)</strong> Why are histograms inappropriate for visualizing categorical variables?</p>
+<p><strong>(LC4.15)</strong> What is the difference between histograms and barplots?</p>
+<p><strong>(LC4.16)</strong> How many Envoy Air flights departed NYC in 2013?</p>
+<p><strong>(LC4.17)</strong> What was the seventh highest airline in terms of departed flights from NYC in 2013?</p>
 <hr />
 <div id="must-avoid-pie-charts" class="section level3">
 <h3><span class="header-section-number">4.4.1</span> Must avoid pie charts!</h3>
@@ -449,17 +456,17 @@ flights_table</code></pre></div>
 <li>what the third largest carrier is in terms of departing flights, and</li>
 <li>how many carriers have fewer flights than United Airlines (<code>UA</code>)?</li>
 </ul>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-25-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-29-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>While it is quite easy to look back at the barplot to get the answer to these questions, it’s quite difficult to get the answers correct when looking at the pie graph. Barplots can always present the information in a way that is easier for the eye to determine relative position. There may be one exception from Nathan Yau at <a href="https://flowingdata.com/2008/09/19/pie-i-have-eaten-and-pie-i-have-not-eaten/" title="Pie I Have Eaten and Pie I Have Not Eaten">FlowingData.com</a> but we will leave this for the reader to decide:</p>
-<p><img src="images/Pie-I-have-Eaten.jpg" width="250" style="display: block; margin: auto;" /></p>
+<p><img src="images/Pie-I-have-Eaten.jpg" style="display: block; margin: auto;" /></p>
 <hr />
 <div class="learncheck">
 <p>
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.17)</strong> Why should pie charts be avoided and replaced by barplots?</p>
-<p><strong>(LC4.18)</strong> What is your opinion as to why pie charts continue to be used?</p>
+<p><strong>(LC4.18)</strong> Why should pie charts be avoided and replaced by barplots?</p>
+<p><strong>(LC4.19)</strong> What is your opinion as to why pie charts continue to be used?</p>
 <hr />
 </div>
 <div id="using-barplots-to-compare-two-variables" class="section level3">
@@ -471,8 +478,8 @@ flights_namedports &lt;-<span class="st"> </span><span class="kw">inner_join</sp
 <p>After running <code>View(flights_namedports)</code>, we see that <code>name</code> now corresponds to the name of the airport as referenced by the <code>origin</code> variable. We will now plot <code>carrier</code> as the horizontal variable. When we specify <code>geom_bar</code>, it will specify <code>count</code> as being the vertical variable. A new addition here is <code>fill = name</code>. Look over what was produced from the plot to get an idea of what this argument gives.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights_namedports, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> name)) +
 <span class="st">  </span><span class="kw">geom_bar</span>()</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-28"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-28-1.png" alt="Stacked barplot comparing the number of flights by carrier and airport" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-32"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-32-1.png" alt="Stacked barplot comparing the number of flights by carrier and airport" width="672" />
 <p class="caption">
 Figure 4.6: Stacked barplot comparing the number of flights by carrier and airport
 </p>
@@ -483,14 +490,14 @@ Figure 4.6: Stacked barplot comparing the number of flights by carrier and airpo
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.19)</strong> What kinds of questions are not easily answered by looking at the above figure?</p>
-<p><strong>(LC4.20)</strong> What can you say, if anything, about the relationship between airline and airport in NYC in 2013 in regards to the number of departing flights?</p>
+<p><strong>(LC4.20)</strong> What kinds of questions are not easily answered by looking at the above figure?</p>
+<p><strong>(LC4.21)</strong> What can you say, if anything, about the relationship between airline and airport in NYC in 2013 in regards to the number of departing flights?</p>
 <hr />
 <p>Another variation on the <strong>stacked barplot</strong> is the <strong>side-by-side barplot</strong>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights_namedports, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> name)) +
 <span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-29"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-29-1.png" alt="Side-by-side barplot comparing the number of flights by carrier and airport" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-33"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-33-1.png" alt="Side-by-side barplot comparing the number of flights by carrier and airport" width="672" />
 <p class="caption">
 Figure 4.7: Side-by-side barplot comparing the number of flights by carrier and airport
 </p>
@@ -501,15 +508,15 @@ Figure 4.7: Side-by-side barplot comparing the number of flights by carrier and 
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.21)</strong> Why might the side-by-side barplot be preferable to a stacked barplot in this case?</p>
-<p><strong>(LC4.22)</strong> What are the disadvantages of using a side-by-side barplot, in general?</p>
+<p><strong>(LC4.22)</strong> Why might the side-by-side barplot be preferable to a stacked barplot in this case?</p>
+<p><strong>(LC4.23)</strong> What are the disadvantages of using a side-by-side barplot, in general?</p>
 <hr />
 <p>Lastly, an often preferred type of barplot is the <strong>faceted barplot</strong>. We already saw this concept of faceting and small multiples in Subsection <a href="4-viz.html#faceting">4.3.1</a>. This gives us a nicer way to compare the distributions across both <code>carrier</code> and airport/<code>name</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights_namedports, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier, <span class="dt">fill =</span> name)) +
 <span class="st">  </span><span class="kw">geom_bar</span>() +
 <span class="st">  </span><span class="kw">facet_grid</span>(name ~<span class="st"> </span>.)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-30"></span>
-<img src="ismay_kim_files/figure-html/unnamed-chunk-30-1.png" alt="Faceted barplot comparing the number of flights by carrier and airport" width="672" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-34"></span>
+<img src="ismay_kim_files/figure-html/unnamed-chunk-34-1.png" alt="Faceted barplot comparing the number of flights by carrier and airport" width="672" />
 <p class="caption">
 Figure 4.8: Faceted barplot comparing the number of flights by carrier and airport
 </p>
@@ -521,8 +528,8 @@ Figure 4.8: Faceted barplot comparing the number of flights by carrier and airpo
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.23)</strong> Why is the faceted barplot preferred to the side-by-side and stacked barplots in this case?</p>
-<p><strong>(LC4.24)</strong> What information about the different carriers at different airports is more easily seen in the faceted barplot?</p>
+<p><strong>(LC4.24)</strong> Why is the faceted barplot preferred to the side-by-side and stacked barplots in this case?</p>
+<p><strong>(LC4.25)</strong> What information about the different carriers at different airports is more easily seen in the faceted barplot?</p>
 <hr />
 </div>
 <div id="summary-2" class="section level3">
@@ -550,13 +557,13 @@ Figure 4.9: Arrival Delays vs Departure Delays for Alaska Airlines flights from 
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.25)</strong> What are some practical reasons why <code>dep_delay</code> and <code>arr_delay</code> have a positive relationship?</p>
-<p><strong>(LC4.26)</strong> What variables (not necessarily in the <code>flights</code> dataframe) would you expect to have a negative correlation (i.e. a negative relationship) with <code>dep_delay</code>? Why? Remember that we are focusing on continuous variables here.</p>
-<p><strong>(LC4.27)</strong> Why do you believe there is a cluster of points near (0, 0)?</p>
+<p><strong>(LC4.26)</strong> What are some practical reasons why <code>dep_delay</code> and <code>arr_delay</code> have a positive relationship?</p>
+<p><strong>(LC4.27)</strong> What variables (not necessarily in the <code>flights</code> dataframe) would you expect to have a negative correlation (i.e. a negative relationship) with <code>dep_delay</code>? Why? Remember that we are focusing on continuous variables here.</p>
+<p><strong>(LC4.28)</strong> Why do you believe there is a cluster of points near (0, 0)?</p>
 <ul>
 <li>What does (0, 0) correspond to in terms of the Alaskan flights?</li>
 </ul>
-<p><strong>(LC4.28)</strong> What are some other features of the plot that stand out to you?</p>
+<p><strong>(LC4.29)</strong> What are some other features of the plot that stand out to you?</p>
 <hr />
 <div id="jittering" class="section level3">
 <h3><span class="header-section-number">4.5.1</span> Jittering</h3>
@@ -564,7 +571,7 @@ Figure 4.9: Arrival Delays vs Departure Delays for Alaska Airlines flights from 
 <p>One way of relieving this issue of <strong>over-plotting</strong> is to <strong>jitter</strong> the points a bit. In other words, we are going to add just a bit of random noise to the points to better see them and remove some of the over-plotting. You can think of “jittering” as shaking the points a bit on the plot. Instead of using <code>geom_point</code>, we use <code>geom_jitter</code> to perform this shaking and specify around how much jitter to add with the <code>width</code> and <code>height</code> arguments. This corresponds to how hard you’d like to shake the plot in units corresponding to those for both the horizontal and vertical variables (minutes here).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(alaska_flights, <span class="kw">aes</span>(<span class="dt">x =</span> dep_delay, <span class="dt">y =</span> arr_delay)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="dv">30</span>, <span class="dt">height =</span> <span class="dv">30</span>)</code></pre></div>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-32-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-36-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>This has helps us a little bit in getting a sense for the over-plotting, but with a relatively large dataset like this one (714 flights), it is often useful to change the transparency of the points as seen in the next section.</p>
 </div>
 <div id="setting-transparency" class="section level3">
@@ -593,11 +600,11 @@ Figure 4.11: Arrival Delays vs Departure Delays for Alaska Airlines flights from
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.29)</strong> Why is setting the <code>alpha</code> argument value useful with scatter-plots?</p>
+<p><strong>(LC4.30)</strong> Why is setting the <code>alpha</code> argument value useful with scatter-plots?</p>
 <ul>
 <li>What further information does it give you that a regular scatter-plot cannot?</li>
 </ul>
-<p><strong>(LC4.30)</strong> After viewing the <a href="4-viz.html#fig:alpha">4.10</a> above, give a range of arrival times and departure times that occur most frequently?</p>
+<p><strong>(LC4.31)</strong> After viewing the <a href="4-viz.html#fig:alpha">4.10</a> above, give a range of arrival times and departure times that occur most frequently?</p>
 <ul>
 <li>How has that region changed compared to when you observed the same plot without the <code>alpha = 0.2</code> set in <a href="4-viz.html#fig:noalpha">4.9</a>?</li>
 </ul>
@@ -616,7 +623,7 @@ Figure 4.11: Arrival Delays vs Departure Delays for Alaska Airlines flights from
 <p>We are interested in exploring the arrival delays by day throughout the year of 2013 from outgoing flights from New York City. If we plotted all of these values, we obtain the following scatter-plot:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(flights, <span class="kw">aes</span>(<span class="dt">x =</span> time_hour, <span class="dt">y =</span> arr_delay)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_point</span>()</code></pre></div>
-<p><img src="ismay_kim_files/figure-html/unnamed-chunk-33-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="ismay_kim_files/figure-html/unnamed-chunk-37-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>We see that this plot is difficult to understand based on the sheer number of points plotted. We see some outlier points with more than 500 minutes of arrival delay, but even some jittering and transparency is not going to help us here.</p>
 <p>Instead of plotting all of the values for each hour for all flights, it might make sense to plot the average value for each day in terms of arrival delays. Of course, we also need to address which average we should use: mean or median. With there being some outliers here, we have chosen to use the median arrival delay (since the mean is heavily influence by outliers).</p>
 <p>You may think that this is a difficult task but the <code>group_by</code> and <code>summarize</code> functions make this a breeze. You’ll see more examples using these two functions in Chapter <a href="5-manip.html#manip">5</a>. Here we will create a new variable, which corresponds to the month and day combined, from the <code>time_hour</code> column using the <code>mutate</code> function and create a new dataframe called <code>flights_day</code>. Notice from running <code>View(flights_day)</code> that the new variable added called <code>date</code> appears on the far right of the dataset.</p>
@@ -656,22 +663,21 @@ Figure 4.12: Line-graph of median arrival delay for flights leaving NYC in 2013 
 <span class="kw">rownames</span>(flights_summarized) &lt;-<span class="st"> </span>flights_summarized$date
 flights_summarized &lt;-<span class="st"> </span><span class="kw">select</span>(flights_summarized, -date)
 <span class="kw">dyRangeSelector</span>(<span class="kw">dygraph</span>(flights_summarized))</code></pre></div>
-<div id="htmlwidget-e9213c23432373170c4b" style="width:672px;height:480px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e9213c23432373170c4b">{"x":{"attrs":{"labels":["day","median_arr_delay"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"daily","annotations":[],"shadings":[],"events":[],"format":"date","data":[["2013-01-01T08:00:00.000Z","2013-01-02T08:00:00.000Z","2013-01-03T08:00:00.000Z","2013-01-04T08:00:00.000Z","2013-01-05T08:00:00.000Z","2013-01-06T08:00:00.000Z","2013-01-07T08:00:00.000Z","2013-01-08T08:00:00.000Z","2013-01-09T08:00:00.000Z","2013-01-10T08:00:00.000Z","2013-01-11T08:00:00.000Z","2013-01-12T08:00:00.000Z","2013-01-13T08:00:00.000Z","2013-01-14T08:00:00.000Z","2013-01-15T08:00:00.000Z","2013-01-16T08:00:00.000Z","2013-01-17T08:00:00.000Z","2013-01-18T08:00:00.000Z","2013-01-19T08:00:00.000Z","2013-01-20T08:00:00.000Z","2013-01-21T08:00:00.000Z","2013-01-22T08:00:00.000Z","2013-01-23T08:00:00.000Z","2013-01-24T08:00:00.000Z","2013-01-25T08:00:00.000Z","2013-01-26T08:00:00.000Z","2013-01-27T08:00:00.000Z","2013-01-28T08:00:00.000Z","2013-01-29T08:00:00.000Z","2013-01-30T08:00:00.000Z","2013-01-31T08:00:00.000Z","2013-02-01T08:00:00.000Z","2013-02-02T08:00:00.000Z","2013-02-03T08:00:00.000Z","2013-02-04T08:00:00.000Z","2013-02-05T08:00:00.000Z","2013-02-06T08:00:00.000Z","2013-02-07T08:00:00.000Z","2013-02-08T08:00:00.000Z","2013-02-09T08:00:00.000Z","2013-02-10T08:00:00.000Z","2013-02-11T08:00:00.000Z","2013-02-12T08:00:00.000Z","2013-02-13T08:00:00.000Z","2013-02-14T08:00:00.000Z","2013-02-15T08:00:00.000Z","2013-02-16T08:00:00.000Z","2013-02-17T08:00:00.000Z","2013-02-18T08:00:00.000Z","2013-02-19T08:00:00.000Z","2013-02-20T08:00:00.000Z","2013-02-21T08:00:00.000Z","2013-02-22T08:00:00.000Z","2013-02-23T08:00:00.000Z","2013-02-24T08:00:00.000Z","2013-02-25T08:00:00.000Z","2013-02-26T08:00:00.000Z","2013-02-27T08:00:00.000Z","2013-02-28T08:00:00.000Z","2013-03-01T08:00:00.000Z","2013-03-02T08:00:00.000Z","2013-03-03T08:00:00.000Z","2013-03-04T08:00:00.000Z","2013-03-05T08:00:00.000Z","2013-03-06T08:00:00.000Z","2013-03-07T08:00:00.000Z","2013-03-08T08:00:00.000Z","2013-03-09T08:00:00.000Z","2013-03-10T08:00:00.000Z","2013-03-11T07:00:00.000Z","2013-03-12T07:00:00.000Z","2013-03-13T07:00:00.000Z","2013-03-14T07:00:00.000Z","2013-03-15T07:00:00.000Z","2013-03-16T07:00:00.000Z","2013-03-17T07:00:00.000Z","2013-03-18T07:00:00.000Z","2013-03-19T07:00:00.000Z","2013-03-20T07:00:00.000Z","2013-03-21T07:00:00.000Z","2013-03-22T07:00:00.000Z","2013-03-23T07:00:00.000Z","2013-03-24T07:00:00.000Z","2013-03-25T07:00:00.000Z","2013-03-26T07:00:00.000Z","2013-03-27T07:00:00.000Z","2013-03-28T07:00:00.000Z","2013-03-29T07:00:00.000Z","2013-03-30T07:00:00.000Z","2013-03-31T07:00:00.000Z","2013-04-01T07:00:00.000Z","2013-04-02T07:00:00.000Z","2013-04-03T07:00:00.000Z","2013-04-04T07:00:00.000Z","2013-04-05T07:00:00.000Z","2013-04-06T07:00:00.000Z","2013-04-07T07:00:00.000Z","2013-04-08T07:00:00.000Z","2013-04-09T07:00:00.000Z","2013-04-10T07:00:00.000Z","2013-04-11T07:00:00.000Z","2013-04-12T07:00:00.000Z","2013-04-13T07:00:00.000Z","2013-04-14T07:00:00.000Z","2013-04-15T07:00:00.000Z","2013-04-16T07:00:00.000Z","2013-04-17T07:00:00.000Z","2013-04-18T07:00:00.000Z","2013-04-19T07:00:00.000Z","2013-04-20T07:00:00.000Z","2013-04-21T07:00:00.000Z","2013-04-22T07:00:00.000Z","2013-04-23T07:00:00.000Z","2013-04-24T07:00:00.000Z","2013-04-25T07:00:00.000Z","2013-04-26T07:00:00.000Z","2013-04-27T07:00:00.000Z","2013-04-28T07:00:00.000Z","2013-04-29T07:00:00.000Z","2013-04-30T07:00:00.000Z","2013-05-01T07:00:00.000Z","2013-05-02T07:00:00.000Z","2013-05-03T07:00:00.000Z","2013-05-04T07:00:00.000Z","2013-05-05T07:00:00.000Z","2013-05-06T07:00:00.000Z","2013-05-07T07:00:00.000Z","2013-05-08T07:00:00.000Z","2013-05-09T07:00:00.000Z","2013-05-10T07:00:00.000Z","2013-05-11T07:00:00.000Z","2013-05-12T07:00:00.000Z","2013-05-13T07:00:00.000Z","2013-05-14T07:00:00.000Z","2013-05-15T07:00:00.000Z","2013-05-16T07:00:00.000Z","2013-05-17T07:00:00.000Z","2013-05-18T07:00:00.000Z","2013-05-19T07:00:00.000Z","2013-05-20T07:00:00.000Z","2013-05-21T07:00:00.000Z","2013-05-22T07:00:00.000Z","2013-05-23T07:00:00.000Z","2013-05-24T07:00:00.000Z","2013-05-25T07:00:00.000Z","2013-05-26T07:00:00.000Z","2013-05-27T07:00:00.000Z","2013-05-28T07:00:00.000Z","2013-05-29T07:00:00.000Z","2013-05-30T07:00:00.000Z","2013-05-31T07:00:00.000Z","2013-06-01T07:00:00.000Z","2013-06-02T07:00:00.000Z","2013-06-03T07:00:00.000Z","2013-06-04T07:00:00.000Z","2013-06-05T07:00:00.000Z","2013-06-06T07:00:00.000Z","2013-06-07T07:00:00.000Z","2013-06-08T07:00:00.000Z","2013-06-09T07:00:00.000Z","2013-06-10T07:00:00.000Z","2013-06-11T07:00:00.000Z","2013-06-12T07:00:00.000Z","2013-06-13T07:00:00.000Z","2013-06-14T07:00:00.000Z","2013-06-15T07:00:00.000Z","2013-06-16T07:00:00.000Z","2013-06-17T07:00:00.000Z","2013-06-18T07:00:00.000Z","2013-06-19T07:00:00.000Z","2013-06-20T07:00:00.000Z","2013-06-21T07:00:00.000Z","2013-06-22T07:00:00.000Z","2013-06-23T07:00:00.000Z","2013-06-24T07:00:00.000Z","2013-06-25T07:00:00.000Z","2013-06-26T07:00:00.000Z","2013-06-27T07:00:00.000Z","2013-06-28T07:00:00.000Z","2013-06-29T07:00:00.000Z","2013-06-30T07:00:00.000Z","2013-07-01T07:00:00.000Z","2013-07-02T07:00:00.000Z","2013-07-03T07:00:00.000Z","2013-07-04T07:00:00.000Z","2013-07-05T07:00:00.000Z","2013-07-06T07:00:00.000Z","2013-07-07T07:00:00.000Z","2013-07-08T07:00:00.000Z","2013-07-09T07:00:00.000Z","2013-07-10T07:00:00.000Z","2013-07-11T07:00:00.000Z","2013-07-12T07:00:00.000Z","2013-07-13T07:00:00.000Z","2013-07-14T07:00:00.000Z","2013-07-15T07:00:00.000Z","2013-07-16T07:00:00.000Z","2013-07-17T07:00:00.000Z","2013-07-18T07:00:00.000Z","2013-07-19T07:00:00.000Z","2013-07-20T07:00:00.000Z","2013-07-21T07:00:00.000Z","2013-07-22T07:00:00.000Z","2013-07-23T07:00:00.000Z","2013-07-24T07:00:00.000Z","2013-07-25T07:00:00.000Z","2013-07-26T07:00:00.000Z","2013-07-27T07:00:00.000Z","2013-07-28T07:00:00.000Z","2013-07-29T07:00:00.000Z","2013-07-30T07:00:00.000Z","2013-07-31T07:00:00.000Z","2013-08-01T07:00:00.000Z","2013-08-02T07:00:00.000Z","2013-08-03T07:00:00.000Z","2013-08-04T07:00:00.000Z","2013-08-05T07:00:00.000Z","2013-08-06T07:00:00.000Z","2013-08-07T07:00:00.000Z","2013-08-08T07:00:00.000Z","2013-08-09T07:00:00.000Z","2013-08-10T07:00:00.000Z","2013-08-11T07:00:00.000Z","2013-08-12T07:00:00.000Z","2013-08-13T07:00:00.000Z","2013-08-14T07:00:00.000Z","2013-08-15T07:00:00.000Z","2013-08-16T07:00:00.000Z","2013-08-17T07:00:00.000Z","2013-08-18T07:00:00.000Z","2013-08-19T07:00:00.000Z","2013-08-20T07:00:00.000Z","2013-08-21T07:00:00.000Z","2013-08-22T07:00:00.000Z","2013-08-23T07:00:00.000Z","2013-08-24T07:00:00.000Z","2013-08-25T07:00:00.000Z","2013-08-26T07:00:00.000Z","2013-08-27T07:00:00.000Z","2013-08-28T07:00:00.000Z","2013-08-29T07:00:00.000Z","2013-08-30T07:00:00.000Z","2013-08-31T07:00:00.000Z","2013-09-01T07:00:00.000Z","2013-09-02T07:00:00.000Z","2013-09-03T07:00:00.000Z","2013-09-04T07:00:00.000Z","2013-09-05T07:00:00.000Z","2013-09-06T07:00:00.000Z","2013-09-07T07:00:00.000Z","2013-09-08T07:00:00.000Z","2013-09-09T07:00:00.000Z","2013-09-10T07:00:00.000Z","2013-09-11T07:00:00.000Z","2013-09-12T07:00:00.000Z","2013-09-13T07:00:00.000Z","2013-09-14T07:00:00.000Z","2013-09-15T07:00:00.000Z","2013-09-16T07:00:00.000Z","2013-09-17T07:00:00.000Z","2013-09-18T07:00:00.000Z","2013-09-19T07:00:00.000Z","2013-09-20T07:00:00.000Z","2013-09-21T07:00:00.000Z","2013-09-22T07:00:00.000Z","2013-09-23T07:00:00.000Z","2013-09-24T07:00:00.000Z","2013-09-25T07:00:00.000Z","2013-09-26T07:00:00.000Z","2013-09-27T07:00:00.000Z","2013-09-28T07:00:00.000Z","2013-09-29T07:00:00.000Z","2013-09-30T07:00:00.000Z","2013-10-01T07:00:00.000Z","2013-10-02T07:00:00.000Z","2013-10-03T07:00:00.000Z","2013-10-04T07:00:00.000Z","2013-10-05T07:00:00.000Z","2013-10-06T07:00:00.000Z","2013-10-07T07:00:00.000Z","2013-10-08T07:00:00.000Z","2013-10-09T07:00:00.000Z","2013-10-10T07:00:00.000Z","2013-10-11T07:00:00.000Z","2013-10-12T07:00:00.000Z","2013-10-13T07:00:00.000Z","2013-10-14T07:00:00.000Z","2013-10-15T07:00:00.000Z","2013-10-16T07:00:00.000Z","2013-10-17T07:00:00.000Z","2013-10-18T07:00:00.000Z","2013-10-19T07:00:00.000Z","2013-10-20T07:00:00.000Z","2013-10-21T07:00:00.000Z","2013-10-22T07:00:00.000Z","2013-10-23T07:00:00.000Z","2013-10-24T07:00:00.000Z","2013-10-25T07:00:00.000Z","2013-10-26T07:00:00.000Z","2013-10-27T07:00:00.000Z","2013-10-28T07:00:00.000Z","2013-10-29T07:00:00.000Z","2013-10-30T07:00:00.000Z","2013-10-31T07:00:00.000Z","2013-11-01T07:00:00.000Z","2013-11-02T07:00:00.000Z","2013-11-03T07:00:00.000Z","2013-11-04T08:00:00.000Z","2013-11-05T08:00:00.000Z","2013-11-06T08:00:00.000Z","2013-11-07T08:00:00.000Z","2013-11-08T08:00:00.000Z","2013-11-09T08:00:00.000Z","2013-11-10T08:00:00.000Z","2013-11-11T08:00:00.000Z","2013-11-12T08:00:00.000Z","2013-11-13T08:00:00.000Z","2013-11-14T08:00:00.000Z","2013-11-15T08:00:00.000Z","2013-11-16T08:00:00.000Z","2013-11-17T08:00:00.000Z","2013-11-18T08:00:00.000Z","2013-11-19T08:00:00.000Z","2013-11-20T08:00:00.000Z","2013-11-21T08:00:00.000Z","2013-11-22T08:00:00.000Z","2013-11-23T08:00:00.000Z","2013-11-24T08:00:00.000Z","2013-11-25T08:00:00.000Z","2013-11-26T08:00:00.000Z","2013-11-27T08:00:00.000Z","2013-11-28T08:00:00.000Z","2013-11-29T08:00:00.000Z","2013-11-30T08:00:00.000Z","2013-12-01T08:00:00.000Z","2013-12-02T08:00:00.000Z","2013-12-03T08:00:00.000Z","2013-12-04T08:00:00.000Z","2013-12-05T08:00:00.000Z","2013-12-06T08:00:00.000Z","2013-12-07T08:00:00.000Z","2013-12-08T08:00:00.000Z","2013-12-09T08:00:00.000Z","2013-12-10T08:00:00.000Z","2013-12-11T08:00:00.000Z","2013-12-12T08:00:00.000Z","2013-12-13T08:00:00.000Z","2013-12-14T08:00:00.000Z","2013-12-15T08:00:00.000Z","2013-12-16T08:00:00.000Z","2013-12-17T08:00:00.000Z","2013-12-18T08:00:00.000Z","2013-12-19T08:00:00.000Z","2013-12-20T08:00:00.000Z","2013-12-21T08:00:00.000Z","2013-12-22T08:00:00.000Z","2013-12-23T08:00:00.000Z","2013-12-24T08:00:00.000Z","2013-12-25T08:00:00.000Z","2013-12-26T08:00:00.000Z","2013-12-27T08:00:00.000Z","2013-12-28T08:00:00.000Z","2013-12-29T08:00:00.000Z","2013-12-30T08:00:00.000Z","2013-12-31T08:00:00.000Z"],[3,4,1,-8,-7,-1,-10,-7,-6,-11,-10,-16,-3,-1,-3,21,0,-4,-12,-5,-3,2,-2.5,2,5,-7,-10,-2,-12,5,14,-1.5,-11,-6,-2,2,-7,-5,14,-3,-5,12,-8,-5,-2,-4,-6,-10,-10,0,-6,1,3,4,-7,-6,-3,14,-12,-8,-9,-12,-8,-10,-6,3,64.5,-14,-10,-7,5,-8,-5,-8,3,0,12,12,-5,-4,-6,4,-1,-2,-11,-11,-13,-15,-18,-8,0,-5,-4,-2,-1,-13,-8,-11,-8,0,5,20,-2,-2,-6,-9,-3,13,15,-2,-3,23,12,5,23,11,-16,-10,-10,-14,-13,-13,-7,-15,-14,-12,-17,18,2,-2,0,-10,-11,-16,-10,-5,-6,-15.5,2,-5,-4.5,7,30,9,-9,-14.5,-16,-7,-6,-11,-12,-16,-1,7,-6,-10,-5,9,-10,-8,7,-7,-6,41,3.5,-13,-8,8,13,2,-11,-11,-12,-5,12,16,5,7,13.5,-1,17,41,2,2,-16,-15,-15,8,8,7,13,2,5,1,-17.5,-13,-4,-6,-4,-3,-2,0,17,23,4,3,2,-8,13,0,-7,-7,16,-1,-1,-4,-5,-8,0,28,25,-4,-1,1,18.5,6,-4,-8,-12,-7,-10,-13,-13,18,-7,-18,-19,-18,-16,8,-7,-18,-15,-15,3,-10,-19,-18,-19,-22,-15,-15,-15,-7,18,2,-19,-14,-7,-13,-16,-11,-13.5,-11,-8,-10,-13,-8.5,-9,-11.5,-20,-14,-15,-22,-16,-5,-10,-15,-9,10,-10,-10,0,2,-15,-8,-9,-9,-8,-2,-3,-5,-5,-5,-5,0,-4,-2,-6,-13,-7,-7,-8,-5,1,-6,-10,0,-9,-8,3,-5,-12,-6,-10,5,-14,-13,-8,-11,1,-6,-7,-9,-5,1,-2,-4,-9,-1,9,-10,-15,-16,-10,-8,-4,-8,20,9,-2,19,23,33,6,0,-5,26,4,0,38,5,0,3.5,1,10,15,-5,-9,-2,-5,-9,3,1,1]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<div id="htmlwidget-b9e4fb0f8a53768e9648" style="width:672px;height:480px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b9e4fb0f8a53768e9648">{"x":{"attrs":{"labels":["day","median_arr_delay"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"daily","annotations":[],"shadings":[],"events":[],"format":"date","data":[["2013-01-01T08:00:00.000Z","2013-01-02T08:00:00.000Z","2013-01-03T08:00:00.000Z","2013-01-04T08:00:00.000Z","2013-01-05T08:00:00.000Z","2013-01-06T08:00:00.000Z","2013-01-07T08:00:00.000Z","2013-01-08T08:00:00.000Z","2013-01-09T08:00:00.000Z","2013-01-10T08:00:00.000Z","2013-01-11T08:00:00.000Z","2013-01-12T08:00:00.000Z","2013-01-13T08:00:00.000Z","2013-01-14T08:00:00.000Z","2013-01-15T08:00:00.000Z","2013-01-16T08:00:00.000Z","2013-01-17T08:00:00.000Z","2013-01-18T08:00:00.000Z","2013-01-19T08:00:00.000Z","2013-01-20T08:00:00.000Z","2013-01-21T08:00:00.000Z","2013-01-22T08:00:00.000Z","2013-01-23T08:00:00.000Z","2013-01-24T08:00:00.000Z","2013-01-25T08:00:00.000Z","2013-01-26T08:00:00.000Z","2013-01-27T08:00:00.000Z","2013-01-28T08:00:00.000Z","2013-01-29T08:00:00.000Z","2013-01-30T08:00:00.000Z","2013-01-31T08:00:00.000Z","2013-02-01T08:00:00.000Z","2013-02-02T08:00:00.000Z","2013-02-03T08:00:00.000Z","2013-02-04T08:00:00.000Z","2013-02-05T08:00:00.000Z","2013-02-06T08:00:00.000Z","2013-02-07T08:00:00.000Z","2013-02-08T08:00:00.000Z","2013-02-09T08:00:00.000Z","2013-02-10T08:00:00.000Z","2013-02-11T08:00:00.000Z","2013-02-12T08:00:00.000Z","2013-02-13T08:00:00.000Z","2013-02-14T08:00:00.000Z","2013-02-15T08:00:00.000Z","2013-02-16T08:00:00.000Z","2013-02-17T08:00:00.000Z","2013-02-18T08:00:00.000Z","2013-02-19T08:00:00.000Z","2013-02-20T08:00:00.000Z","2013-02-21T08:00:00.000Z","2013-02-22T08:00:00.000Z","2013-02-23T08:00:00.000Z","2013-02-24T08:00:00.000Z","2013-02-25T08:00:00.000Z","2013-02-26T08:00:00.000Z","2013-02-27T08:00:00.000Z","2013-02-28T08:00:00.000Z","2013-03-01T08:00:00.000Z","2013-03-02T08:00:00.000Z","2013-03-03T08:00:00.000Z","2013-03-04T08:00:00.000Z","2013-03-05T08:00:00.000Z","2013-03-06T08:00:00.000Z","2013-03-07T08:00:00.000Z","2013-03-08T08:00:00.000Z","2013-03-09T08:00:00.000Z","2013-03-10T08:00:00.000Z","2013-03-11T07:00:00.000Z","2013-03-12T07:00:00.000Z","2013-03-13T07:00:00.000Z","2013-03-14T07:00:00.000Z","2013-03-15T07:00:00.000Z","2013-03-16T07:00:00.000Z","2013-03-17T07:00:00.000Z","2013-03-18T07:00:00.000Z","2013-03-19T07:00:00.000Z","2013-03-20T07:00:00.000Z","2013-03-21T07:00:00.000Z","2013-03-22T07:00:00.000Z","2013-03-23T07:00:00.000Z","2013-03-24T07:00:00.000Z","2013-03-25T07:00:00.000Z","2013-03-26T07:00:00.000Z","2013-03-27T07:00:00.000Z","2013-03-28T07:00:00.000Z","2013-03-29T07:00:00.000Z","2013-03-30T07:00:00.000Z","2013-03-31T07:00:00.000Z","2013-04-01T07:00:00.000Z","2013-04-02T07:00:00.000Z","2013-04-03T07:00:00.000Z","2013-04-04T07:00:00.000Z","2013-04-05T07:00:00.000Z","2013-04-06T07:00:00.000Z","2013-04-07T07:00:00.000Z","2013-04-08T07:00:00.000Z","2013-04-09T07:00:00.000Z","2013-04-10T07:00:00.000Z","2013-04-11T07:00:00.000Z","2013-04-12T07:00:00.000Z","2013-04-13T07:00:00.000Z","2013-04-14T07:00:00.000Z","2013-04-15T07:00:00.000Z","2013-04-16T07:00:00.000Z","2013-04-17T07:00:00.000Z","2013-04-18T07:00:00.000Z","2013-04-19T07:00:00.000Z","2013-04-20T07:00:00.000Z","2013-04-21T07:00:00.000Z","2013-04-22T07:00:00.000Z","2013-04-23T07:00:00.000Z","2013-04-24T07:00:00.000Z","2013-04-25T07:00:00.000Z","2013-04-26T07:00:00.000Z","2013-04-27T07:00:00.000Z","2013-04-28T07:00:00.000Z","2013-04-29T07:00:00.000Z","2013-04-30T07:00:00.000Z","2013-05-01T07:00:00.000Z","2013-05-02T07:00:00.000Z","2013-05-03T07:00:00.000Z","2013-05-04T07:00:00.000Z","2013-05-05T07:00:00.000Z","2013-05-06T07:00:00.000Z","2013-05-07T07:00:00.000Z","2013-05-08T07:00:00.000Z","2013-05-09T07:00:00.000Z","2013-05-10T07:00:00.000Z","2013-05-11T07:00:00.000Z","2013-05-12T07:00:00.000Z","2013-05-13T07:00:00.000Z","2013-05-14T07:00:00.000Z","2013-05-15T07:00:00.000Z","2013-05-16T07:00:00.000Z","2013-05-17T07:00:00.000Z","2013-05-18T07:00:00.000Z","2013-05-19T07:00:00.000Z","2013-05-20T07:00:00.000Z","2013-05-21T07:00:00.000Z","2013-05-22T07:00:00.000Z","2013-05-23T07:00:00.000Z","2013-05-24T07:00:00.000Z","2013-05-25T07:00:00.000Z","2013-05-26T07:00:00.000Z","2013-05-27T07:00:00.000Z","2013-05-28T07:00:00.000Z","2013-05-29T07:00:00.000Z","2013-05-30T07:00:00.000Z","2013-05-31T07:00:00.000Z","2013-06-01T07:00:00.000Z","2013-06-02T07:00:00.000Z","2013-06-03T07:00:00.000Z","2013-06-04T07:00:00.000Z","2013-06-05T07:00:00.000Z","2013-06-06T07:00:00.000Z","2013-06-07T07:00:00.000Z","2013-06-08T07:00:00.000Z","2013-06-09T07:00:00.000Z","2013-06-10T07:00:00.000Z","2013-06-11T07:00:00.000Z","2013-06-12T07:00:00.000Z","2013-06-13T07:00:00.000Z","2013-06-14T07:00:00.000Z","2013-06-15T07:00:00.000Z","2013-06-16T07:00:00.000Z","2013-06-17T07:00:00.000Z","2013-06-18T07:00:00.000Z","2013-06-19T07:00:00.000Z","2013-06-20T07:00:00.000Z","2013-06-21T07:00:00.000Z","2013-06-22T07:00:00.000Z","2013-06-23T07:00:00.000Z","2013-06-24T07:00:00.000Z","2013-06-25T07:00:00.000Z","2013-06-26T07:00:00.000Z","2013-06-27T07:00:00.000Z","2013-06-28T07:00:00.000Z","2013-06-29T07:00:00.000Z","2013-06-30T07:00:00.000Z","2013-07-01T07:00:00.000Z","2013-07-02T07:00:00.000Z","2013-07-03T07:00:00.000Z","2013-07-04T07:00:00.000Z","2013-07-05T07:00:00.000Z","2013-07-06T07:00:00.000Z","2013-07-07T07:00:00.000Z","2013-07-08T07:00:00.000Z","2013-07-09T07:00:00.000Z","2013-07-10T07:00:00.000Z","2013-07-11T07:00:00.000Z","2013-07-12T07:00:00.000Z","2013-07-13T07:00:00.000Z","2013-07-14T07:00:00.000Z","2013-07-15T07:00:00.000Z","2013-07-16T07:00:00.000Z","2013-07-17T07:00:00.000Z","2013-07-18T07:00:00.000Z","2013-07-19T07:00:00.000Z","2013-07-20T07:00:00.000Z","2013-07-21T07:00:00.000Z","2013-07-22T07:00:00.000Z","2013-07-23T07:00:00.000Z","2013-07-24T07:00:00.000Z","2013-07-25T07:00:00.000Z","2013-07-26T07:00:00.000Z","2013-07-27T07:00:00.000Z","2013-07-28T07:00:00.000Z","2013-07-29T07:00:00.000Z","2013-07-30T07:00:00.000Z","2013-07-31T07:00:00.000Z","2013-08-01T07:00:00.000Z","2013-08-02T07:00:00.000Z","2013-08-03T07:00:00.000Z","2013-08-04T07:00:00.000Z","2013-08-05T07:00:00.000Z","2013-08-06T07:00:00.000Z","2013-08-07T07:00:00.000Z","2013-08-08T07:00:00.000Z","2013-08-09T07:00:00.000Z","2013-08-10T07:00:00.000Z","2013-08-11T07:00:00.000Z","2013-08-12T07:00:00.000Z","2013-08-13T07:00:00.000Z","2013-08-14T07:00:00.000Z","2013-08-15T07:00:00.000Z","2013-08-16T07:00:00.000Z","2013-08-17T07:00:00.000Z","2013-08-18T07:00:00.000Z","2013-08-19T07:00:00.000Z","2013-08-20T07:00:00.000Z","2013-08-21T07:00:00.000Z","2013-08-22T07:00:00.000Z","2013-08-23T07:00:00.000Z","2013-08-24T07:00:00.000Z","2013-08-25T07:00:00.000Z","2013-08-26T07:00:00.000Z","2013-08-27T07:00:00.000Z","2013-08-28T07:00:00.000Z","2013-08-29T07:00:00.000Z","2013-08-30T07:00:00.000Z","2013-08-31T07:00:00.000Z","2013-09-01T07:00:00.000Z","2013-09-02T07:00:00.000Z","2013-09-03T07:00:00.000Z","2013-09-04T07:00:00.000Z","2013-09-05T07:00:00.000Z","2013-09-06T07:00:00.000Z","2013-09-07T07:00:00.000Z","2013-09-08T07:00:00.000Z","2013-09-09T07:00:00.000Z","2013-09-10T07:00:00.000Z","2013-09-11T07:00:00.000Z","2013-09-12T07:00:00.000Z","2013-09-13T07:00:00.000Z","2013-09-14T07:00:00.000Z","2013-09-15T07:00:00.000Z","2013-09-16T07:00:00.000Z","2013-09-17T07:00:00.000Z","2013-09-18T07:00:00.000Z","2013-09-19T07:00:00.000Z","2013-09-20T07:00:00.000Z","2013-09-21T07:00:00.000Z","2013-09-22T07:00:00.000Z","2013-09-23T07:00:00.000Z","2013-09-24T07:00:00.000Z","2013-09-25T07:00:00.000Z","2013-09-26T07:00:00.000Z","2013-09-27T07:00:00.000Z","2013-09-28T07:00:00.000Z","2013-09-29T07:00:00.000Z","2013-09-30T07:00:00.000Z","2013-10-01T07:00:00.000Z","2013-10-02T07:00:00.000Z","2013-10-03T07:00:00.000Z","2013-10-04T07:00:00.000Z","2013-10-05T07:00:00.000Z","2013-10-06T07:00:00.000Z","2013-10-07T07:00:00.000Z","2013-10-08T07:00:00.000Z","2013-10-09T07:00:00.000Z","2013-10-10T07:00:00.000Z","2013-10-11T07:00:00.000Z","2013-10-12T07:00:00.000Z","2013-10-13T07:00:00.000Z","2013-10-14T07:00:00.000Z","2013-10-15T07:00:00.000Z","2013-10-16T07:00:00.000Z","2013-10-17T07:00:00.000Z","2013-10-18T07:00:00.000Z","2013-10-19T07:00:00.000Z","2013-10-20T07:00:00.000Z","2013-10-21T07:00:00.000Z","2013-10-22T07:00:00.000Z","2013-10-23T07:00:00.000Z","2013-10-24T07:00:00.000Z","2013-10-25T07:00:00.000Z","2013-10-26T07:00:00.000Z","2013-10-27T07:00:00.000Z","2013-10-28T07:00:00.000Z","2013-10-29T07:00:00.000Z","2013-10-30T07:00:00.000Z","2013-10-31T07:00:00.000Z","2013-11-01T07:00:00.000Z","2013-11-02T07:00:00.000Z","2013-11-03T07:00:00.000Z","2013-11-04T08:00:00.000Z","2013-11-05T08:00:00.000Z","2013-11-06T08:00:00.000Z","2013-11-07T08:00:00.000Z","2013-11-08T08:00:00.000Z","2013-11-09T08:00:00.000Z","2013-11-10T08:00:00.000Z","2013-11-11T08:00:00.000Z","2013-11-12T08:00:00.000Z","2013-11-13T08:00:00.000Z","2013-11-14T08:00:00.000Z","2013-11-15T08:00:00.000Z","2013-11-16T08:00:00.000Z","2013-11-17T08:00:00.000Z","2013-11-18T08:00:00.000Z","2013-11-19T08:00:00.000Z","2013-11-20T08:00:00.000Z","2013-11-21T08:00:00.000Z","2013-11-22T08:00:00.000Z","2013-11-23T08:00:00.000Z","2013-11-24T08:00:00.000Z","2013-11-25T08:00:00.000Z","2013-11-26T08:00:00.000Z","2013-11-27T08:00:00.000Z","2013-11-28T08:00:00.000Z","2013-11-29T08:00:00.000Z","2013-11-30T08:00:00.000Z","2013-12-01T08:00:00.000Z","2013-12-02T08:00:00.000Z","2013-12-03T08:00:00.000Z","2013-12-04T08:00:00.000Z","2013-12-05T08:00:00.000Z","2013-12-06T08:00:00.000Z","2013-12-07T08:00:00.000Z","2013-12-08T08:00:00.000Z","2013-12-09T08:00:00.000Z","2013-12-10T08:00:00.000Z","2013-12-11T08:00:00.000Z","2013-12-12T08:00:00.000Z","2013-12-13T08:00:00.000Z","2013-12-14T08:00:00.000Z","2013-12-15T08:00:00.000Z","2013-12-16T08:00:00.000Z","2013-12-17T08:00:00.000Z","2013-12-18T08:00:00.000Z","2013-12-19T08:00:00.000Z","2013-12-20T08:00:00.000Z","2013-12-21T08:00:00.000Z","2013-12-22T08:00:00.000Z","2013-12-23T08:00:00.000Z","2013-12-24T08:00:00.000Z","2013-12-25T08:00:00.000Z","2013-12-26T08:00:00.000Z","2013-12-27T08:00:00.000Z","2013-12-28T08:00:00.000Z","2013-12-29T08:00:00.000Z","2013-12-30T08:00:00.000Z","2013-12-31T08:00:00.000Z"],[3,4,1,-8,-7,-1,-10,-7,-6,-11,-10,-16,-3,-1,-3,21,0,-4,-12,-5,-3,2,-2.5,2,5,-7,-10,-2,-12,5,14,-1.5,-11,-6,-2,2,-7,-5,14,-3,-5,12,-8,-5,-2,-4,-6,-10,-10,0,-6,1,3,4,-7,-6,-3,14,-12,-8,-9,-12,-8,-10,-6,3,64.5,-14,-10,-7,5,-8,-5,-8,3,0,12,12,-5,-4,-6,4,-1,-2,-11,-11,-13,-15,-18,-8,0,-5,-4,-2,-1,-13,-8,-11,-8,0,5,20,-2,-2,-6,-9,-3,13,15,-2,-3,23,12,5,23,11,-16,-10,-10,-14,-13,-13,-7,-15,-14,-12,-17,18,2,-2,0,-10,-11,-16,-10,-5,-6,-15.5,2,-5,-4.5,7,30,9,-9,-14.5,-16,-7,-6,-11,-12,-16,-1,7,-6,-10,-5,9,-10,-8,7,-7,-6,41,3.5,-13,-8,8,13,2,-11,-11,-12,-5,12,16,5,7,13.5,-1,17,41,2,2,-16,-15,-15,8,8,7,13,2,5,1,-17.5,-13,-4,-6,-4,-3,-2,0,17,23,4,3,2,-8,13,0,-7,-7,16,-1,-1,-4,-5,-8,0,28,25,-4,-1,1,18.5,6,-4,-8,-12,-7,-10,-13,-13,18,-7,-18,-19,-18,-16,8,-7,-18,-15,-15,3,-10,-19,-18,-19,-22,-15,-15,-15,-7,18,2,-19,-14,-7,-13,-16,-11,-13.5,-11,-8,-10,-13,-8.5,-9,-11.5,-20,-14,-15,-22,-16,-5,-10,-15,-9,10,-10,-10,0,2,-15,-8,-9,-9,-8,-2,-3,-5,-5,-5,-5,0,-4,-2,-6,-13,-7,-7,-8,-5,1,-6,-10,0,-9,-8,3,-5,-12,-6,-10,5,-14,-13,-8,-11,1,-6,-7,-9,-5,1,-2,-4,-9,-1,9,-10,-15,-16,-10,-8,-4,-8,20,9,-2,19,23,33,6,0,-5,26,4,0,38,5,0,3.5,1,10,15,-5,-9,-2,-5,-9,3,1,1]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p><br></p>
 <p>The syntax here is a little different than what we have covered so far. The <code>dygraph</code> function is expecting for the dates to be given as the <code>rownames</code> of the object. We then remove the <code>date</code> variable from the <code>flights_summarized</code> dataframe since it is accounted for in the <code>rownames</code>. Lastly, we run the <code>dygraph</code> function on the new dataframe that only contains the median arrival delay as a column and then provide the ability to have a selector to zoom in on the interactive plot via <code>dyRangeSelector</code>. (Note that this plot will only be interactive in the HTML version of this book.)</p>
-<p><strong>Include this interactive dygraphs stuff here or in Appendix B?</strong></p>
-<p><strong>Include bad example of when a line-graph would be invalid?</strong></p>
 <hr />
 <div class="learncheck">
 <p>
 <strong><em>Learning check</em></strong>
 </p>
 </div>
-<p><strong>(LC4.31)</strong> Why should line-graphs be avoided when there is not a clear ordering of the horizontal axis?</p>
-<p><strong>(LC4.32)</strong> Why are line-graphs frequently used when time is the explanatory variable?</p>
-<p><strong>(LC4.33)</strong> Why did we use the <code>flights_summarized</code> dataframe to produce the line-graph in Figure <a href="4-viz.html#fig:lineflights">4.12</a> instead of <code>flights</code> or <code>flights_day</code>?</p>
-<p><strong>(LC4.34)</strong> Are the largest median arrival delays where you expected them to occur on the line-graph above in Figure <a href="#lineflights"><strong>??</strong></a>?</p>
-<p><strong>(LC4.35)</strong> Use the interactive line-graph to determine the highest median arrival delay for flights from NYC in 2013. What date was it and what do you think contributed to it?</p>
+<p><strong>(LC4.32)</strong> Why should line-graphs be avoided when there is not a clear ordering of the horizontal axis?</p>
+<p><strong>(LC4.33)</strong> Why are line-graphs frequently used when time is the explanatory variable?</p>
+<p><strong>(LC4.34)</strong> Why did we use the <code>flights_summarized</code> dataframe to produce the line-graph in Figure <a href="4-viz.html#fig:lineflights">4.12</a> instead of <code>flights</code> or <code>flights_day</code>?</p>
+<p><strong>(LC4.35)</strong> Are the largest median arrival delays where you expected them to occur on the line-graph above in Figure <a href="#lineflights"><strong>??</strong></a>?</p>
+<p><strong>(LC4.36)</strong> Use the interactive line-graph to determine the highest median arrival delay for flights from NYC in 2013. What date was it and what do you think contributed to it?</p>
 <hr />
 </div>
 <div id="summary-4" class="section level3">
@@ -681,29 +687,51 @@ flights_summarized &lt;-<span class="st"> </span><span class="kw">select</span>(
 </div>
 <div id="brief-review-of-the-grammar-of-graphics" class="section level2">
 <h2><span class="header-section-number">4.7</span> Brief Review of The Grammar of Graphics</h2>
-<p>You have seen all of the major pieces behind “The Grammar of Graphics” which serves as the basis for the <code>ggplot2</code> package. Here is a summary of each part:</p>
-<p><strong>May need some tweaking</strong>: <a href="http://www.ling.upenn.edu/~joseff/avml2012/" class="uri">http://www.ling.upenn.edu/~joseff/avml2012/</a></p>
-<hr />
-<hr />
-<div class="review">
-<p>
-<strong><em>Review questions</em></strong>
-</p>
-</div>
-<p><strong>(RQ4.1)</strong></p>
+<p>The FNG discussion above has introduced you to all of the major pieces behind “The Grammar of Graphics”, which serves as the basis for the <code>ggplot2</code> package. This theoretical framework given by Leland Wilkinson <span class="citation">(Wilkinson <a href="#ref-wilkinson2005">2005</a>)</span> helps us identify what the pieces are that make up a statistical graphic:</p>
+<blockquote>
+<p>In brief, the grammar tells us that a statistical graphic is a mapping from data to aesthetic attributes (color, shape, size) of geometric objects (points, lines, bars).</p>
+</blockquote>
+<p>Specially, we can break a graphic into the following components:</p>
 <ul>
-<li><p>Have a variety of bad plots with data for the readers and have readers create better plots with <code>ggplot2</code></p></li>
-<li>Have sample datasets to work with from problem statements
+<li><p><code>aes</code>: mappings of data to <em>aesthetics</em> we can perceive on a graphic. These include x/y position, color, size, and shape. Each aesthetic can be mapped to a variable in our data set. If not assigned, they are set to defaults.</p></li>
+<li><p><code>geom</code>: (geometric objects) This refers to our type of plot: points, lines, bars, etc.</p></li>
+<li><p><code>stat</code>: (statistical transformations to summarize data) This includes smoothing, binning values into a histogram, or just itself <code>&quot;identity&quot;</code>. You’ll see this when we get to regression later in Chapter <a href="10-regress.html#regress">10</a>.</p></li>
+<li><p><code>facet</code>: how to break up data into subsets and display broken down plots as small multiples</p></li>
+<li><p><code>scales</code> both</p>
 <ul>
-<li>Identify the appropriate plot to address the questions of interest</li>
+<li>convert <strong>data units</strong> to <strong>physical units</strong> the computer can display</li>
+<li>draw a legend and/or axes, which provide an inverse mapping to make it possible to read the original data values from the graph.</li>
 </ul></li>
-<li><p>Why is it important for barplots to start at zero?</p></li>
+<li><p><code>coord</code>: coordinate system for x/y values: typically cartesian.</p></li>
+<li><p><code>position</code> adjustments</p></li>
 </ul>
-<hr />
-<hr />
+<p>There are other extra attributes that can be tweaked as well including titles for the plot and each of the axes and also over-arching themes for the plot. In general, the Grammar of Graphics allows for customizability but also keeping with a consistent framework that allows the user to easily tweak their creations as they wish or need to in order to convey a message about their data.</p>
+<p>We’ll see (and have seen) that you don’t necessarily need to include all of these in your code to produce a plot but each of the components are set by default and do exist with each plot produced using <code>ggplot2</code>.</p>
+<p>An excellent resource as you begin to create plots using the <code>ggplot2</code> package is a cheatsheet that RStudio has put together entitled “Data Visualization with ggplot2” available <a href="https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf">here</a>. This covers more than what we’ve discussed in this chapter but provides nice visual descriptions of what each function produces.</p>
+<!--
+***
+***
+
+<div class="review">
+<p><strong><em>Review questions</em></strong></p>
+</div>
+
+**(RQ4.1)**
+
+- Have a variety of bad plots with data for the readers and have readers create better plots with `ggplot2`
+
+- Have sample datasets to work with from problem statements
+    + Identify the appropriate plot to address the questions of interest
+
+- Why is it important for barplots to start at zero?
+
+***
+***
+-->
 </div>
 <div id="whats-to-come-1" class="section level2">
 <h2><span class="header-section-number">4.8</span> What’s to come?</h2>
+<p>In Chapter <a href="5-manip.html#manip">5</a>, we’ll further explore data by grouping our data, creating summaries based on those groupings, filtering our data to match conditions, selecting specific columns of our data, and other manipulations with our data including defining new columns/variables. These data manipulation procedures will go hand-in-hand with the data visualizations you’ve produced here.</p>
 
 </div>
 </div>
@@ -715,8 +743,11 @@ flights_summarized &lt;-<span class="st"> </span><span class="kw">select</span>(
 <div id="ref-R-ggplot2">
 <p>Wickham, Hadley, and Winston Chang. 2016. <em>Ggplot2: An Implementation of the Grammar of Graphics</em>. <a href="https://CRAN.R-project.org/package=ggplot2" class="uri">https://CRAN.R-project.org/package=ggplot2</a>.</p>
 </div>
+<div id="ref-usedtor2016">
+<p>Ismay, Chester. 2016. <em>Getting Used to R, RStudio, and R Markdown</em>. <a href="http://ismayc.github.io/rbasics-book" class="uri">http://ismayc.github.io/rbasics-book</a>.</p>
+</div>
 <div id="ref-r4ds2016">
-<p>Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science</em>. O’Reilly. <a href="http://http://r4ds.had.co.nz/" class="uri">http://http://r4ds.had.co.nz/</a>.</p>
+<p>Grolemund, Garrett, and Hadley Wickham. 2016. <em>R for Data Science</em>. <a href="http://r4ds.had.co.nz/" class="uri">http://r4ds.had.co.nz/</a>.</p>
 </div>
 </div>
 <div class="footnotes">

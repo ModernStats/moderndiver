@@ -106,7 +106,7 @@
 % title / author / date
 \title{\Large{A MODERN DIVE into Data with R}}
 \author{Chester Ismay and Albert Y. Kim}
-\date{2016-08-23}
+\date{2016-08-26}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -190,7 +190,11 @@ This book was written using the \textbf{bookdown} R package from Yihui
 Xie. In order to follow along and run the code in this book on your own,
 you'll need to have access to R and RStudio. You can find more
 information on both of these with a simple Google search for ``R'' and
-for ``RStudio'' and in Appendix A - Chapter \ref{appendix1}.
+for ``RStudio''. An introduction to using R, RStudio, and R Markdown is
+also available in a free book
+\href{http://ismayc.github.io/rbasics-book}{here} \citep{usedtor2016}.
+It is recommended that you refer back to this book frequently as it has
+GIF screen recordings that you can follow along with as you learn.
 
 We will keep a running list of R packages you will need to have
 installed to complete the analysis as well here in the
@@ -206,7 +210,7 @@ will see the corresponding \texttt{library} function in the text.
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{needed_pkgs <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"nycflights13"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }
-  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"rmarkdown"}\NormalTok{)}
+  \StringTok{"devtools"}\NormalTok{, }\StringTok{"ggplot2movies"}\NormalTok{, }\StringTok{"dygraphs"}\NormalTok{, }\StringTok{"rmarkdown"}\NormalTok{)}
 
 \NormalTok{new.pkgs <-}\StringTok{ }\NormalTok{needed_pkgs[!(needed_pkgs %in%}\StringTok{ }\KeywordTok{installed.packages}\NormalTok{())]}
 
@@ -219,15 +223,16 @@ will see the corresponding \texttt{library} function in the text.
 \textbf{Book was last updated:}
 
 \begin{verbatim}
-## [1] "By cismay on Tuesday, August 23, 2016 16:12:25 PDT"
+## [1] "By Chester on Friday, August 26, 2016 16:45:08 PDT"
 \end{verbatim}
 
 \section{Colophon}\label{colophon}
 
-The source of the book is available at \textbf{UPDATE THIS} and was
-built with versions of R packages given here. This may not be of
-importance for initial readers of this book, but you can reproduce a
-duplicate of this book by installing these versions of the packages.
+The source of the book is available
+\href{https://github.com/ModernStats/bookdown}{here} and was built with
+versions of R packages given here. This may not be of importance for
+initial readers of this book, but you can reproduce a duplicate of this
+book by installing these versions of the packages.
 
 \begin{longtable}{lllll}
 \toprule
@@ -252,45 +257,47 @@ evaluate &  & 0.9 & 2016-04-29 & CRAN (R 3.3.0)\\
 formatR &  & 1.4 & 2016-05-09 & CRAN (R 3.3.0)\\
 \addlinespace
 ggplot2 & * & 2.1.0 & 2016-03-01 & CRAN (R 3.3.0)\\
+ggplot2movies &  & 0.0.1 & 2015-08-25 & CRAN (R 3.3.0)\\
 git2r &  & 0.15.0 & 2016-05-11 & CRAN (R 3.3.0)\\
 gtable &  & 0.2.0 & 2016-02-26 & CRAN (R 3.3.0)\\
 highr &  & 0.6 & 2016-05-09 & CRAN (R 3.3.0)\\
-htmltools &  & 0.3.5 & 2016-03-21 & CRAN (R 3.3.0)\\
 \addlinespace
+htmltools &  & 0.3.5 & 2016-03-21 & CRAN (R 3.3.0)\\
 htmlwidgets &  & 0.7 & 2016-08-02 & CRAN (R 3.3.0)\\
 httr &  & 1.2.1 & 2016-07-03 & CRAN (R 3.3.0)\\
 jsonlite &  & 1.0 & 2016-07-01 & CRAN (R 3.3.0)\\
 knitr & * & 1.14 & 2016-08-13 & CRAN (R 3.3.0)\\
-labeling &  & 0.3 & 2014-08-23 & CRAN (R 3.3.0)\\
 \addlinespace
+labeling &  & 0.3 & 2014-08-23 & CRAN (R 3.3.0)\\
 lattice &  & 0.20-33 & 2015-07-14 & CRAN (R 3.3.1)\\
 lazyeval &  & 0.2.0 & 2016-06-12 & CRAN (R 3.3.0)\\
 magrittr &  & 1.5 & 2014-11-22 & CRAN (R 3.3.0)\\
 markdown &  & 0.7.7 & 2015-04-22 & CRAN (R 3.3.0)\\
-MASS &  & 7.3-45 & 2016-04-21 & CRAN (R 3.3.1)\\
 \addlinespace
+MASS &  & 7.3-45 & 2016-04-21 & CRAN (R 3.3.1)\\
 memoise &  & 1.0.0 & 2016-01-29 & CRAN (R 3.3.0)\\
 mime &  & 0.5 & 2016-07-07 & CRAN (R 3.3.0)\\
 munsell &  & 0.4.3 & 2016-02-13 & CRAN (R 3.3.0)\\
 nycflights13 & * & 0.2.0 & 2016-04-30 & CRAN (R 3.3.0)\\
-openssl &  & 0.9.4 & 2016-05-25 & CRAN (R 3.3.0)\\
 \addlinespace
+openssl &  & 0.9.4 & 2016-05-25 & CRAN (R 3.3.0)\\
 plyr &  & 1.8.4 & 2016-06-08 & CRAN (R 3.3.0)\\
 R6 &  & 2.1.3 & 2016-08-19 & CRAN (R 3.3.0)\\
 RColorBrewer &  & 1.1-2 & 2014-12-07 & CRAN (R 3.3.0)\\
 Rcpp &  & 0.12.6 & 2016-07-19 & CRAN (R 3.3.0)\\
-reshape2 &  & 1.4.1 & 2014-12-06 & CRAN (R 3.3.0)\\
 \addlinespace
+reshape2 &  & 1.4.1 & 2014-12-06 & CRAN (R 3.3.0)\\
 rmarkdown &  & 1.0 & 2016-07-08 & CRAN (R 3.3.0)\\
 rstudioapi &  & 0.6 & 2016-06-27 & CRAN (R 3.3.0)\\
 scales &  & 0.4.0 & 2016-02-26 & CRAN (R 3.3.0)\\
 stringi &  & 1.1.1 & 2016-05-27 & CRAN (R 3.3.0)\\
-stringr &  & 1.1.0 & 2016-08-19 & CRAN (R 3.3.0)\\
 \addlinespace
+stringr &  & 1.1.0 & 2016-08-19 & CRAN (R 3.3.0)\\
 tibble &  & 1.1 & 2016-07-04 & CRAN (R 3.3.0)\\
 whisker &  & 0.3-2 & 2013-04-28 & CRAN (R 3.3.0)\\
 withr &  & 1.0.2 & 2016-06-20 & CRAN (R 3.3.0)\\
 xts &  & 0.9-7 & 2014-01-02 & CRAN (R 3.3.0)\\
+\addlinespace
 yaml &  & 2.1.13 & 2014-06-12 & CRAN (R 3.3.0)\\
 zoo &  & 1.7-13 & 2016-05-03 & CRAN (R 3.3.0)\\
 \bottomrule
@@ -300,57 +307,213 @@ zoo &  & 1.7-13 & 2016-05-03 & CRAN (R 3.3.0)\\
 
 \section{Preamble}\label{preamble}
 
+This book is inspired by three books:
+
 \begin{itemize}
 \tightlist
 \item
-  Coggle Diagrams
+  ``Mathematical Statistics with Resampling and R'' \citep{hester2011},
 \item
-  Lean on visualizations as much as possible first to introduce summary
-  measures
+  ``Intro Stat with Randomization and Simulation'' \citep{isrs2014}, and
 \item
-  We will focus on the triad: computational, data, and inferential
-  thinking.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Literate programming / literate data science
-  \item
-    ``Programs must be written for people to read, and only incidentally
-    for machines to execute.'' - Hal Abelson
-  \end{itemize}
-\item
-  Discuss the role of data analysis in the sciences
-\item
-  Explain why programming and data science help scientific knowledge
-  grow
+  ``R for Data Science'' \citep{r4ds2016}.
 \end{itemize}
+
+These books provide excellent resources on how to use resampling to
+build statistical concepts like normal distributions using computers
+instead of focusing on memorization of formulas. The last two books also
+provide a path towards free alternatives to the traditionally expensive
+introductory statistics textbook. When looking over the vast number of
+introductory statistics textbooks we found that there wasn't one that
+incorporated many of the new R packages directly into the text.
+Additionally, there wasn't an open-source, free textbook available that
+showed new learners all of the following
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  how to use R to explore and visualize data
+\item
+  how to use randomization and simulation to build inferential ideas
+\item
+  how to effectively create stories using these ideas to convey
+  information to a lay audience.
+\end{enumerate}
+
+We will introduce sometimes difficult statistics concepts through the
+medium of data visualization. In today's world, we are bombarded with
+graphics that attempt to convey ideas. We will explore what makes a good
+graphic and what the standard ways are to convey relationships with
+data. You'll also see the use of visualization to introduce concepts
+like mean, median, standard deviation, distributions, etc. In general,
+we'll use visualization as a way of building almost all of the ideas in
+this book.
+
+Additionally, this book will focus on the triad of computational
+thinking, data thinking, and inferential thinking. We'll see throughout
+the book how these three modes of thinking can build effective ways to
+work with, describe, and convey statistical knowledge. In order to do
+so, you'll see the importance of literate programming to develop
+literate data science. In other words, you'll see how to write code and
+descriptions that are useful not just for a computer to execute but also
+for readers to understand exactly what a statistical analysis is doing
+and how it works. Hal Abelson coined the phrase that we will follow
+throughout this book:
+
+\begin{quote}
+``Programs must be written for people to read, and only incidentally for
+machines to execute.''
+\end{quote}
+
+\section{Two driving data sources}\label{two-driving-data-sources}
+
+Instead of hopping from one data set to the next, we've decided to focus
+throughout the book on two different data sources: flights leaving New
+York City in 2013 and IMDB (Internet Movie DataBase) ratings on movies.
+By focusing on just two large data sources, it is our hope that you'll
+be able to see how each of the chapters is interconnected. You'll see
+how the data being tidy leads into data visualization and manipulation
+and how those concepts tie into inference and regression.
 
 \section{Data/science pipeline}\label{datascience-pipeline}
 
-\section{Reproducibility}\label{reproducibility}
+You may think of statistics as just being a bunch of numbers. We
+commonly hear the phrase ``statistician'' when listening to broadcasts
+of sporting events. Statistics (in particular, data analysis), in
+addition to describing numbers like with baseball batting averages,
+plays a vital role in all of the sciences. You'll commonly hear the
+phrase ``statistically significant'' thrown around in the media. You'll
+see things that say ``Science now shows that chocolate is good for
+you.'' Underpinning these claims is data analysis. By the end of this
+book, you'll be able to better understand whether these claims should be
+trusted or whether we should be weary. Inside data analysis are many
+sub-fields that we will discuss throughout this book (not necessarily in
+this order):
 
 \begin{itemize}
+\tightlist
 \item
-  ``The most important tool is the \emph{mindset}, when starting, that
-  the end product will be reproducible.'' -- Keith Baggerly
+  data collection
 \item
-  ``We are talking about \emph{computational} reproducibility.'' - Yihui
-  Xie
+  data manipulation
+\item
+  data visualization
+\item
+  data modeling
+\item
+  inference
+\item
+  interpretation of results
+\item
+  data storytelling
 \end{itemize}
 
-\section{Who is this book for?
-(Target)}\label{who-is-this-book-for-target}
+This can be summarized in a graphic that is commonly used by Hadley
+Wickham:
 
-Students taking a traditional intro stats class in a small college
-environment using RStudio preferably RStudio Server.
+\begin{center}\includegraphics[width=13.01in]{images/tidy1} \end{center}
 
-We assume no prerequisites: no calculus and no prior programming
-experience.
+We will begin with a discussion on what is meant by tidy data and then
+dig into the gray \textbf{Understand} portion of the cycle and conclude
+by talking about interpretting and discussing the results of our models
+via \textbf{Communication}. These steps are vital to any statistical
+analysis. But why should you care about statistics? ``Why did they make
+me take this class?''
 
-\emph{To think about further}
+There's a reason so many fields require a statistics course. Scientific
+knowledge grows through an understanding of statistical significance and
+data analysis. You needn't be intimidated by statistics. It's not the
+beast that it used to be and paired with computation you'll see how
+reproducible research in the sciences particularly increases scientific
+knowledge.
+
+\section{Reproducibility}\label{reproducibility}
+
+\begin{quote}
+``The most important tool is the \emph{mindset}, when starting, that the
+end product will be reproducible.'' -- Keith Baggerly
+\end{quote}
+
+Another large goal of this book is to help readers understand the
+importance of reproducible analyses. The hope is to get readers into the
+habit of making their analyses reproducible from the very beginning.
+This means we'll be trying to help you build new habits. This will take
+practice and be difficult at times. You'll see just why it is so
+important for you to keep track of your code and well-document it to
+help yourself later and any potential collaborators as well.
+
+Copying and pasting is not the way that efficient and effective
+scientific research is conducted. It's much more important for time to
+be spent on data collection and data analysis and not on copying and
+pasting plots back and forth across a variety of programs.
+
+In a traditional analyses if an error was made with the original data,
+we'd need to step through the entire process again: recreate the plots
+and copy and paste all of the new plots and our statistical analsis into
+your document. This is error prone and a frustrating use of time. We'll
+see how to use R Markdown to get away from this tedious activity so that
+we can spend more time doing science.
+
+\begin{quote}
+``We are talking about \emph{computational} reproducibility.'' - Yihui
+Xie
+\end{quote}
+
+Reproducibility means a lot of things in terms of different scientific
+fields. Are experiments conducted in a way that another researcher could
+follow the steps and get similar results? In this book, we will focus on
+what is known as \textbf{computational reproducibility}. This refers to
+being able to pass all of one's data analysis and conclusions to someone
+else and have them get exactly the same results on their machine. This
+allows for time to be spent doing actual science and interpretting of
+results and assumptions instead of the more error prone way of starting
+from scratch or follow a list of steps that may be different from
+machine to machine.
+
+\section{Who is this book for?}\label{who-is-this-book-for}
+
+This book is targetted at students taking a traditional intro stats
+class in a small college environment using RStudio and preferably
+RStudio Server. We assume no prerequisites: no calculus and no prior
+programming experience. This is intended to be a gentle and nice
+introduction to the practice of statistics in terms of how data
+scientists, statisticians, and other scientists analyze data and write
+stories about data. We have intentionally avoided the use of throwing
+formulas at you and instead have focused on developing statistical
+concepts via data visualization and statistical computing. We hope this
+is a more intuitive experience than the way statistics has traditionally
+been taught in the past (and how it is commonly perceived from the
+outside). We additionally hope that you see the value of reproducible
+research via R as you continue in your studies. We understand that there
+will initially be growing pains in learning to program but we are here
+to help you and you should know that there is a huge community of R
+users that are always happy to help newbies along.
+
+Now let's get into learning about how to create good stories about and
+with data!
+
+\part{Data Exploration}\label{part-data-exploration}
+
 
 \chapter{Tidy data}\label{tidy}
+
+In this chapter, we'll discuss the importance of tidy data. You may
+think that this means just having your data in a spreadsheet, but you'll
+see that it is actually more specific than that. Data actually comes to
+us in a variety of formats from pictures to text and to just numbers.
+We'll focus on datasets that can be stored in a spreadsheet throughout
+this book as that is the most common way data is collected in the
+sciences.
+
+Having tidy data will allow us to more easily create data visualizations
+as we will see in Chapter \ref{viz}. It will also help us with
+manipulating data in Chapter \ref{manip} and in all subsequent chapters
+when we discuss statistical inference. You may not necessarily
+understand the importance for \textbf{tidy data} but it will become more
+and more apparent as we proceed through the book.
+
+\section{What is tidy data?}\label{what-is-tidy-data}
 
 You have surely heard the word ``tidy'' in your life:
 
@@ -380,8 +543,6 @@ others to find elements of your data, to manipulate and transform your
 data, and for our purposes continuing with the common theme: it makes it
 easier to visualize your data and the relationships between different
 variables in your data.
-
-\section{What is tidy data?}\label{what-is-tidy-data}
 
 We will follow Hadley Wickham's definition of \textbf{tidy data} here
 \citep{tidy}:
@@ -415,6 +576,15 @@ tables are matched up with observations, variables and types. In
   Each type of observational unit forms a table.
 \end{enumerate}
 \end{quote}
+
+\begin{figure}
+
+{\centering \includegraphics[width=26.67in]{images/tidy-1} 
+
+}
+
+\caption[Tidy data graphic from http://r4ds.had.co.nz/tidy-data.html]{Tidy data graphic from http://r4ds.had.co.nz/tidy-data.html}\label{fig:tidyfig}
+\end{figure}
 
 Reading over this definition, you can begin to think about datasets that
 won't follow this nice format.
@@ -753,8 +923,8 @@ new dataframe called \texttt{joined\_flights}.
 \end{Shaded}
 
 If we \texttt{View} this dataset, we see a new variable has been created
-called (We will see in Chapter \ref{manip} ways to change \texttt{name}
-to a more descriptive variable name.)
+called (We will see in Subsection \ref{select} ways to change
+\texttt{name} to a more descriptive variable name.)
 
 More discussion about joining dataframes together will be given in
 Chapter \ref{manip}. We will see there that the names of the columns to
@@ -866,18 +1036,25 @@ for tidy data.
 
 In Chapter \ref{tidy}, we discussed the importance of datasets being
 \textbf{tidy}. You will see in examples here why having a tidy dataset
-helps us immensely with plotting our data. We will focus on using
-Hadley's \texttt{ggplot2} package in doing so, which was developed to
-work specifically on datasets that are \textbf{tidy}. It provides an
+helps us immensely with plotting our data. In plotting our data, we will
+be able to gain valuable insights from our data that we couldn't
+initially see from just looking at the raw tidy data. We will focus on
+using Hadley's \texttt{ggplot2} package in doing so, which was developed
+to work specifically on datasets that are \textbf{tidy}. It provides an
 easy way to customize your plots and is based on data visualization
 theory given in \emph{The Grammar of Graphics} \citep{wilkinson2005}.
 
 Graphics provide a nice way for us to get a sense for how quantitative
-variables compare in terms of their center and their spread. It also
-helps us to identify patterns and outliers in our data. We will see that
-a common extension of these ideas is to compare the distribution (i.e.,
-what the spread of a variable looks like) as we go across the levels of
-a different categorical variable.
+variables compare in terms of their center and their spread. The most
+important thing to know about graphics is that they should be created to
+make it obvious for your audience to see the findings you want to get
+across. This requires a balance on not including too much in your plots,
+but also including enough so that relationships and interesting findings
+can be easily seen. As we will see, plots/graphics also help us to
+identify patterns and outliers in our data. We will see that a common
+extension of these ideas is to compare the distribution (i.e., what the
+spread of a variable looks like) as we go across the levels of a
+different categorical variable.
 
 \section{Five Named Graphs - The FNG}\label{five-named-graphs---the-fng}
 
@@ -934,11 +1111,11 @@ something similar to a number line:
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-13-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-14-1} 
 
 }
 
-\caption[Strip Plot of Hourly Temperature Recordings from NYC in 2013]{Strip Plot of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-13}
+\caption[Strip Plot of Hourly Temperature Recordings from NYC in 2013]{Strip Plot of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-14}
 \end{figure}
 
 This gives us a general idea of how the values of \texttt{temp} differ.
@@ -972,7 +1149,7 @@ function as arguments where \texttt{aes} stands for ``aesthetics''.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-14-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-15-1} \end{center}
 
 The plot given above is not a histogram, but the output does show us a
 bit of what is going on with
@@ -982,8 +1159,9 @@ producing a backdrop onto which we will ``paint'' elements.
 We next proceed by adding a layer---hence, the use of the \texttt{+}
 symbol---to the plot to produce a histogram. (Note also here that we
 don't have to specify the \texttt{data\ =} and \texttt{mapping\ =} text
-in our function calls. This is covered in more detail in Appendix A -
-Chapter \ref{appendix1}.)
+in our function calls. This is covered in more detail in Chapter 5 of
+the ``Getting Used to R, RStudio, and R Markdown'' book
+\citep{usedtor2016}).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1002,11 +1180,11 @@ Chapter \ref{appendix1}.)
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-15-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-16-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013]{Histogram of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-15}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013]{Histogram of Hourly Temperature Recordings from NYC in 2013}\label{fig:unnamed-chunk-16}
 \end{figure}
 
 We have the power to specify how many bins we would like to put the data
@@ -1015,7 +1193,15 @@ default, this is chosen to be 30 somewhat arbitrarily and we have
 received a warning above our plot that this was done. We also notice
 here that another warning about 1 missing value is given. This value is
 omitted from the plot. This warning is ignored for future customizations
-of the plot. (\textbf{Discuss missing values here?})
+of the plot.
+
+Missing values are a common problem when working with data and there are
+entire fields of study on how to work with missing data. Frequently what
+is done is to remove instances from the data set that are missing. This
+is certainly the easy way to deal with them, but not necessarily the
+correct decision in all cases. For our purposes, we will usually ignore
+potential warnings about missing data since R can usually handle them by
+ignoring them.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1026,11 +1212,11 @@ of the plot. (\textbf{Discuss missing values here?})
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-16-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-17-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins]{Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins}\label{fig:unnamed-chunk-16}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins]{Histogram of Hourly Temperature Recordings from NYC in 2013 - 60 Bins}\label{fig:unnamed-chunk-17}
 \end{figure}
 
 We can tweak the plot a little more by specifying the width of the bins
@@ -1050,11 +1236,11 @@ by name and color is available
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-17-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-18-1} 
 
 }
 
-\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10]{Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10}\label{fig:unnamed-chunk-17}
+\caption[Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10]{Histogram of Hourly Temperature Recordings from NYC in 2013 - Binwidth = 10}\label{fig:unnamed-chunk-18}
 \end{figure}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1077,7 +1263,7 @@ it close? Why?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\subsection{Continuous data summaries}\label{continuous-data-summaries}
+\subsection{Continuous data summaries}\label{contsum}
 
 The \texttt{temp} variable is a \textbf{continuous} quantitative
 variable (frequently just called a \textbf{continuous variable}). ``A
@@ -1099,14 +1285,14 @@ see in Chapter \ref{manip} how to use the \texttt{summarize} function in
 the \texttt{dplyr} package to produce similar results.)
 
 The syntax here is a little different than what we have seen before. (A
-further discussion about R syntax is available in Appendix A - Chapter
-\ref{appendix1}). Here, \texttt{summary} is the function and it is
-expecting an object to be summarized as its argument. The object here is
-the \texttt{temp} variable in the \texttt{weather} dataframe. To focus
-on just this one variable \texttt{temp} in \texttt{weather}, we separate
-them by the dollar sign symbol \texttt{\$}. Order matters here: the
-dataframe comes before the \texttt{\$} and the variable/column name
-comes after.
+further discussion about R syntax is available in Chapter 5 of the ``R
+basics'' book \citep{usedtor2016}). Here, \texttt{summary} is the
+function and it is expecting an object to be summarized as its argument.
+The object here is the \texttt{temp} variable in the \texttt{weather}
+dataframe. To focus on just this one variable \texttt{temp} in
+\texttt{weather}, we separate them by the dollar sign symbol
+\texttt{\$}. Order matters here: the dataframe comes before the
+\texttt{\$} and the variable/column name comes after.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1121,8 +1307,8 @@ comes after.
 
 This tells us what is known as the \textbf{five-number summary} for our
 variable as well as the \textbf{mean} value of the variable. More
-information on both of these concepts is given in Appendix A - Chapter
-\ref{appendix1}.
+information on both of these concepts is given in Appendix B - Chapter
+\ref{appendix2}.
 
 This \texttt{summary} gives us some numerical summaries of our
 temperature variable. The minimum recorded temperature is 10.94 degrees
@@ -1139,7 +1325,58 @@ would see that 25\% of them would fall below 39.92 and that 75\% of them
 would fall below 69.98. This implies that the middle 50\% of data values
 lie between 39.92 and 69.98 degrees Fahrenheit.
 
-\textbf{Introduce standard deviation here?}
+Another common measure to determine the variability of a data set is the
+\textbf{standard deviation}. You can read further about the mathematical
+details of standard deviation in Appendix B - Chapter \ref{appendix2},
+but you can think of it as being a measure of how far the data is, on
+average, from the mean. Let's investigate this further by calculating
+the standard deviation of our temperature variable:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sd}\NormalTok{(weather$temp)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] NA
+\end{verbatim}
+
+Remember that there were some missing values in our temperature data
+when we plotted it earlier. By default, the \texttt{sd} function that
+computes standard deviation of a variable will give the value of
+\texttt{NA} if any of the data is missing. To further understand this,
+you can look at the help of the \texttt{sd} function in the R Console:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?sd}
+\end{Highlighting}
+\end{Shaded}
+
+Under \textbf{Usage} you can see that \texttt{na.rm} is set to
+\texttt{FALSE} by default. We'd like for missing values to be removed
+from our analysis so we set that value to \texttt{TRUE}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sd}\NormalTok{(weather$temp, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 17.78212
+\end{verbatim}
+
+Standard deviation is always in the same units as our original data set.
+So in this case the standard deviation is in degrees Fahrenheit. Thus,
+we can interpret this value saying:
+
+For a randomly selected element in our temperature column, we can expect
+it to be about 17.7821236 degrees Fahrenheit from our mean value of
+`55.2035149. By combining this knowledge with the plots above, we can
+have a good idea for whether this data is very spread out from its
+center or if it is tightly bunched.
 
 \subsection{Summary}\label{summary}
 
@@ -1160,7 +1397,7 @@ variable varies. They allow us to answer questions such as
   \textbf{standard deviation} discussed above.
 \end{itemize}
 
-The histogram show how many entries fall in different groupings of this
+The histogram shows how many entries fall in different groupings of this
 variable. Another common property of distributions is symmetry and as we
 saw it is quite easily identified by looking over the histogram produced
 from the variable's values.
@@ -1191,7 +1428,7 @@ concept of faceting in further detail in Section \ref{barplots}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-19-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-23-1} \end{center}
 
 As we might expect, the temperature tends to increase as summer
 approaches and then decrease as winter approaches.
@@ -1216,6 +1453,9 @@ different type of plot here.)
 \textbf{(LC4.8)} For which types of datasets would these types of
 faceted plots not work well in comparing relationships between
 variables? Draw or give an example.
+
+\textbf{(LC4.9)} Does the \texttt{temp} variable in the \texttt{weather}
+data set have a lot of variability? Why do you say that?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -1244,7 +1484,7 @@ above with the faceted histograms.
 ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
 \end{verbatim}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-20-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-24-1} \end{center}
 
 Note the first warning that is given here. (The second one corresponds
 to missing values in the dataframe and it is turned off on subsequent
@@ -1261,7 +1501,7 @@ groupings. We can get around this by introducing a new function for our
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-21-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-25-1} \end{center}
 
 We have introduced a new function called \texttt{factor()} here. One of
 the things this function does is to convert a numeric value like
@@ -1270,7 +1510,7 @@ the things this function does is to convert a numeric value like
 percentile, the median (50\textsuperscript{th} percentile), and the
 75\textsuperscript{th} percentile. The dots correspond to
 \textbf{outliers}. (The specific formulation for these outliers is
-discussed in Appendix A - Chapter \ref{appendix1}.) The lines show how
+discussed in Appendix B - Chapter \ref{appendix2}.) The lines show how
 the data varies that is not in the center 50\% defined by the first and
 third quantiles. Longer lines correspond to more variability and shorter
 lines correspond to less variability.
@@ -1281,20 +1521,20 @@ lines correspond to less variability.
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.9)} What does the dot at the bottom of the plot for May
+\textbf{(LC4.10)} What does the dot at the bottom of the plot for May
 correspond to? Explain what might have occurred in May to produce this
 point.
 
-\textbf{(LC4.10)} Which months have the highest variability in
+\textbf{(LC4.11)} Which months have the highest variability in
 temperature? What reasons do you think this is?
 
-\textbf{(LC4.11)} We looked at the distribution of a continuous variable
+\textbf{(LC4.12)} We looked at the distribution of a continuous variable
 over a categorical variable here with this boxplot. Why can't we look at
 the distribution of one continuous variable over the distribution of
 another continuous variable? Say temperature across pressure, for
 example?
 
-\textbf{(LC4.12)} Boxplots provide a simple way to identify outliers.
+\textbf{(LC4.13)} Boxplots provide a simple way to identify outliers.
 Why may outliers be easier to identify when looking at a boxplot instead
 of a faceted histogram?
 
@@ -1334,11 +1574,11 @@ invoking the \texttt{geom\_bar} function in \texttt{ggplot2}:
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-22-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-26-1} 
 
 }
 
-\caption[Number of flights departing NYC in 2013 by airline]{Number of flights departing NYC in 2013 by airline}\label{fig:unnamed-chunk-22}
+\caption[Number of flights departing NYC in 2013 by airline]{Number of flights departing NYC in 2013 by airline}\label{fig:unnamed-chunk-26}
 \end{figure}
 
 Recall the \texttt{airlines} dataset discussed in Chapter \ref{tidy}.
@@ -1374,26 +1614,39 @@ Recall the \texttt{airlines} dataset discussed in Chapter \ref{tidy}.
 
 We see that United Air Lines, JetBlue Airways, and ExpressJet Airlines
 had the most flights depart New York City in 2013. To get the actual
-number of flights by each airline we can use the \texttt{table} function
-on the \texttt{carrier} variable in \texttt{flights}:
+number of flights by each airline we can use the \texttt{count} function
+in the \texttt{dplyr} package on the \texttt{carrier} variable in
+\texttt{flights}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{flights_table <-}\StringTok{ }\KeywordTok{table}\NormalTok{(flights$carrier)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\NormalTok{flights_table <-}\StringTok{ }\KeywordTok{count}\NormalTok{(}\DataTypeTok{x =} \NormalTok{flights, }\DataTypeTok{vars =} \NormalTok{carrier)}
 \NormalTok{flights_table}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## 
-##    9E    AA    AS    B6    DL    EV    F9    FL    HA    MQ    OO    UA 
-## 18460 32729   714 54635 48110 54173   685  3260   342 26397    32 58665 
-##    US    VX    WN    YV 
-## 20536  5162 12275   601
+## # A tibble: 16 x 2
+##     vars     n
+##    <chr> <int>
+## 1     9E 18460
+## 2     AA 32729
+## 3     AS   714
+## 4     B6 54635
+## 5     DL 48110
+## 6     EV 54173
+## 7     F9   685
+## 8     FL  3260
+## 9     HA   342
+## 10    MQ 26397
+## 11    OO    32
+## 12    UA 58665
+## 13    US 20536
+## 14    VX  5162
+## 15    WN 12275
+## 16    YV   601
 \end{verbatim}
-
-More information on the use of this \texttt{\$} syntax is available in
-Chapter \ref{tidy} and in Appendix A - Chapter \ref{appendix1}.
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -1401,15 +1654,15 @@ Chapter \ref{tidy} and in Appendix A - Chapter \ref{appendix1}.
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.13)} Why are histograms inappropriate for visualizing
+\textbf{(LC4.14)} Why are histograms inappropriate for visualizing
 categorical variables?
 
-\textbf{(LC4.14)} What is the difference between histograms and
+\textbf{(LC4.15)} What is the difference between histograms and
 barplots?
 
-\textbf{(LC4.15)} How many Envoy Air flights departed NYC in 2013?
+\textbf{(LC4.16)} How many Envoy Air flights departed NYC in 2013?
 
-\textbf{(LC4.16)} What was the seventh highest airline in terms of
+\textbf{(LC4.17)} What was the seventh highest airline in terms of
 departed flights from NYC in 2013?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1440,7 +1693,7 @@ review this chart, try to identify
   (\texttt{UA})?
 \end{itemize}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-25-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-29-1} \end{center}
 
 While it is quite easy to look back at the barplot to get the answer to
 these questions, it's quite difficult to get the answers correct when
@@ -1450,7 +1703,7 @@ may be one exception from Nathan Yau at
 \href{https://flowingdata.com/2008/09/19/pie-i-have-eaten-and-pie-i-have-not-eaten/}{FlowingData.com}
 but we will leave this for the reader to decide:
 
-\begin{center}\includegraphics[width=6.94in]{images/Pie-I-have-Eaten} \end{center}
+\begin{center}\includegraphics{images/Pie-I-have-Eaten} \end{center}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -1458,10 +1711,10 @@ but we will leave this for the reader to decide:
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.17)} Why should pie charts be avoided and replaced by
+\textbf{(LC4.18)} Why should pie charts be avoided and replaced by
 barplots?
 
-\textbf{(LC4.18)} What is your opinion as to why pie charts continue to
+\textbf{(LC4.19)} What is your opinion as to why pie charts continue to
 be used?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1506,11 +1759,11 @@ plot to get an idea of what this argument gives.
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-28-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-32-1} 
 
 }
 
-\caption[Stacked barplot comparing the number of flights by carrier and airport]{Stacked barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-28}
+\caption[Stacked barplot comparing the number of flights by carrier and airport]{Stacked barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-32}
 \end{figure}
 
 This plot is what is known as a \textbf{stacked barplot}. While simple
@@ -1520,10 +1773,10 @@ to make, it often leads to many problems.
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.19)} What kinds of questions are not easily answered by
+\textbf{(LC4.20)} What kinds of questions are not easily answered by
 looking at the above figure?
 
-\textbf{(LC4.20)} What can you say, if anything, about the relationship
+\textbf{(LC4.21)} What can you say, if anything, about the relationship
 between airline and airport in NYC in 2013 in regards to the number of
 departing flights?
 
@@ -1541,11 +1794,11 @@ Another variation on the \textbf{stacked barplot} is the
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-29-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-33-1} 
 
 }
 
-\caption[Side-by-side barplot comparing the number of flights by carrier and airport]{Side-by-side barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-29}
+\caption[Side-by-side barplot comparing the number of flights by carrier and airport]{Side-by-side barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-33}
 \end{figure}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1554,10 +1807,10 @@ Another variation on the \textbf{stacked barplot} is the
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.21)} Why might the side-by-side barplot be preferable to a
+\textbf{(LC4.22)} Why might the side-by-side barplot be preferable to a
 stacked barplot in this case?
 
-\textbf{(LC4.22)} What are the disadvantages of using a side-by-side
+\textbf{(LC4.23)} What are the disadvantages of using a side-by-side
 barplot, in general?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1577,11 +1830,11 @@ distributions across both \texttt{carrier} and airport/\texttt{name}.
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-30-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-34-1} 
 
 }
 
-\caption[Faceted barplot comparing the number of flights by carrier and airport]{Faceted barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-30}
+\caption[Faceted barplot comparing the number of flights by carrier and airport]{Faceted barplot comparing the number of flights by carrier and airport}\label{fig:unnamed-chunk-34}
 \end{figure}
 
 Note how the \texttt{facet\_grid} function arguments are written here.
@@ -1597,10 +1850,10 @@ this in Chapter \ref{infer}.
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.23)} Why is the faceted barplot preferred to the
+\textbf{(LC4.24)} Why is the faceted barplot preferred to the
 side-by-side and stacked barplots in this case?
 
-\textbf{(LC4.24)} What information about the different carriers at
+\textbf{(LC4.25)} What information about the different carriers at
 different airports is more easily seen in the faceted barplot?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1668,16 +1921,16 @@ there.
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.25)} What are some practical reasons why
+\textbf{(LC4.26)} What are some practical reasons why
 \texttt{dep\_delay} and \texttt{arr\_delay} have a positive
 relationship?
 
-\textbf{(LC4.26)} What variables (not necessarily in the
+\textbf{(LC4.27)} What variables (not necessarily in the
 \texttt{flights} dataframe) would you expect to have a negative
 correlation (i.e.~a negative relationship) with \texttt{dep\_delay}?
 Why? Remember that we are focusing on continuous variables here.
 
-\textbf{(LC4.27)} Why do you believe there is a cluster of points near
+\textbf{(LC4.28)} Why do you believe there is a cluster of points near
 (0, 0)?
 
 \begin{itemize}
@@ -1686,7 +1939,7 @@ Why? Remember that we are focusing on continuous variables here.
   What does (0, 0) correspond to in terms of the Alaskan flights?
 \end{itemize}
 
-\textbf{(LC4.28)} What are some other features of the plot that stand
+\textbf{(LC4.29)} What are some other features of the plot that stand
 out to you?
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -1718,7 +1971,7 @@ variables (minutes here).
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-32-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-36-1} \end{center}
 
 This has helps us a little bit in getting a sense for the over-plotting,
 but with a relatively large dataset like this one (714 flights), it is
@@ -1773,7 +2026,7 @@ We can also specify the \texttt{alpha} argument in
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.29)} Why is setting the \texttt{alpha} argument value
+\textbf{(LC4.30)} Why is setting the \texttt{alpha} argument value
 useful with scatter-plots?
 
 \begin{itemize}
@@ -1783,7 +2036,7 @@ useful with scatter-plots?
   cannot?
 \end{itemize}
 
-\textbf{(LC4.30)} After viewing the \ref{fig:alpha} above, give a range
+\textbf{(LC4.31)} After viewing the \ref{fig:alpha} above, give a range
 of arrival times and departure times that occur most frequently?
 
 \begin{itemize}
@@ -1832,7 +2085,7 @@ of these values, we obtain the following scatter-plot:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-33-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-37-1} \end{center}
 
 We see that this plot is difficult to understand based on the sheer
 number of points plotted. We see some outlier points with more than 500
@@ -1944,7 +2197,7 @@ work with:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-36-1} \end{center}
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-40-1} \end{center}
 
 The syntax here is a little different than what we have covered so far.
 The \texttt{dygraph} function is expecting for the dates to be given as
@@ -1957,31 +2210,27 @@ selector to zoom in on the interactive plot via
 \texttt{dyRangeSelector}. (Note that this plot will only be interactive
 in the HTML version of this book.)
 
-\textbf{Include this interactive dygraphs stuff here or in Appendix B?}
-
-\textbf{Include bad example of when a line-graph would be invalid?}
-
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 \begin{learncheck}
 \textbf{\emph{Learning check}}
 \end{learncheck}
 
-\textbf{(LC4.31)} Why should line-graphs be avoided when there is not a
+\textbf{(LC4.32)} Why should line-graphs be avoided when there is not a
 clear ordering of the horizontal axis?
 
-\textbf{(LC4.32)} Why are line-graphs frequently used when time is the
+\textbf{(LC4.33)} Why are line-graphs frequently used when time is the
 explanatory variable?
 
-\textbf{(LC4.33)} Why did we use the \texttt{flights\_summarized}
+\textbf{(LC4.34)} Why did we use the \texttt{flights\_summarized}
 dataframe to produce the line-graph in Figure \ref{fig:lineflights}
 instead of \texttt{flights} or \texttt{flights\_day}?
 
-\textbf{(LC4.34)} Are the largest median arrival delays where you
+\textbf{(LC4.35)} Are the largest median arrival delays where you
 expected them to occur on the line-graph above in Figure
 \ref{lineflights}?
 
-\textbf{(LC4.35)} Use the interactive line-graph to determine the
+\textbf{(LC4.36)} Use the interactive line-graph to determine the
 highest median arrival delay for flights from NYC in 2013. What date was
 it and what do you think contributed to it?
 
@@ -1998,85 +2247,1354 @@ natural ordering. We can mislead our audience if that isn't the case.
 \section{Brief Review of The Grammar of
 Graphics}\label{brief-review-of-the-grammar-of-graphics}
 
-You have seen all of the major pieces behind ``The Grammar of Graphics''
-which serves as the basis for the \texttt{ggplot2} package. Here is a
-summary of each part:
+The FNG discussion above has introduced you to all of the major pieces
+behind ``The Grammar of Graphics'', which serves as the basis for the
+\texttt{ggplot2} package. This theoretical framework given by Leland
+Wilkinson \citep{wilkinson2005} helps us identify what the pieces are
+that make up a statistical graphic:
 
-\textbf{May need some tweaking}:
-\url{http://www.ling.upenn.edu/~joseff/avml2012/}
+\begin{quote}
+In brief, the grammar tells us that a statistical graphic is a mapping
+from data to aesthetic attributes (color, shape, size) of geometric
+objects (points, lines, bars).
+\end{quote}
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-\begin{review}
-\textbf{\emph{Review questions}}
-\end{review}
-
-\textbf{(RQ4.1)}
+Specially, we can break a graphic into the following components:
 
 \begin{itemize}
 \item
-  Have a variety of bad plots with data for the readers and have readers
-  create better plots with \texttt{ggplot2}
+  \texttt{aes}: mappings of data to \emph{aesthetics} we can perceive on
+  a graphic. These include x/y position, color, size, and shape. Each
+  aesthetic can be mapped to a variable in our data set. If not
+  assigned, they are set to defaults.
 \item
-  Have sample datasets to work with from problem statements
+  \texttt{geom}: (geometric objects) This refers to our type of plot:
+  points, lines, bars, etc.
+\item
+  \texttt{stat}: (statistical transformations to summarize data) This
+  includes smoothing, binning values into a histogram, or just itself
+  \texttt{"identity"}. You'll see this when we get to regression later
+  in Chapter \ref{regress}.
+\item
+  \texttt{facet}: how to break up data into subsets and display broken
+  down plots as small multiples
+\item
+  \texttt{scales} both
 
   \begin{itemize}
   \tightlist
   \item
-    Identify the appropriate plot to address the questions of interest
+    convert \textbf{data units} to \textbf{physical units} the computer
+    can display
+  \item
+    draw a legend and/or axes, which provide an inverse mapping to make
+    it possible to read the original data values from the graph.
   \end{itemize}
 \item
-  Why is it important for barplots to start at zero?
+  \texttt{coord}: coordinate system for x/y values: typically cartesian.
+\item
+  \texttt{position} adjustments
 \end{itemize}
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+There are other extra attributes that can be tweaked as well including
+titles for the plot and each of the axes and also over-arching themes
+for the plot. In general, the Grammar of Graphics allows for
+customizability but also keeping with a consistent framework that allows
+the user to easily tweak their creations as they wish or need to in
+order to convey a message about their data.
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+We'll see (and have seen) that you don't necessarily need to include all
+of these in your code to produce a plot but each of the components are
+set by default and do exist with each plot produced using
+\texttt{ggplot2}.
+
+An excellent resource as you begin to create plots using the
+\texttt{ggplot2} package is a cheatsheet that RStudio has put together
+entitled ``Data Visualization with ggplot2'' available
+\href{https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf}{here}.
+This covers more than what we've discussed in this chapter but provides
+nice visual descriptions of what each function produces.
 
 \section{What's to come?}\label{whats-to-come-1}
 
+In Chapter \ref{manip}, we'll further explore data by grouping our data,
+creating summaries based on those groupings, filtering our data to match
+conditions, selecting specific columns of our data, and other
+manipulations with our data including defining new columns/variables.
+These data manipulation procedures will go hand-in-hand with the data
+visualizations you've produced here.
+
 \chapter{Manipulating Data}\label{manip}
+
+Let's briefly recap where we have been so far and where we are headed.
+In Chapter \ref{tidy}, we discussed what it means for data to be tidy.
+We saw that this corresponds to observations to correspond to rows and
+for variables to be stored in columns. The entries in the data frame
+correspond to different combinations of observational units and
+variables. In the \texttt{flights} data frame, we saw that each row
+corresponded to a different flight leaving New York City. (In other
+words, the observational unit of that tidy data frame is a flight.) The
+variables are listed as columns and for \texttt{flights} they include
+both quantitative variables like \texttt{dep\_delay} and
+\texttt{distance} but also categorical variables like \texttt{carrier}
+and \texttt{origin}. An entry in the table corresponds to a particular
+flight and a particular value of a given variable representing that
+flight.
+
+We saw in Chapter \ref{viz} that organizing data in this tidy way makes
+it easy for use to produce graphics. We can simply specify what
+variable/column we would like on one axis, what variable we'd like on
+the other axis, and what type of plot we'd like to make. We can also do
+things such as changing the color by another variable or change the size
+of our points by a fourth variable given this tidy data set.
+
+In Chapter \ref{viz}, we also introduced some ways to summarize and
+manipulate data to suit your needs. This chapter focuses more on the
+details of this by giving a variety of examples using the five main
+verbs in the \texttt{dplyr} package. There are more advanced operations
+that can be done than these and you'll see some examples of this near
+the end of the chapter.
+
+As we saw with the RStudio cheatsheet on
+\href{https://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf}{data
+visualization}, RStudio has also created a cheatsheet for data
+manipulation entitled ``Data Wrangling with dplyr and tidyr'' available
+\href{https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf}{here}.
+We will focus only on the \texttt{dplyr} functions in this book, but you
+are encouraged to also explore \texttt{tidyr} if you are presented with
+data that is not in the tidy format that we have specified as the
+preferred option for our purposes.
+
+\section{Five Main Verbs - The FMV}\label{five-main-verbs---the-fmv}
+
+If you scan over the Data Wrangling cheatsheet, you may be initially
+overwhelmed by the amount of functions available. You'll see the use of
+all of these as you work more and more with data frames in R. The
+\texttt{d} in \texttt{dplyr} stands for data frames so the functions
+here work when you are working with objects of the data frame type.
+
+It's most important for you to focus on the five most commonly used
+functions that help us manipulate and summarize data. A description of
+these verbs follows with each subsection devoted to seeing an example of
+that verb in play (or a combination of a few verbs):
 
 \begin{itemize}
 \tightlist
 \item
-  Going through a lot of examples with \texttt{dplyr} here
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Definitely want to introduce them to the pipe
-  \item
-    Show why it is so much better than nesting/temporary variables
-  \item
-    Show how to get the summary statistics mentioned in Viz across
-    groups with \texttt{group\_by} and \texttt{summarize}
-  \item
-    Show how to rename variables such as the \texttt{name} column from
-    \texttt{airlines}
-  \item
-    Get number of elements in specific columns similar to
-    \texttt{table()} function with \texttt{dplyr}
-  \item
-    \href{https://github.com/Amherst-Statistics}{Nick Horton's slides
-    from JSM}
-  \end{itemize}
+  \texttt{select}: Choose variables/columns by their names
 \item
-  Database normalization
+  \texttt{filter}: Pick rows based on conditions about their values
 \item
-  \url{https://en.wikipedia.org/wiki/Database_normalization}
+  \texttt{summarize}: Create summary measures of variables (or groups of
+  observations on variables using \texttt{group\_by})
 \item
-  Add importance of joining tables
+  \texttt{mutate}: Make a new variable in the data frame
 \item
-  Make sure to refer back to plots in the viz chapter and how the
-  material here relates to answering those questions
-\item
-  We'll also need to address how this leads into inference
+  \texttt{arrange}: Sort the rows based on one or more variables
 \end{itemize}
 
+Just as we had the FNG (The Five Named Graphs in Chapter \ref{viz} using
+\texttt{ggplot2}), we have the FMV here (The Five Main Verbs in
+\texttt{dplyr}):
+
+\subsection{\texorpdfstring{Select variables using
+\texttt{select}}{Select variables using select}}\label{select-variables-using-select}
+
+\begin{figure}
+
+{\centering \includegraphics[width=16.06in]{images/select} 
+
+}
+
+\caption[Select diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Select diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:selectfig}
+\end{figure}
+
+We've seen that the \texttt{flights} data frame in the
+\texttt{nycflights13} package contains many different variables (19 in
+fact). You can identify this by running the \texttt{dim} function:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(nycflights13)}
+\KeywordTok{data}\NormalTok{(flights)}
+\KeywordTok{dim}\NormalTok{(flights)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 336776     19
+\end{verbatim}
+
+One of these variables is \texttt{year}. If you remember the original
+description of the \texttt{flights} data frame (or by running
+\texttt{?flights}), you'll remember that this data correspond to flights
+in 2013 departing New York City. The \texttt{year} variable isn't really
+a variable here in that it doesn't vary\ldots{} \texttt{flights}
+actually comes from a larger data set that covers many years. We may
+want to remove the \texttt{year} variable from our data set. To do so
+easily, we use the \texttt{select} variable:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(dplyr)}
+\NormalTok{flights <-}\StringTok{ }\KeywordTok{select}\NormalTok{(}\DataTypeTok{.data =} \NormalTok{flights, -year)}
+\KeywordTok{names}\NormalTok{(flights)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "month"          "day"            "dep_time"       "sched_dep_time"
+##  [5] "dep_delay"      "arr_time"       "sched_arr_time" "arr_delay"     
+##  [9] "carrier"        "flight"         "tailnum"        "origin"        
+## [13] "dest"           "air_time"       "distance"       "hour"          
+## [17] "minute"         "time_hour"
+\end{verbatim}
+
+The \texttt{names} function gives a listing of all the columns in a data
+frame. We see that \texttt{year} has been removed. This was done using a
+\texttt{-} in front of the name of the column we'd like to remove.
+
+We could also select specific columns (instead of deselecting columns)
+by listing them out:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flight_dep_times <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, month, day, dep_time, sched_dep_time)}
+\NormalTok{flight_dep_times}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 336,776 x 4
+##    month   day dep_time sched_dep_time
+##    <int> <int>    <int>          <int>
+## 1      1     1      517            515
+## 2      1     1      533            529
+## 3      1     1      542            540
+## 4      1     1      544            545
+## 5      1     1      554            600
+## 6      1     1      554            558
+## 7      1     1      555            600
+## 8      1     1      557            600
+## 9      1     1      557            600
+## 10     1     1      558            600
+## # ... with 336,766 more rows
+\end{verbatim}
+
+Or we could specify a ranges of columns:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flight_arr_times <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, month:day, arr_time:sched_arr_time)}
+\NormalTok{flight_arr_times}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 336,776 x 4
+##    month   day arr_time sched_arr_time
+##    <int> <int>    <int>          <int>
+## 1      1     1      830            819
+## 2      1     1      850            830
+## 3      1     1      923            850
+## 4      1     1     1004           1022
+## 5      1     1      812            837
+## 6      1     1      740            728
+## 7      1     1      913            854
+## 8      1     1      709            723
+## 9      1     1      838            846
+## 10     1     1      753            745
+## # ... with 336,766 more rows
+\end{verbatim}
+
+The \texttt{select} function can also be used to reorder columns in
+combination with the \texttt{everything} helper function. Let's suppose
+we'd like the \texttt{hour}, \texttt{minute}, and \texttt{time\_hour}
+variables, which appear at the end of the \texttt{flights} data set to
+actually appear immediately after the \texttt{day} variable:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_reorder <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, month:day, hour:time_hour, }\KeywordTok{everything}\NormalTok{())}
+\KeywordTok{names}\NormalTok{(flights_reorder)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "month"          "day"            "hour"           "minute"        
+##  [5] "time_hour"      "dep_time"       "sched_dep_time" "dep_delay"     
+##  [9] "arr_time"       "sched_arr_time" "arr_delay"      "carrier"       
+## [13] "flight"         "tailnum"        "origin"         "dest"          
+## [17] "air_time"       "distance"
+\end{verbatim}
+
+Lastly, the helper functions \texttt{starts\_with}, \texttt{ends\_with},
+and \texttt{contains} can be used to choose column names that match
+those conditions:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_begin_a <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, }\KeywordTok{starts_with}\NormalTok{(}\StringTok{"a"}\NormalTok{))}
+\NormalTok{flights_begin_a}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 336,776 x 3
+##    arr_time arr_delay air_time
+##       <int>     <dbl>    <dbl>
+## 1       830        11      227
+## 2       850        20      227
+## 3       923        33      160
+## 4      1004       -18      183
+## 5       812       -25      116
+## 6       740        12      150
+## 7       913        19      158
+## 8       709       -14       53
+## 9       838        -8      140
+## 10      753         8      138
+## # ... with 336,766 more rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_delays <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, }\KeywordTok{ends_with}\NormalTok{(}\StringTok{"delay"}\NormalTok{))}
+\NormalTok{flights_delays}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 336,776 x 2
+##    dep_delay arr_delay
+##        <dbl>     <dbl>
+## 1          2        11
+## 2          4        20
+## 3          2        33
+## 4         -1       -18
+## 5         -6       -25
+## 6         -4        12
+## 7         -5        19
+## 8         -3       -14
+## 9         -3        -8
+## 10        -2         8
+## # ... with 336,766 more rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_time <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, }\KeywordTok{contains}\NormalTok{(}\StringTok{"time"}\NormalTok{))}
+\NormalTok{flights_time}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 336,776 x 6
+##    dep_time sched_dep_time arr_time sched_arr_time air_time
+##       <int>          <int>    <int>          <int>    <dbl>
+## 1       517            515      830            819      227
+## 2       533            529      850            830      227
+## 3       542            540      923            850      160
+## 4       544            545     1004           1022      183
+## 5       554            600      812            837      116
+## 6       554            558      740            728      150
+## 7       555            600      913            854      158
+## 8       557            600      709            723       53
+## 9       557            600      838            846      140
+## 10      558            600      753            745      138
+## # ... with 336,766 more rows, and 1 more variables: time_hour <time>
+\end{verbatim}
+
+Another useful function is \texttt{rename}, which as you may suspect
+renames one column to another name. Suppose we wanted \texttt{dep\_time}
+and \texttt{arr\_time} to be \texttt{departure\_time} and
+\texttt{arrival\_time} instead in the \texttt{flights\_time} data frame:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_time <-}\StringTok{ }\KeywordTok{rename}\NormalTok{(flights_time,}
+                       \DataTypeTok{departure_time =} \NormalTok{dep_time,}
+                       \DataTypeTok{arrival_time =} \NormalTok{arr_time)}
+\KeywordTok{names}\NormalTok{(flights_time)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "departure_time" "sched_dep_time" "arrival_time"   "sched_arr_time"
+## [5] "air_time"       "time_hour"
+\end{verbatim}
+
+It's easy to forget if the new name comes before or after the equals
+sign. I usually remember this as ``New Before, Old After'' or NBOA.
+
+You'll receive an error if you try to do it the other way:
+
+\begin{verbatim}
+Error: Unknown variables: departure_time, arrival_time.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.1)} How many different ways are there to select all three
+of \texttt{dest}, \texttt{air\_time}, and \texttt{distance} variables
+from \texttt{flights}? Give the code showing how to do all of them you
+can think of.
+
+\textbf{(LC5.2)} How could one use \texttt{starts\_with},
+\texttt{ends\_with}, and \texttt{contains} to select columns from a
+dataset with 100 or so columns? Think up a dataset that might have that
+many columns and discuss how each of these functions could be used to
+make smaller data sets.
+
+\textbf{(LC5.3)} Why might we want to use the \texttt{select} function
+on a data frame?
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{\texorpdfstring{Filter observations using
+\texttt{filter}}{Filter observations using filter}}\label{filter-observations-using-filter}
+
+\begin{figure}
+
+{\centering \includegraphics[width=17.03in]{images/filter} 
+
+}
+
+\caption[Filter diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Filter diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:filter}
+\end{figure}
+
+All of the FMVs follow the same syntax with the first argument to the
+function/verb being the name of the data frame and then the other
+arguments specifying which criteria you'd like the verb to work with.
+
+The \texttt{filter} function here works much like the ``Filter'' option
+in Microsoft Excel. It allows you to specify criteria about values of
+variable in your data set and then chooses only those rows that match
+that criteria. We begin by focusing only on flights from New York City
+to Portland, Oregon. The \texttt{dest} code (or airport code) for
+Portland, Oregon is \texttt{"PDX"}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{portland_flights <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(flights, dest ==}\StringTok{ "PDX"}\NormalTok{)}
+\NormalTok{portland_flights}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1,354 x 18
+##    month   day dep_time sched_dep_time dep_delay arr_time
+##    <int> <int>    <int>          <int>     <dbl>    <int>
+## 1      1     1     1739           1740        -1     2051
+## 2      1     1     1805           1757         8     2117
+## 3      1     1     2052           2029        23     2349
+## 4      1     2      804            805        -1     1039
+## 5      1     2     1552           1550         2     1853
+## 6      1     2     1727           1720         7     2042
+## 7      1     2     1738           1740        -2     2028
+## 8      1     2     2024           2029        -5     2314
+## 9      1     3     1755           1745        10     2110
+## 10     1     3     1814           1727        47     2108
+## # ... with 1,344 more rows, and 12 more variables:
+## #   sched_arr_time <int>, arr_delay <dbl>, carrier <chr>, flight <int>,
+## #   tailnum <chr>, origin <chr>, dest <chr>, air_time <dbl>,
+## #   distance <dbl>, hour <dbl>, minute <dbl>, time_hour <time>
+\end{verbatim}
+
+Note the second equals sign here. You are almost guaranteed to make the
+mistake at least one of only including one equals sign. Let's see what
+happens when we make this error:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{portland_flights <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(flights, }\DataTypeTok{dest =} \StringTok{"PDX"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Error: filter() takes unnamed arguments. Do you need `==`?
+\end{verbatim}
+
+We see that there were 1354 flights from New York City to Portland in
+2013. Let's combine this with what we saw in Subsection \ref{select} to
+ensure that Portland flights were selected:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{reordered_flights <-}\StringTok{ }\KeywordTok{select}\NormalTok{(flights, dest, }\KeywordTok{everything}\NormalTok{())}
+\NormalTok{pdx_flights <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(reordered_flights, dest ==}\StringTok{ "PDX"}\NormalTok{)}
+\NormalTok{pdx_flights}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1,354 x 18
+##     dest month   day dep_time sched_dep_time dep_delay arr_time
+##    <chr> <int> <int>    <int>          <int>     <dbl>    <int>
+## 1    PDX     1     1     1739           1740        -1     2051
+## 2    PDX     1     1     1805           1757         8     2117
+## 3    PDX     1     1     2052           2029        23     2349
+## 4    PDX     1     2      804            805        -1     1039
+## 5    PDX     1     2     1552           1550         2     1853
+## 6    PDX     1     2     1727           1720         7     2042
+## 7    PDX     1     2     1738           1740        -2     2028
+## 8    PDX     1     2     2024           2029        -5     2314
+## 9    PDX     1     3     1755           1745        10     2110
+## 10   PDX     1     3     1814           1727        47     2108
+## # ... with 1,344 more rows, and 11 more variables:
+## #   sched_arr_time <int>, arr_delay <dbl>, carrier <chr>, flight <int>,
+## #   tailnum <chr>, origin <chr>, air_time <dbl>, distance <dbl>,
+## #   hour <dbl>, minute <dbl>, time_hour <time>
+\end{verbatim}
+
+We see that Portland flights were selected here. You could also run
+\texttt{View(pdx\_flights)} to glance at the data in spreadsheet form.
+
+You can combine multiple criteria together using operators that make
+comparisons:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\textbar{}} corresponds to ``or''
+\item
+  \texttt{\&} corresponds to ``and''
+\end{itemize}
+
+We can often skip the use of \texttt{\&} and just separate our
+conditions with a comma. You'll see this in the example below.
+
+In addition, you can use other mathematical checks (similar to
+\texttt{==}):
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\textgreater{}} corresponds to ``greater than''
+\item
+  \texttt{\textless{}} corresponds to ``less than''
+\item
+  \texttt{\textgreater{}=} corresponds to ``greater than or equal to''
+\item
+  \texttt{\textless{}=} corresponds to ``less than or equal to''
+\item
+  \texttt{!=} corresponds to ``not equal to''
+\end{itemize}
+
+To see many of these in action, let's select all flights that left JFK
+airport heading to Burlington, Vermont (\texttt{"BTV"}) or Seattle,
+Washington (\texttt{"SEA"}) in the months of October, November, or
+December:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{btv_sea_flights_fall <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(flights,}
+                               \NormalTok{origin ==}\StringTok{ "JFK"}\NormalTok{, }
+                               \NormalTok{(dest ==}\StringTok{ "BTV"}\NormalTok{) |}\StringTok{ }\NormalTok{(dest ==}\StringTok{ "SEA"}\NormalTok{),}
+                               \NormalTok{month >=}\StringTok{ }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Another example uses the \texttt{!} to choose pick rows that
+\textbf{DON'T} match a condition. Here we are referring to excluding the
+Northern Hemisphere summer months of June, July, and August.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{not_summer_flights <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(flights,}
+                             \NormalTok{!}\KeywordTok{between}\NormalTok{(month, }\DecValTok{6}\NormalTok{, }\DecValTok{8}\NormalTok{))}
+\NormalTok{not_summer_flights}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 249,781 x 18
+##    month   day dep_time sched_dep_time dep_delay arr_time
+##    <int> <int>    <int>          <int>     <dbl>    <int>
+## 1      1     1      517            515         2      830
+## 2      1     1      533            529         4      850
+## 3      1     1      542            540         2      923
+## 4      1     1      544            545        -1     1004
+## 5      1     1      554            600        -6      812
+## 6      1     1      554            558        -4      740
+## 7      1     1      555            600        -5      913
+## 8      1     1      557            600        -3      709
+## 9      1     1      557            600        -3      838
+## 10     1     1      558            600        -2      753
+## # ... with 249,771 more rows, and 12 more variables:
+## #   sched_arr_time <int>, arr_delay <dbl>, carrier <chr>, flight <int>,
+## #   tailnum <chr>, origin <chr>, dest <chr>, air_time <dbl>,
+## #   distance <dbl>, hour <dbl>, minute <dbl>, time_hour <time>
+\end{verbatim}
+
+To check that we are correct here we can use the \texttt{count} function
+on the \texttt{month} variable in our \texttt{not\_summer\_flights} data
+frame to ensure June, July, and August are not selected:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{count}\NormalTok{(not_summer_flights, month)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 9 x 2
+##   month     n
+##   <int> <int>
+## 1     1 27004
+## 2     2 24951
+## 3     3 28834
+## 4     4 28330
+## 5     5 28796
+## 6     9 27574
+## 7    10 28889
+## 8    11 27268
+## 9    12 28135
+\end{verbatim}
+
+The function \texttt{between} is a shortcut. We could also have written
+the following to get the same result:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{not_summer2 <-}\StringTok{ }\KeywordTok{filter}\NormalTok{(flights, month <=}\StringTok{ }\DecValTok{5} \NormalTok{|}\StringTok{ }\NormalTok{month >=}\StringTok{ }\DecValTok{9}\NormalTok{)}
+\KeywordTok{count}\NormalTok{(not_summer2, month)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 9 x 2
+##   month     n
+##   <int> <int>
+## 1     1 27004
+## 2     2 24951
+## 3     3 28834
+## 4     4 28330
+## 5     5 28796
+## 6     9 27574
+## 7    10 28889
+## 8    11 27268
+## 9    12 28135
+\end{verbatim}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.4)} What's another way using \texttt{!} we could filter
+only the rows that are not summer months (June, July, or August) in the
+\texttt{flights} data frame?
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{\texorpdfstring{Summarize variables using
+\texttt{summarize}}{Summarize variables using summarize}}\label{summarize-variables-using-summarize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=16.08in]{images/summarize1} 
+
+}
+
+\caption[Summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:sum1}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=9.53in]{images/summary} 
+
+}
+
+\caption[Another summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Another summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:sum2}
+\end{figure}
+
+We saw in Subsection \ref{contsum} a way to calculate the standard
+deviation and mean of the temperature variable \texttt{temp} in the
+\texttt{weather} data frame of \texttt{nycflights}. We can do so in one
+step using the \texttt{summarize} function in \texttt{dplyr}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summarize}\NormalTok{(weather,}
+          \DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(temp),}
+          \DataTypeTok{std_dev =} \KeywordTok{sd}\NormalTok{(temp))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 2
+##    mean std_dev
+##   <dbl>   <dbl>
+## 1    NA      NA
+\end{verbatim}
+
+What happened here? The mean and the standard deviation temperatures are
+missing? Remember that by default the \texttt{mean} and \texttt{sd}
+functions do not ignore missing values. We need to specify \texttt{TRUE}
+for the \texttt{na.rm} parameter:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{summary_temp <-}\StringTok{ }\KeywordTok{summarize}\NormalTok{(weather,}
+          \DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(temp, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{std_dev =} \KeywordTok{sd}\NormalTok{(temp, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{)}
+          \NormalTok{)}
+\NormalTok{summary_temp}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 2
+##       mean  std_dev
+##      <dbl>    <dbl>
+## 1 55.20351 17.78212
+\end{verbatim}
+
+We've created a small data frame here called \texttt{summary\_temp} that
+includes both the \texttt{mean} and the \texttt{std\_dev} of the
+\texttt{temp} variable in \texttt{weather}. If we'd like to access
+either of these values directly we can use the \texttt{\$} to specify a
+column in a data frame:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{summary_temp$mean}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 55.20351
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{summary_temp$std_dev}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 17.78212
+\end{verbatim}
+
+It's often more useful to summarize a variable based on the groupings of
+another variable. Let's say we were interested in the mean and standard
+deviation of temperatures for each month. We believe that you will be
+amazed at just how simple this is:
+
+\begin{figure}
+
+{\centering \includegraphics[width=13.11in]{images/group_summary} 
+
+}
+
+\caption[Group by and summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Group by and summarize diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:groupsummarize}
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{grouped_weather <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(weather, month)}
+\NormalTok{summary_tempXmonth <-}\StringTok{ }\KeywordTok{summarize}\NormalTok{(grouped_weather,}
+          \DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(temp, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{std_dev =} \KeywordTok{sd}\NormalTok{(temp, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{)}
+          \NormalTok{)}
+\NormalTok{summary_tempXmonth}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 12 x 3
+##    month     mean   std_dev
+##    <dbl>    <dbl>     <dbl>
+## 1      1 35.64127 10.185459
+## 2      2 34.15454  6.940228
+## 3      3 39.81404  6.224948
+## 4      4 51.67094  8.785250
+## 5      5 61.59185  9.608687
+## 6      6 72.14500  7.603356
+## 7      7 80.00967  7.147631
+## 8      8 74.40495  5.171365
+## 9      9 67.42582  8.475824
+## 10    10 60.03305  8.829652
+## 11    11 45.10893 10.502249
+## 12    12 38.36811  9.940822
+\end{verbatim}
+
+By simply grouping the \texttt{weather} data set by \texttt{month} first
+and then passing this new data frame into \texttt{summarize} we get a
+resulting data frame that shows the mean and standard deviation
+temperature for each month in New York City.
+
+Another useful function is the \texttt{n} function which gives a count
+of how many entries appeared in the groupings. Suppose we'd like to get
+a sense for how many flights departed each of the three airports in New
+York City:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{grouped_flights <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(flights, origin)}
+\NormalTok{by_origin <-}\StringTok{ }\KeywordTok{summarize}\NormalTok{(grouped_flights,}
+                       \DataTypeTok{count =} \KeywordTok{n}\NormalTok{())}
+\NormalTok{by_origin}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 2
+##   origin  count
+##    <chr>  <int>
+## 1    EWR 120835
+## 2    JFK 111279
+## 3    LGA 104662
+\end{verbatim}
+
+We see that Newark (\texttt{"EWR"}) had the most flights departing in
+2013 followed by \texttt{"JFK"} and lastly by LaGuardia
+(\texttt{"LGA"}).
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.5)} What does the standard deviation column in the
+\texttt{summary\_tempXmonth} data frame tell us about temperatures in
+New York City throughout the year?
+
+\textbf{(LC5.6)} What code would be required to get the mean and
+standard deviation temperature for each day in 2013 for NYC?
+
+\textbf{(LC5.7)} How could we identify how many flights left each of the
+three airports in each of the months of 2013?
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{\texorpdfstring{Create new variables/change old variables
+using
+\texttt{mutate}}{Create new variables/change old variables using mutate}}\label{create-new-variableschange-old-variables-using-mutate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=17in]{images/mutate} 
+
+}
+
+\caption[Mutate diagram from Data Wrangling with dplyr and tidyr cheatsheet]{Mutate diagram from Data Wrangling with dplyr and tidyr cheatsheet}\label{fig:select}
+\end{figure}
+
+When looking at the \texttt{flights} data set, there are some clear
+additional variables that could be calculated based on the values of
+variables already in the data set. Passengers are often frustrated when
+their flights departs late, but change their mood a bit if pilots can
+make up some time during the flight to get them to their destination
+close to when they expected to land. This is commonly referred to as
+gain and we will create this variable using the \texttt{mutate}
+function:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_plus <-}\StringTok{ }\KeywordTok{mutate}\NormalTok{(flights,}
+         \DataTypeTok{gain =} \NormalTok{arr_delay -}\StringTok{ }\NormalTok{dep_delay)}
+\end{Highlighting}
+\end{Shaded}
+
+We can now look at summary measures of this \texttt{gain} variable and
+even plot it in the form of a histogram:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{gain_summary <-}\StringTok{ }\KeywordTok{summarize}\NormalTok{(flights_plus,}
+          \DataTypeTok{min =} \KeywordTok{min}\NormalTok{(gain, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{q1 =} \KeywordTok{quantile}\NormalTok{(gain, }\FloatTok{0.25}\NormalTok{, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{median =} \KeywordTok{quantile}\NormalTok{(gain, }\FloatTok{0.5}\NormalTok{, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{q3 =} \KeywordTok{quantile}\NormalTok{(gain, }\FloatTok{0.75}\NormalTok{, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{max =} \KeywordTok{max}\NormalTok{(gain, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(gain, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{sd =} \KeywordTok{sd}\NormalTok{(gain, }\DataTypeTok{na.rm =} \OtherTok{TRUE}\NormalTok{),}
+          \DataTypeTok{missing =} \KeywordTok{sum}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(gain))}
+\NormalTok{)}
+\NormalTok{gain_summary}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 8
+##     min    q1 median    q3   max      mean       sd missing
+##   <dbl> <dbl>  <dbl> <dbl> <dbl>     <dbl>    <dbl>   <int>
+## 1  -109   -17     -7     3   196 -5.659779 18.04365    9430
+\end{verbatim}
+
+We've recreated the \texttt{summary} function we say in Chapter
+\ref{viz} here using the \texttt{summarize} function in \texttt{dplyr}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(ggplot2)}
+\KeywordTok{ggplot}\NormalTok{(flights_plus, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =} \NormalTok{gain)) +}
+\StringTok{  }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{color =} \StringTok{"white"}\NormalTok{, }\DataTypeTok{bins =} \DecValTok{20}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-64-1} \end{center}
+
+We can also create multiple columns at once and even refer to columns
+that were just created in a new column. Hadley produces one such example
+in Chapter 5 of ``R for Data Science'' \citep{r4ds2016}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights_plus2 <-}\StringTok{ }\KeywordTok{mutate}\NormalTok{(flights,}
+  \DataTypeTok{gain =} \NormalTok{arr_delay -}\StringTok{ }\NormalTok{dep_delay,}
+  \DataTypeTok{hours =} \NormalTok{air_time /}\StringTok{ }\DecValTok{60}\NormalTok{,}
+  \DataTypeTok{gain_per_hour =} \NormalTok{gain /}\StringTok{ }\NormalTok{hours}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.8)} What do positive values of the \texttt{gain} variable
+in \texttt{flights\_plus} correspond to? What about negative values? And
+what about a zero value?
+
+\textbf{(LC5.9)} Could we create the \texttt{dep\_delay} and
+\texttt{arr\_delay} columns by simply subtracting \texttt{dep\_time}
+from \texttt{sched\_dep\_time} and similarly for arrivals? Try the code
+out and explain any differences between the result and what actually
+appears in \texttt{flights}.
+
+\textbf{(LC5.10)} What can we say about the distribution of
+\texttt{gain}? Describe it in a few sentences using the plot and the
+\texttt{gain\_summary} data frame values.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{\texorpdfstring{Reorder the data frame using
+\texttt{arrange}}{Reorder the data frame using arrange}}\label{reorder-the-data-frame-using-arrange}
+
+If you've ever worked with data, one of the most common things you'd
+like to do is sort it. Have you ever been asked to calculate a median by
+hand? This requires you to put the data in order from smallest to
+highest in value. The \texttt{dplyr} package has a function called
+\texttt{arrange} that we will use to sort/reorder our data according to
+the values of the specified variable. This is most frequently used after
+we have used the \texttt{group\_by} and \texttt{summarize} functions as
+we will see.
+
+Let's suppose we were interested in determining the most frequent
+destination airports from New York City in 2013:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{by_dest <-}\StringTok{ }\KeywordTok{group_by}\NormalTok{(flights, dest)}
+\NormalTok{freq_dest <-}\StringTok{ }\KeywordTok{summarize}\NormalTok{(by_dest, }\DataTypeTok{num_flights =} \KeywordTok{n}\NormalTok{())}
+\NormalTok{freq_dest}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 105 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ABQ         254
+## 2    ACK         265
+## 3    ALB         439
+## 4    ANC           8
+## 5    ATL       17215
+## 6    AUS        2439
+## 7    AVL         275
+## 8    BDL         443
+## 9    BGR         375
+## 10   BHM         297
+## # ... with 95 more rows
+\end{verbatim}
+
+You'll see that by default the values of \texttt{dest} are displayed in
+alphabetical order here. Remember to use \texttt{View()} in the R
+Console to look at all the values of \texttt{freq\_dest} in spreadsheet
+format. We are interested in finding those airports that appear most:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{arrange}\NormalTok{(freq_dest, num_flights)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 105 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    LEX           1
+## 2    LGA           1
+## 3    ANC           8
+## 4    SBN          10
+## 5    HDN          15
+## 6    MTJ          15
+## 7    EYW          17
+## 8    PSP          19
+## 9    JAC          25
+## 10   BZN          36
+## # ... with 95 more rows
+\end{verbatim}
+
+This is actually giving us the opposite of what we are looking for. It
+tells us the least frequent destination airports. To switch the ordering
+to be descending instead of ascending we use the \texttt{desc} function:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{arrange}\NormalTok{(freq_dest, }\KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 105 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ORD       17283
+## 2    ATL       17215
+## 3    LAX       16174
+## 4    BOS       15508
+## 5    MCO       14082
+## 6    CLT       14064
+## 7    SFO       13331
+## 8    FLL       12055
+## 9    MIA       11728
+## 10   DCA        9705
+## # ... with 95 more rows
+\end{verbatim}
+
+We can also use the \texttt{top\_n} function which automatically tells
+us the most frequent \texttt{num\_flights}. We specify the top 10
+airports here:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{top_n}\NormalTok{(freq_dest, }\DataTypeTok{n =} \DecValTok{10}\NormalTok{, }\DataTypeTok{wt =} \NormalTok{num_flights)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ATL       17215
+## 2    BOS       15508
+## 3    CLT       14064
+## 4    DCA        9705
+## 5    FLL       12055
+## 6    LAX       16174
+## 7    MCO       14082
+## 8    MIA       11728
+## 9    ORD       17283
+## 10   SFO       13331
+\end{verbatim}
+
+We'll still need to arrange this by \texttt{num\_flights} though:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{arrange}\NormalTok{(}\KeywordTok{top_n}\NormalTok{(freq_dest, }\DataTypeTok{n =} \DecValTok{10}\NormalTok{, }\DataTypeTok{wt =} \NormalTok{num_flights), }\KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ORD       17283
+## 2    ATL       17215
+## 3    LAX       16174
+## 4    BOS       15508
+## 5    MCO       14082
+## 6    CLT       14064
+## 7    SFO       13331
+## 8    FLL       12055
+## 9    MIA       11728
+## 10   DCA        9705
+\end{verbatim}
+
+\textbf{Note:} Remember that I didn't pull the \texttt{n} and
+\texttt{wt} arguments out of thin air. They can be found by using the
+\texttt{?} function on \texttt{top\_n}.
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.11)} Create a new data frame that shows the top 5 airports
+with the largest arrival delays from NYC in 2013.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{\texorpdfstring{The pipe
+\texttt{\%\textgreater{}\%}}{The pipe \%\textgreater{}\%}}\label{the-pipe}
+
+Just as the \texttt{+} sign was used to add layers to a plot created
+using \texttt{ggplot} we will use the pipe operator
+(\texttt{\%\textgreater{}\%}) to chain together \texttt{dplyr}
+functions. We'll see that we can even chain together \texttt{dplyr}
+functions and plotting code. (Both \texttt{ggplot2} and \texttt{dplyr}
+were created by Hadley after all.)
+
+You may have been a little confused by the last chunk we created above:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{arrange}\NormalTok{(}\KeywordTok{top_n}\NormalTok{(freq_dest, }\DataTypeTok{n =} \DecValTok{10}\NormalTok{, }\DataTypeTok{wt =} \NormalTok{num_flights), }\KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+If we don't create temporary variables like we did before with
+\texttt{by\_dest}, \texttt{grouped\_flights}, etc., we start to get into
+the issue of trying to match parentheses. We could separate this code a
+bit to help with this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{arrange}\NormalTok{(}
+  \KeywordTok{top_n}\NormalTok{(freq_dest, }
+        \DataTypeTok{n =} \DecValTok{10}\NormalTok{,}
+        \DataTypeTok{wt =} \NormalTok{num_flights), }
+  \KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ORD       17283
+## 2    ATL       17215
+## 3    LAX       16174
+## 4    BOS       15508
+## 5    MCO       14082
+## 6    CLT       14064
+## 7    SFO       13331
+## 8    FLL       12055
+## 9    MIA       11728
+## 10   DCA        9705
+\end{verbatim}
+
+Even this make it difficult to understand what is exactly happening
+though. \texttt{desc(num\_flights)} is an argument to \texttt{arrange}.
+The best way to fix this problem is the use of the chaining operator
+called the pipe (\texttt{\%\textgreater{}\%}):
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{freq_dest %>%}
+\StringTok{  }\KeywordTok{top_n}\NormalTok{(}\DataTypeTok{n =} \DecValTok{10}\NormalTok{, }\DataTypeTok{wt =} \NormalTok{num_flights) %>%}
+\StringTok{  }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 2
+##     dest num_flights
+##    <chr>       <int>
+## 1    ORD       17283
+## 2    ATL       17215
+## 3    LAX       16174
+## 4    BOS       15508
+## 5    MCO       14082
+## 6    CLT       14064
+## 7    SFO       13331
+## 8    FLL       12055
+## 9    MIA       11728
+## 10   DCA        9705
+\end{verbatim}
+
+Recall from Chapter @\ref(viz) that we read the pipe operator as ``and
+then''. So here we take the \texttt{freq\_dest} data frame \textbf{AND
+THEN} we determine the top 10 values of \texttt{num\_flights}
+\textbf{AND THEN} we arrange these top 10 flights according to a
+descending numbers of flights (from highest to lowest).
+
+We can go one stop further and tie together the \texttt{group\_by} and
+\texttt{summarize} functions we used to find the most frequent flights:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ten_freq_dests <-}\StringTok{ }\NormalTok{flights %>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(dest) %>%}
+\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{num_flights =} \KeywordTok{n}\NormalTok{()) %>%}
+\StringTok{  }\KeywordTok{top_n}\NormalTok{(}\DataTypeTok{n =} \DecValTok{10}\NormalTok{) %>%}
+\StringTok{  }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(num_flights))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Selecting by num_flights
+\end{verbatim}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.12)} Recreate each of the chunks of code above Subsection
+\ref{arrange} in this chapter using the \texttt{\%\textgreater{}\%}
+operator. Note that sometimes you can combine multiple subsequent chunks
+of code together. Do so whenever possible.
+
+\textbf{(LC5.13)} What benefits can you see to using the pipe instead of
+the other way of doing things as you saw throughout this chapter? Give
+specific examples.
+
+\textbf{(LC5.14)} Write out exactly how the \texttt{ten\_freq\_dests}
+data set was created using the ``and then'' verbiage.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+The piping syntax will be our major focus throughout the rest of this
+book and you'll find that you'll quickly be addicted to the chaining
+with some practice. If you'd like to see more examples on using
+\texttt{dplyr}, the FMV (in addition to some other \texttt{dplyr}
+verbs), and \texttt{\%\textgreater{}\%} with the \texttt{nycflights13}
+data set, you can check out Chapter 5 of Hadley and Garrett's book
+\citep{r4ds2016}.
+
+\section{Joining/merging data frames}\label{joiningmerging-data-frames}
+
+Something you may have thought to yourself as you looked at the most
+freqent destinations of flights from NYC in 2013 is
+
+\begin{itemize}
+\tightlist
+\item
+  ``What cities are these airports in?''
+\item
+  ``Is \texttt{"ORD"} Orlando?''
+\item
+  ``Where is \texttt{"FLL"}?
+\end{itemize}
+
+The \texttt{nycflights13} data source contains multiple data frames.
+Instead of having to manually look up different values of airport names
+corresponding to airport codes like \texttt{ORD}, we can have R
+automatically do this ``looking up'' for us.
+
+To do so, we'll need to tell R how to match one data frame to another
+data frame. Let's first check out the \texttt{airports} data frame
+inside of R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{View}\NormalTok{(airports)}
+\end{Highlighting}
+\end{Shaded}
+
+The first column \texttt{faa} corresponds to the airport codes that we
+saw in \texttt{dest} in our \texttt{flights} and subsequent
+\texttt{ten\_freq\_dests} data sets. Hadley and Garrett \citep{r4ds2016}
+created the following diagram to help us understand how the different
+data sets are linked:
+
+\begin{figure}
+
+{\centering \includegraphics[width=11in]{images/relational-nycflights} 
+
+}
+
+\caption[Data relationships in nycflights13 from R for Data Science]{Data relationships in nycflights13 from R for Data Science}\label{fig:reldiagram}
+\end{figure}
+
+We see from \texttt{View(airports)} that \texttt{airports} contains a
+lot of other information about 1396. We are only really interested here
+in the \texttt{faa} and \texttt{name} columns. Let's use the
+\texttt{select} function to only use those variables:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{airports_small <-}\StringTok{ }\NormalTok{airports %>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(faa, name)}
+\end{Highlighting}
+\end{Shaded}
+
+So if we identify the names of the airports we can use the
+\texttt{inner\_join} function. Note that we will also rename the
+subsequent column \texttt{name} as \texttt{airport\_name}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{named_freq_dests <-}\StringTok{ }\NormalTok{ten_freq_dests %>%}
+\StringTok{  }\KeywordTok{inner_join}\NormalTok{(airports_small, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"dest"} \NormalTok{=}\StringTok{ "faa"}\NormalTok{)) %>%}
+\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{airport_name =} \NormalTok{name)}
+\NormalTok{named_freq_dests}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 3
+##     dest num_flights                       airport_name
+##    <chr>       <int>                              <chr>
+## 1    ORD       17283                 Chicago Ohare Intl
+## 2    ATL       17215    Hartsfield Jackson Atlanta Intl
+## 3    LAX       16174                   Los Angeles Intl
+## 4    BOS       15508 General Edward Lawrence Logan Intl
+## 5    MCO       14082                       Orlando Intl
+## 6    CLT       14064             Charlotte Douglas Intl
+## 7    SFO       13331                 San Francisco Intl
+## 8    FLL       12055     Fort Lauderdale Hollywood Intl
+## 9    MIA       11728                         Miami Intl
+## 10   DCA        9705      Ronald Reagan Washington Natl
+\end{verbatim}
+
+In case you didn't know, \texttt{"ORD"} is the airport code of Chicago
+O'Hare airport and \texttt{"FLL"} is the main airport in Fort
+Lauderdale, Florida.
+
+A visual representation of the \texttt{inner\_join} is given
+\citep{r4ds2016}:
+
+\begin{figure}
+
+{\centering \includegraphics[width=9.39in]{images/join-inner} 
+
+}
+
+\caption[Diagram of inner join from R for Data Science]{Diagram of inner join from R for Data Science}\label{fig:ijdiagram}
+\end{figure}
+
+There are more complex joins available, but the \texttt{inner\_join}
+will solve nearly all (if not all) of the problems you'll face in our
+experience.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC5.15)} What happens when you try to \texttt{inner\_join} the
+\texttt{ten\_freq\_dests} data frame with \texttt{airports} instead of
+\texttt{airports\_small}? How might one use this result to answer
+further questions about the top 10 destinations?
+
+\textbf{(LC5.16)} What surprises you about the top 10 destinations from
+NYC in 2013?
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
 \section{What's to come?}\label{whats-to-come-2}
+
+This concludes the \textbf{Data Exploration} unit of this book. You
+should be pretty proficient in both plotting variables (or multiple
+variables together) in various data sets and manipulating data as we've
+done in this chapter. You are encouraged to step back through the code
+in earlier chapters and make changes as you see fit based on your
+updated knowledge.
+
+In Chapter \ref{collect}, we'll begin to build the pieces needed to
+understand how this unit of \textbf{Data Exploration} can tie into
+statistical inference in the \textbf{Inference} part of the book.
+Remember that the focus throughout is on data visualization and we'll
+see that next when we discuss sampling.
 
 \chapter{Collecting Data}\label{collect}
 
@@ -2115,6 +3633,18 @@ More traditional in feel
     Think up data example to include in earlier chapters
   \end{itemize}
 \end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC6.1)}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{What's to come?}\label{whats-to-come-3}
 
 \part{Inference}\label{part-inference}
 
@@ -2172,7 +3702,17 @@ More traditional in feel
   \end{itemize}
 \end{itemize}
 
-\section{What's to come?}\label{whats-to-come-3}
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC7.1)}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{What's to come?}\label{whats-to-come-4}
 
 \chapter{Hypothesis Testing}\label{hypo}
 
@@ -2192,11 +3732,31 @@ More traditional in feel
   \end{itemize}
 \end{itemize}
 
-\section{What's to come?}\label{whats-to-come-4}
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC8.1)}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{What's to come?}\label{whats-to-come-5}
 
 \chapter{Confidence Intervals}\label{ci}
 
-\section{What's to come?}\label{whats-to-come-5}
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC9.1)}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{What's to come?}\label{whats-to-come-6}
 
 \chapter{Simple and Multiple Regression}\label{regress}
 
@@ -2237,50 +3797,27 @@ More traditional in feel
   \end{itemize}
 \end{itemize}
 
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{learncheck}
+\textbf{\emph{Learning check}}
+\end{learncheck}
+
+\textbf{(LC10.1)}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{What's to come?}\label{whats-to-come-7}
+
 \part{Conclusion}\label{part-conclusion}
 
 
-\chapter{Concluding remarks}\label{conclusion}
-
-\section{Topics to be Dropped}\label{topics-to-be-dropped}
-
-\begin{itemize}
-\tightlist
-\item
-  Design of experiments
-\item
-  statistical power
-\item
-  Independence/Probability
-\item
-  Chi-Square Tests
-\item
-  Not do extensive ANOVA, but allude to it after doing multiple
-  regression with categorical
-\item
-  Logistic Regression
-\item
-  CLT/Mathematical computation engine (but we need to ascertain the
-  unintended consequences of dropping it)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Tell them the minimum they need to know
-  \end{itemize}
-\item
-  Simpson's paradox
-\end{itemize}
+\chapter{Concluding Remarks}\label{conclusion}
 
 \part{Appendix}\label{part-appendix}
 
 
-\chapter{Appendix A: R and RStudio Basics}\label{appendix1}
-
-Link to \url{http://ismayc.github.io/rbasics-book} or reproduce the
-documents here?
-
-\chapter{Appendix B: Intermediate R}\label{appendix2}
+\chapter{Appendix A: Intermediate R}\label{appendix1}
 
 \section{Sorted barplots}\label{sorted-barplots}
 
@@ -2353,11 +3890,11 @@ We can use the sorted table giving the number of flights defined as
 
 \begin{figure}
 
-{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-39-1} 
+{\centering \includegraphics{ismay_kim_files/figure-latex/unnamed-chunk-80-1} 
 
 }
 
-\caption[Number of flights departing NYC in 2013 by airline - Descending numbers]{Number of flights departing NYC in 2013 by airline - Descending numbers}\label{fig:unnamed-chunk-39}
+\caption[Number of flights departing NYC in 2013 by airline - Descending numbers]{Number of flights departing NYC in 2013 by airline - Descending numbers}\label{fig:unnamed-chunk-80}
 \end{figure}
 
 \begin{Shaded}
@@ -2393,10 +3930,25 @@ by looking at Figure 4.6 instead of Figure 4.5?
   Reshaping the data with \texttt{tidyr}
 \end{itemize}
 
-\chapter{Appendix C: R Markdown}\label{appendix3}
+\chapter{Appendix B: Statistical Basics}\label{appendix2}
 
-Link to \url{http://ismayc.github.io/rbasics-book} or reproduce the
-documents here?
+\section{Basic statistical terms}\label{basic-statistical-terms}
+
+\begin{itemize}
+\tightlist
+\item
+  Mean
+\item
+  Median
+\item
+  Standard deviation
+\item
+  Five-number summary
+\item
+  Distribution
+\item
+  Outliers
+\end{itemize}
 
 \part{Bibliography}\label{part-bibliography}
 
